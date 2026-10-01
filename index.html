@@ -8,14 +8,14 @@
 :root {
   --bg: #f6f3ec; --panel: #ffffff; --ink: #24301f; --muted: #6b7363; --line: #e3ddd0;
   --accent: #3f7a3a; --accent-soft: #e4efdf;
-  --indoors: #8a5cc7; --sow: #3f8f3a; --transplant: #2a86a8; --plant: #b07a2a; --harvest: #d0572f;
+  --indoors: #8a5cc7; --sow: #3f8f3a; --transplant: #2a86a8; --plant: #b07a2a; --harvest: #d0572f; --hydro: #1f63c9;
   --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 14px rgba(0,0,0,.06);
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #161a14; --panel: #20261d; --ink: #e8ecdf; --muted: #9aa392; --line: #333b2e;
     --accent: #7cc271; --accent-soft: #2b3a27;
-    --indoors: #a784dd; --sow: #6cbb5f; --transplant: #4fb1d3; --plant: #d3a04f; --harvest: #f07a52;
+    --indoors: #a784dd; --sow: #6cbb5f; --transplant: #4fb1d3; --plant: #d3a04f; --harvest: #f07a52; --hydro: #6aa6ff;
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 14px rgba(0,0,0,.3);
   }
 }
@@ -63,6 +63,11 @@ h2.group { font-size: 16px; margin: 22px 0 10px; color: var(--muted); font-weigh
 .card .name { font-weight: 650; font-size: 15px; }
 .badges { display: flex; flex-wrap: wrap; gap: 4px; }
 .badge { font-size: 11.5px; font-weight: 600; padding: 2px 7px; border-radius: 99px; color: #fff; background: var(--c); }
+.badge.hy { color: var(--hydro); background: color-mix(in srgb, var(--hydro) 10%, var(--panel));
+  box-shadow: inset 0 0 0 1.5px var(--hydro); }
+td.nm .badge { font-size: 10.5px; padding: 1px 6px; }
+.m-head .badges { margin-top: 6px; }
+.legend span.hy::before { background: color-mix(in srgb, var(--hydro) 10%, var(--panel)); box-shadow: inset 0 0 0 1.5px var(--hydro); }
 .strip { display: grid; grid-template-columns: repeat(12, 1fr); gap: 2px; margin-top: auto; padding-top: 4px; }
 .strip i { height: 6px; border-radius: 2px; background: var(--line); }
 .strip i.p { background: var(--sow); } .strip i.h { background: var(--harvest); }
@@ -106,7 +111,6 @@ dialog::backdrop { background: rgba(10,15,8,.55); }
 .facts .hydro { grid-column: 1 / -1; }
 .facts .hydro b { color: var(--transplant); }
 .facts .hydro.no b { color: var(--muted); }
-.drop { font-size: 12px; margin-left: 4px; cursor: help; }
 .cal { display: grid; grid-template-columns: 110px repeat(12, 1fr); gap: 3px; font-size: 12px; align-items: center; }
 .cal .h { text-align: center; color: var(--muted); font-weight: 600; }
 .cal .h.cur { color: var(--accent); }
@@ -166,6 +170,7 @@ dialog::backdrop { background: rgba(10,15,8,.55); }
     <span style="--c:var(--transplant)">Transplant seedlings</span>
     <span style="--c:var(--plant)">Plant (trees, crowns, bulbs, slips)</span>
     <span style="--c:var(--harvest)">Harvest</span>
+    <span class="hy">💧 Hydro Seed / Hydro Cutting: can be grown hydroponically that way</span>
   </div>
 
   <div id="out"></div>
@@ -220,8 +225,10 @@ const state = {
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[ch]);
 const HYDRO_LABEL = { seeds: "Yes, from seeds", cuttings: "Yes, from cuttings", both: "Yes, from seeds or cuttings", no: "Not practical" };
-const hydroIcon = c => c.hydro === "no" ? "" :
-  `<span class="drop" title="Hydroponic: ${HYDRO_LABEL[c.hydro].slice(5)}">💧</span>`;
+const hydroChips = c => [
+  ...(c.hydro === "seeds" || c.hydro === "both" ? ["Hydro Seed"] : []),
+  ...(c.hydro === "cuttings" || c.hydro === "both" ? ["Hydro Cutting"] : []),
+].map(l => `<span class="badge hy" title="${esc(c.hydro_note)}">💧 ${l}</span>`).join("");
 const plantMonths = c => new Set(PLANT_KEYS.flatMap(k => c[k]));
 const actionsIn = (c, m) => ACTIONS.filter(a => c[a.k].includes(m));
 
@@ -257,8 +264,8 @@ function card(c) {
   return `<button class="card" data-id="${c.id}">
     <div class="ph" style="background-image:url('${c.img || ""}')"></div>
     <div class="body">
-      <div class="name">${esc(c.name)}${hydroIcon(c)}</div>
-      <div class="badges">${acts.map(a => `<span class="badge" style="--c:${a.c}">${a.label}</span>`).join("")}</div>
+      <div class="name">${esc(c.name)}</div>
+      <div class="badges">${acts.map(a => `<span class="badge" style="--c:${a.c}">${a.label}</span>`).join("")}${hydroChips(c)}</div>
       ${strip(c)}
     </div></button>`;
 }
@@ -277,7 +284,7 @@ function renderChart(list) {
   let rows = "", last = null;
   for (const c of list) {
     if (c.season !== last) { rows += `<tr class="sec"><td colspan="13">${SEASON_LABEL[c.season]}</td></tr>`; last = c.season; }
-    rows += `<tr data-id="${c.id}"><td class="nm">${c.img ? `<img src="${c.img}" alt="" loading="lazy">` : ""}${esc(c.name)}${hydroIcon(c)}</td>${
+    rows += `<tr data-id="${c.id}"><td class="nm">${c.img ? `<img src="${c.img}" alt="" loading="lazy">` : ""}${esc(c.name)}${hydroChips(c)}</td>${
       MONTHS.map((_, i) => {
         const m = i + 1;
         const bars = [...ACTIONS, HARVEST].filter(a => c[a.k].includes(m));
@@ -310,7 +317,7 @@ function openCrop(id) {
     ${c.img ? `<img class="m-img" src="${c.img}" alt="${esc(c.name)}">` : ""}
     <div class="m-body">
       <div class="m-head">
-        <div><h3>${esc(c.name)}</h3><div class="tag">${c.cat} · ${c.season === "perennial" ? "perennial" : c.season + " season"}</div></div>
+        <div><h3>${esc(c.name)}</h3><div class="tag">${c.cat} · ${c.season === "perennial" ? "perennial" : c.season + " season"}</div><div class="badges">${hydroChips(c)}</div></div>
         <button class="close" aria-label="Close">×</button>
       </div>
       <div class="facts">
