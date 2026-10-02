@@ -430,6 +430,8 @@ function renderLocbar() {
   const C = state.C, l = state.loc;
   const frost = C.lf32 == null
     ? `<span class="fact"><b>Frost-free</b> in a typical year</span>`
+    : shortFrost(C)
+    ? `<span class="fact">Frost <b>rare</b>, possible ~${fmtDay(C.ff32)}–${fmtDay(C.lf32)}</span>`
     : `<span class="fact">Last frost <b>~${fmtDay(C.lf32)}</b></span><span class="fact">First frost <b>~${fmtDay(C.ff32)}</b></span>`;
   const st = C.stations;
   $("#locbar").hidden = false;
@@ -444,13 +446,17 @@ function renderLocbar() {
 }
 
 // ---------------- Monthly note ----------------
+// frost only threatens for a few weeks in midwinter (coastal / low-desert climates)
+const shortFrost = C => C.lf32 != null && C.frostFreeDays >= 320;
+
 function monthNote(m) {
   const C = state.C, s = E.MSTART[m - 1], e = s + MDAYS[m - 1] - 1, mid = s + 14;
   const inMonth = d => d != null && d >= s && d <= e;
   const hi = Math.round(C.tmax[mid]), lo = Math.round(C.tmin[mid]);
   const parts = [];
-  if (C.lf32 == null) {
-    if ([12, 1, 2].includes(m)) parts.push("Frost is rare here (most years never reach 32°F), but cover tender plants on unusually cold nights.");
+  if (C.lf32 == null || shortFrost(C)) {
+    if (C.lf32 != null && [12, 1, 2].includes(m)) parts.push(`Frost is rare here, but possible around ${fmtDay(C.ff32)}–${fmtDay(C.lf32)}. Cover tender plants on clear, cold nights.`);
+    else if ([12, 1, 2].includes(m)) parts.push("Frost is rare here (most years never reach 32°F), but cover tender plants on unusually cold nights.");
   } else {
     if (inMonth(C.lf32)) parts.push(`Your average last spring frost is around <b>${fmtDay(C.lf32)}</b>. Wait until after it to set out tender plants.`);
     else {
