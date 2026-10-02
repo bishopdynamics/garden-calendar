@@ -14,6 +14,9 @@ Pick your location (or let the browser find it) and the calendar works out when 
 - **Month by month:** see what to plant or harvest this month, with notes like "about 6 weeks until your last frost: start warm-season seeds indoors."
 - **Year chart:** every crop's whole year at a glance, with indoor starts, sowing, transplanting, planting and harvest.
 - **94 crops:** 50 vegetables, 37 fruits (berries, vines, citrus and fruit trees) and 7 herbs, each with a photo, spacing, sun, days to harvest and growing tips.
+- **631 varieties with harvest dates:** each crop lists widely sold varieties. For vegetables the table shows when *you'd* get a first harvest if you planted that variety now at your location, and flags varieties too slow to finish before frost or summer heat.
+- **Fastest harvest:** sort what you can plant this month by how soon it's ready, or filter to crops ready within 30, 60 or 90 days.
+- **Chill hours for fruit:** the app estimates your area's winter chill hours and marks which fruit varieties will fruit well there, need more chill, or may bloom too early.
 - **Advice for your area:** low-chill fruit varieties for mild winters, short-day vs. long-day onions by latitude, short-season varieties where summers are cool, and more.
 - **Honest about what won't grow:** crops that can't survive your winters or ripen in your summers are hidden by default (with the reason, if you want to see them). Borderline crops are marked **Marginal**, with tips for making them work.
 - **Hydroponics:** every crop is tagged 💧 **Hydro Seed** and/or 💧 **Hydro Cutting** if it can be grown hydroponically that way, with notes on how.
@@ -26,7 +29,8 @@ Planting dates aren't stored; they're computed in your browser from climate data
 1. **Your location** is matched to the nearest ZIP code (for its USDA hardiness zone) and the three nearest NOAA weather stations.
 2. **Local climate** is blended from those stations: average last/first frost dates and daily temperature curves built from monthly highs and lows.
 3. **Each crop has rules** describing what it needs (see [`build/crops.py`](build/crops.py)): soil warmth at planting, frost tolerance, how hot is too hot (bolting, failed fruit set), how much heat it needs to ripen, and its hardiness-zone range for perennials.
-4. **The engine** ([`engine.js`](engine.js)) tries every planting date through the year. It grows the crop forward using [growing degree days](https://en.wikipedia.org/wiki/Growing_degree-day), so crops mature faster in warm weather and slower in cool weather. It keeps the dates where the crop survives and matures, and turns them into months.
+4. **Varieties** ([`build/varieties/`](build/varieties/)) carry days to maturity (vegetables) or chill hours and hardiness (fruit). The engine grows each variety forward from your planting date to estimate its first harvest. Winter chill hours are estimated from daily temperature curves between 32 and 45 °F.
+5. **The engine** ([`engine.js`](engine.js)) tries every planting date through the year. It grows the crop forward using [growing degree days](https://en.wikipedia.org/wiki/Growing_degree-day), so crops mature faster in warm weather and slower in cool weather. It keeps the dates where the crop survives and matures, and turns them into months.
 
 The model was checked against a hand-made calendar for Claremont, CA and spot-checked against extension-service guidance for Minneapolis, Duluth, Atlanta, Houston, Phoenix and Seattle.
 

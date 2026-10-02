@@ -21,7 +21,11 @@ tar xzf us-climate-normals_*annualseasonal*.tar.gz -C ann
 tar xzf us-climate-normals_*monthly_multivariate*.tar.gz -C mly
 cd ../.. && python3 build/geo.py
 
-# 3. Check the engine
+# 3. Varieties: edit build/varieties/*.json (format in build/varieties/SCHEMA.md), then validate and rebuild
+python3 build/test/varieties.py     # schema, tags, notes, outliers
+python3 build/build.py
+
+# 4. Check the engine
 node build/test/check.js            # Claremont vs. hand-made reference + sample cities
 node build/test/check.js 55401      # every crop for one ZIP
 node build/test/sweep.js 400        # anomaly sweep across 400 ZIPs

@@ -165,6 +165,26 @@ dialog::backdrop { background: rgba(10,15,8,.55); }
 .credit { font-size: 11.5px; color: var(--muted); margin-top: 12px; }
 .credit a { color: inherit; }
 
+/* harvest timing + variety table */
+.hv { font-size: 12.5px; color: var(--muted); }
+.hv b { color: var(--harvest); font-weight: 650; }
+select.ctl { font: inherit; font-size: 14px; padding: 7px 10px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--panel); color: var(--ink); }
+.vt-wrap { margin-top: 14px; }
+.vt-wrap h4 { margin: 0; font-size: 15px; }
+.vt-wrap .vt-sub { color: var(--muted); font-size: 13px; margin: 2px 0 8px; }
+.vt-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
+table.vt { min-width: 560px; font-size: 13.5px; }
+table.vt th { text-align: left; font-size: 12px; color: var(--muted); font-weight: 600; padding: 7px 10px; background: var(--bg); white-space: nowrap; }
+table.vt td { padding: 7px 10px; border-top: 1px solid var(--line); vertical-align: top; }
+table.vt td.n { font-weight: 600; white-space: nowrap; }
+table.vt td.num { white-space: nowrap; }
+table.vt tr.bad td { opacity: .6; }
+table.vt .when { color: var(--harvest); font-weight: 600; white-space: nowrap; }
+table.vt .slow, table.vt .fit-bad { color: var(--warn); font-weight: 600; white-space: nowrap; }
+table.vt .fit-ok { color: var(--accent); white-space: nowrap; }
+.tag { display: inline-block; font-size: 11px; color: var(--muted); border: 1px solid var(--line); border-radius: 99px; padding: 0 6px; margin: 2px 3px 0 0; }
+
 footer { max-width: 1400px; margin: 0 auto; padding: 0 24px 40px; font-size: 12.5px; color: var(--muted); }
 footer a { color: inherit; }
 
@@ -177,6 +197,14 @@ footer a { color: inherit; }
   .count { margin-left: 0; }
   .link-btn { margin-left: 0; }
   .setup { padding: 20px 16px; }
+  /* variety table becomes one block per variety */
+  table.vt { min-width: 0; }
+  table.vt tr:first-child { display: none; }
+  table.vt tr { display: flex; flex-wrap: wrap; gap: 2px 14px; padding: 9px 12px; border-top: 1px solid var(--line); }
+  table.vt tr:nth-child(2) { border-top: 0; }
+  table.vt td { border: 0; padding: 0; }
+  table.vt td.n, table.vt td.vnote { flex-basis: 100%; }
+  table.vt td[data-l]::before { content: attr(data-l) ": "; color: var(--muted); font-weight: 400; }
 }
 </style>
 </head>
@@ -227,6 +255,16 @@ footer a { color: inherit; }
         <button data-v="cards">Cards</button>
         <button data-v="chart">Year chart</button>
       </div>
+      <select class="ctl" id="sort" title="Sort order">
+        <option value="name">Sort: A–Z</option>
+        <option value="fast">Sort: fastest harvest</option>
+      </select>
+      <select class="ctl" id="within" title="Days from planting to first harvest">
+        <option value="0">Harvest within: any time</option>
+        <option value="30">Harvest within 30 days</option>
+        <option value="60">Harvest within 60 days</option>
+        <option value="90">Harvest within 90 days</option>
+      </select>
       <input type="search" id="q" placeholder="Search crops…">
       <label class="toggle"><input type="checkbox" id="unsuited"> <span id="unsuited-label">Show crops that won't grow here</span></label>
       <span class="count" id="count"></span>
@@ -287,6 +325,8 @@ const state = {
   hydro: store.get("hydro", "any"),
   view: store.get("view", "cards"),
   showUnsuited: store.get("showUnsuited", false),
+  sort: store.get("sort", "name"),
+  within: 0,
   q: "",
   loc: store.get("loc", null),  // { label, lat, lon, zone }
   C: null,                      // prepared climate for loc
@@ -302,6 +342,32 @@ const hydroChips = c => [
   ...(c.hydro === "cuttings" || c.hydro === "both" ? ["Hydro Cutting"] : []),
 ].map(l => `<span class="badge hy" title="${esc(c.hydro_note)}">💧 ${l}</span>`).join("");
 const plantMonths = c => new Set(PLANT_KEYS.flatMap(k => c[k]));
+// "early Mar" / "mid Mar" / "late Mar"
+const partOfMonth = d => { const dt = new Date(2001, 0, d), n = dt.getDate(); return `${n <= 10 ? "early" : n <= 20 ? "mid" : "late"} ${MONTHS[dt.getMonth()]}`; };
+const BASIS_VERB = { transplant: "transplant", sow: "sow", slips: "plant slips", sets: "plant sets", tubers: "plant", cloves: "plant cloves" };
+const BASIS_DAYS = { transplant: "from transplant", sow: "from sowing", slips: "from slips", sets: "from planting", tubers: "from planting", cloves: "from planting" };
+
+// First-harvest timing for crop c planted in month m, across its varieties (cached per location).
+let timingCache = new Map();
+function timing(c, m) {
+  const key = c.id + ":" + m;
+  if (timingCache.has(key)) return timingCache.get(key);
+  let t = null;
+  if (c.suitable) {
+    const days = c.varieties.filter(v => v.days).map(v => v.days);
+    const runs = (days.length ? days : c.rule.days || []).map(d => E.varietyTiming(c, state.C, m, d)).filter(x => x && x.ok && x.mature);
+    if (runs.length) {
+      runs.sort((a, b) => a.waitDays - b.waitDays);
+      t = { fast: runs[0], slow: runs[runs.length - 1] };
+    }
+  }
+  timingCache.set(key, t);
+  return t;
+}
+const harvestText = t => {
+  const a = partOfMonth(t.fast.mature), b = partOfMonth(t.slow.mature);
+  return a === b ? `~${a}` : `~${a} – ${b}`;
+};
 const actionsIn = (c, m) => ACTIONS.filter(a => c[a.k].includes(m));
 
 // ---------------- Location data ----------------
@@ -351,6 +417,7 @@ function searchPlaces(q) {
 function applyLocation(loc) {
   state.loc = loc;
   state.C = E.prepare(E.climateFrom(STATIONS, loc.lat, loc.lon), loc.zone, loc.lat);
+  timingCache = new Map();
   state.crops = CROPS.map(c => {
     const r = E.evaluate(c, state.C);
     return { ...c, ...r, local: r.suitable ? E.localTips(c, state.C, r) : [] };
@@ -440,6 +507,7 @@ function renderLocbar() {
     <span class="fact">Zone <b>${esc(C.zone)}</b></span>
     ${frost}
     <span class="fact"><b>${Math.round(C.hotDays)}</b> days ≥ 90°F/yr</span>
+    <span class="fact" title="Estimated average winter hours between 32–45°F; fruit trees need enough to bloom and fruit well">~<b>${C.chill.toLocaleString()}</b> chill hours</span>
     <button class="link-btn" id="change">Change location</button>
     <span class="src">Climate from NOAA station${st.length > 1 ? "s" : ""} ${st.map(s => `${esc(s.name)} (${s.mi < 1 ? "<1" : Math.round(s.mi)} mi)`).join(", ")}</span>`;
   $("#change").onclick = showSetup;
@@ -474,6 +542,8 @@ function monthNote(m) {
 }
 
 // ---------------- Crop views ----------------
+// harvest-timing sort/filter apply when browsing what to plant this month
+const timedView = () => state.view === "cards" && state.mode === "plant";
 function filtered() {
   const q = state.q.trim().toLowerCase();
   return state.crops.filter(c =>
@@ -482,8 +552,11 @@ function filtered() {
     (state.hydro === "any" || c.hydro === state.hydro || c.hydro === "both") &&
     (!q || c.name.toLowerCase().includes(q) || c.tips.toLowerCase().includes(q)) &&
     (state.mode === "all" || state.view === "chart" || !c.suitable ||
-      (state.mode === "plant" ? plantMonths(c).has(state.month) : c.harvest.includes(state.month)))
-  ).sort((a, b) => (b.suitable - a.suitable) || SEASON_ORDER[a.season] - SEASON_ORDER[b.season] || a.name.localeCompare(b.name));
+      (state.mode === "plant" ? plantMonths(c).has(state.month) : c.harvest.includes(state.month))) &&
+    (!timedView() || !state.within || (timing(c, state.month)?.fast.waitDays ?? Infinity) <= state.within)
+  ).sort((a, b) => (b.suitable - a.suitable) ||
+    (timedView() && state.sort === "fast" ? (timing(a, state.month)?.fast.waitDays ?? 1e9) - (timing(b, state.month)?.fast.waitDays ?? 1e9) : 0) ||
+    SEASON_ORDER[a.season] - SEASON_ORDER[b.season] || a.name.localeCompare(b.name));
 }
 
 function renderMonths() {
@@ -510,6 +583,7 @@ function card(c) {
       <div class="name">${esc(c.name)}</div>
       <div class="badges">${c.suitable ? (c.marginal ? `<span class="badge no" title="${esc(c.reason)}">Marginal</span>` : "") : `<span class="badge no">Not suited here</span>`}${
         acts.map(a => `<span class="badge" style="--c:${a.c}">${a.label}</span>`).join("")}${hydroChips(c)}</div>
+      ${c.suitable && timedView() && timing(c, state.month) ? `<div class="hv">First harvest <b>${harvestText(timing(c, state.month))}</b></div>` : ""}
       ${c.suitable ? strip(c) : ""}
     </div></button>`;
 }
@@ -517,8 +591,9 @@ function card(c) {
 function renderCards(list) {
   if (!list.length) return `<div class="empty">Nothing matches for ${MONTHS_LONG[state.month - 1]}.</div>`;
   const groups = {};
-  list.forEach(c => (groups[c.suitable ? c.season : "unsuited"] ??= []).push(c));
-  const label = { ...SEASON_LABEL, unsuited: "Not suited to this location" };
+  const fastSort = timedView() && state.sort === "fast";
+  list.forEach(c => (groups[!c.suitable ? "unsuited" : fastSort ? "fast" : c.season] ??= []).push(c));
+  const label = { ...SEASON_LABEL, unsuited: "Not suited to this location", fast: "Fastest to first harvest" };
   return Object.keys(groups).map(s =>
     `<h2 class="group">${label[s]} · ${groups[s].length}</h2><div class="grid">${groups[s].map(card).join("")}</div>`
   ).join("");
@@ -546,6 +621,8 @@ function render() {
   for (const k of ["mode", "cat", "hydro", "view"])
     document.querySelectorAll(`#${k} button`).forEach(b => b.classList.toggle("on", b.dataset.v === state[k]));
   $("#mode").style.display = state.view === "chart" ? "none" : "";
+  $("#sort").hidden = $("#within").hidden = !timedView();
+  $("#sort").value = state.sort; $("#within").value = String(state.within);
   const nUnsuited = state.crops.filter(c => !c.suitable).length;
   $("#unsuited").checked = state.showUnsuited;
   $("#unsuited-label").textContent = `Show crops that won't grow here (${nUnsuited})`;
@@ -558,6 +635,47 @@ function render() {
     state.mode === "harvest" ? `to harvest in ${MONTHS_LONG[state.month - 1]}` : "crops";
   $("#count").textContent = `${n} ${what}`;
   $("#out").innerHTML = state.view === "chart" ? renderChart(list) : renderCards(list);
+}
+
+// Month to show variety harvest dates for: the selected month if the crop can be planted then, else the next one.
+function timingMonth(c) {
+  for (let i = 0; i < 12; i++) { const m = (state.month - 1 + i) % 12 + 1; if (E.plantDayIn(c, state.C, m)) return m; }
+  return null;
+}
+function chillFit(v, C) {
+  if (v.zones && C.z < v.zones[0]) return `<span class="fit-bad" title="Rated for zones ${v.zones.join("–")}">✗ not hardy here</span>`;
+  if (v.zones && C.z > v.zones[1]) return `<span class="fit-bad" title="Rated for zones ${v.zones.join("–")}">✗ needs colder winters</span>`;
+  if (v.chill == null) return "";
+  if (v.chill > C.chill + Math.max(100, C.chill * 0.25)) return `<span class="fit-bad" title="This area averages ~${C.chill} chill hours">✗ needs more chill</span>`;
+  if (C.chill > 600 && v.chill < C.chill * 0.4) return `<span class="fit-bad" title="Low-chill varieties can bloom during midwinter warm spells and lose flowers to frost">⚠ may bloom too early</span>`;
+  return `<span class="fit-ok">✓ good fit</span>`;
+}
+function varietyTable(c) {
+  const vs = c.varieties;
+  if (!vs.length) return "";
+  const tags = v => (v.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
+  if (c.basis) {
+    const m = c.suitable ? timingMonth(c) : null;
+    const runs = m ? vs.map(v => v.days ? E.varietyTiming(c, state.C, m, v.days) : null) : [];
+    const p = m && E.plantDayIn(c, state.C, m);
+    const sub = m ? `First harvest if you ${BASIS_VERB[c.basis] || "plant"} around <b>${fmtDay(p.day)}</b> near ${esc(state.loc.label)}${m !== state.month ? ` (the next planting window)` : ""}. Estimates from local climate averages.`
+                  : `Days to maturity ${BASIS_DAYS[c.basis] || ""}, from seed catalogs.`;
+    return `<div class="vt-wrap"><h4>Varieties</h4><div class="vt-sub">${sub}</div><div class="vt-scroll"><table class="vt">
+      <tr><th>Variety</th><th>Type</th><th>Days ${BASIS_DAYS[c.basis] || ""}</th>${m ? "<th>First harvest</th>" : ""}<th>Notes</th></tr>
+      ${vs.map((v, i) => { const r = runs[i];
+        const cell = !m ? "" : !r ? `<td data-l="First harvest">–</td>` : r.ok ? `<td class="when" data-l="First harvest">${partOfMonth(r.mature)}</td>`
+          : `<td class="slow" data-l="First harvest" title="Wouldn't finish before frost or summer heat if planted then">too slow</td>`;
+        return `<tr class="${m && r && !r.ok ? "bad" : ""}"><td class="n">${esc(v.name)}</td><td data-l="Type">${esc(v.type)}</td><td class="num" data-l="Days">${v.days ?? "–"}</td>${cell}<td class="vnote">${esc(v.notes)} ${tags(v)}</td></tr>`; }).join("")}
+    </table></div></div>`;
+  }
+  const C = state.C, anyChill = vs.some(v => v.chill != null);
+  const sub = anyChill ? `This area gets about <b>${C.chill.toLocaleString()} chill hours</b> in an average winter (estimate). Pick varieties whose chill need is at or a bit below that. Chill figures are nursery estimates and vary between sources, so treat borderline fits as a judgment call.` : "Varieties commonly sold by nurseries.";
+  return `<div class="vt-wrap"><h4>Varieties</h4><div class="vt-sub">${sub}</div><div class="vt-scroll"><table class="vt">
+    <tr><th>Variety</th><th>Type</th><th>Ripens</th><th>First crop</th>${anyChill ? "<th>Chill hours</th>" : ""}<th>Notes</th></tr>
+    ${vs.map(v => { const fit = chillFit(v, C);
+      return `<tr class="${fit.includes("fit-bad") && !fit.includes("⚠") ? "bad" : ""}"><td class="n">${esc(v.name)}</td><td data-l="Type">${esc(v.type)}</td><td data-l="Ripens">${esc(v.ripens || "")}</td>
+        <td class="num" data-l="First crop">${v.years ? `year ${esc(v.years)}` : ""}</td>${anyChill ? `<td class="num" data-l="Chill">${v.chill ?? "–"} ${fit}</td>` : ""}<td class="vnote">${esc(v.notes)} ${tags(v)}</td></tr>`; }).join("")}
+  </table></div></div>`;
 }
 
 function openCrop(id) {
@@ -585,6 +703,7 @@ function openCrop(id) {
       </div>` : ""}
       <p class="tips">${esc(c.tips)}</p>
       ${c.local.length ? `<div class="local"><b>For your area</b>${c.local.map(t => `<p>${esc(t)}</p>`).join("")}</div>` : ""}
+      ${varietyTable(c)}
       ${cr ? `<div class="credit">Photo: ${esc(cr.artist || "Unknown")}${cr.license ? `, ${esc(cr.license)}` : ""}, via Wikimedia Commons${
         cr.source ? ` (<a href="${esc(cr.source)}" target="_blank" rel="noopener">source</a>)` : ""}</div>` : ""}
     </div>`;
@@ -603,6 +722,8 @@ for (const k of ["mode", "cat", "hydro", "view"])
   });
 $("#unsuited").addEventListener("change", e => { state.showUnsuited = e.target.checked; store.set("showUnsuited", state.showUnsuited); render(); });
 $("#q").addEventListener("input", e => { state.q = e.target.value; render(); });
+$("#sort").addEventListener("change", e => { state.sort = e.target.value; store.set("sort", state.sort); render(); });
+$("#within").addEventListener("change", e => { state.within = +e.target.value; render(); });
 $("#out").addEventListener("click", e => {
   const el = e.target.closest("[data-id]"); if (el) openCrop(el.dataset.id);
 });

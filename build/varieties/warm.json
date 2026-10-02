@@ -1,0 +1,193 @@
+{
+  "lima-bean": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Henderson Bush", "type": "bush baby", "days": 65,
+        "tags": ["short-season", "heirloom", "open-pollinated"],
+        "notes": "Small-seeded baby lima on compact bushes; the earliest, surest lima where summers are short." },
+      { "name": "Jackson Wonder", "type": "bush baby", "days": 66,
+        "tags": ["heat-tolerant", "heirloom", "open-pollinated"],
+        "notes": "Speckled buff-and-purple butter bean; keeps setting pods through heat and dry spells in the South." },
+      { "name": "Fordhook 242", "type": "bush", "days": 75,
+        "tags": ["heat-tolerant", "heirloom", "open-pollinated"],
+        "notes": "Classic large-seeded bush lima that sets pods in hot weather; the standard for big, plump beans." },
+      { "name": "King of the Garden", "type": "pole", "days": 88,
+        "tags": ["heirloom", "open-pollinated"],
+        "notes": "Vigorous pole lima with big flat beans and heavy yields; best where summers are long and warm." },
+      { "name": "Christmas", "type": "pole", "days": 85,
+        "tags": ["heirloom", "open-pollinated"],
+        "notes": "Large maroon-splashed pole lima with chestnut flavor; thrives in long, hot summers." }
+    ]
+  },
+  "cowpea": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Queen Anne", "type": "blackeye", "days": 60,
+        "tags": ["compact", "heirloom", "open-pollinated"],
+        "notes": "Compact bush blackeye with an early, concentrated set; good for small gardens or shorter summers." },
+      { "name": "Mississippi Silver", "type": "crowder", "days": 62,
+        "tags": ["heat-tolerant", "disease-resistant", "open-pollinated"],
+        "notes": "Silvery pods that are easy to shell; bred for heat, humidity and disease in Deep South gardens." },
+      { "name": "Pinkeye Purple Hull", "type": "pinkeye", "days": 65,
+        "tags": ["heat-tolerant", "heirloom", "open-pollinated"],
+        "notes": "Southern favorite with purple pods that are easy to spot; often gives a second flush in hot climates." },
+      { "name": "California Blackeye No. 5", "type": "blackeye", "days": 65,
+        "tags": ["heat-tolerant", "disease-resistant", "open-pollinated"],
+        "notes": "The classic black-eyed pea; wilt- and nematode-resistant, productive for fresh shelling or dry beans." },
+      { "name": "Zipper Cream", "type": "cream", "days": 66,
+        "tags": ["heat-tolerant", "open-pollinated"],
+        "notes": "Large creamy-white peas from pods that 'zip' open; mild flavor, prized for fresh shelling in the South." }
+    ]
+  },
+  "corn": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Early Sunglow", "type": "su", "days": 63,
+        "tags": ["short-season", "compact", "hybrid"],
+        "notes": "Short plants with 7\" yellow ears; very early and tolerates cool soil where summers are short." },
+      { "name": "Northern Xtra-Sweet", "type": "sh2", "days": 67,
+        "tags": ["short-season", "hybrid"],
+        "notes": "One of the earliest supersweets; sugars hold well after picking. Isolate from other corn types." },
+      { "name": "Ambrosia", "type": "se", "days": 75,
+        "tags": ["hybrid"],
+        "notes": "Tender bicolor with 8\" ears; a reliable mid-season sugary-enhanced choice for most gardens." },
+      { "name": "Bodacious", "type": "se", "days": 77,
+        "tags": ["hybrid"],
+        "notes": "Big 8\" yellow ears with sweet, tender kernels; vigorous and dependable across most regions." },
+      { "name": "Golden Bantam", "type": "su", "days": 80,
+        "tags": ["heirloom", "open-pollinated"],
+        "notes": "1902 heirloom with old-fashioned corny flavor; save your own seed. Eat right after picking." },
+      { "name": "Incredible", "type": "se", "days": 85,
+        "tags": ["hybrid"],
+        "notes": "Large 9\" yellow ears with excellent flavor; a top main-season se for home and market growers." },
+      { "name": "Illini Xtra Sweet", "type": "sh2", "days": 85,
+        "tags": ["hybrid"],
+        "notes": "The original supersweet; very sweet and long-holding. Needs warm soil and isolation from other corn." },
+      { "name": "Silver Queen", "type": "su", "days": 92,
+        "tags": ["disease-resistant", "hybrid"],
+        "notes": "Late white corn with long ears and classic flavor; a Southern favorite where the season is long." }
+    ]
+  },
+  "cantaloupe": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Minnesota Midget", "type": "muskmelon", "days": 65,
+        "tags": ["short-season", "compact", "container", "heirloom", "open-pollinated"],
+        "notes": "4\" melons on 3-ft vines; the go-to for short, cool summers, small spaces and containers." },
+      { "name": "Halona", "type": "muskmelon", "days": 73,
+        "tags": ["short-season", "disease-resistant", "hybrid"],
+        "notes": "Early, very sweet orange melon with powdery mildew resistance; ripens well where summers are short." },
+      { "name": "Athena", "type": "muskmelon", "days": 74,
+        "tags": ["disease-resistant", "hybrid"],
+        "notes": "Eastern-type cantaloupe with firm sweet flesh and good shelf life; tolerant of fusarium and mildew." },
+      { "name": "Sugar Cube", "type": "muskmelon", "days": 77,
+        "tags": ["disease-resistant", "hybrid"],
+        "notes": "Softball-size, very high-sugar melons with broad disease resistance; ideal for small households." },
+      { "name": "Hale's Best Jumbo", "type": "muskmelon", "days": 85,
+        "tags": ["heat-tolerant", "heirloom", "open-pollinated"],
+        "notes": "Old standard with thick salmon flesh; handles heat and drought well. Good where summers are long." },
+      { "name": "Ambrosia", "type": "muskmelon", "days": 86,
+        "tags": ["disease-resistant", "hybrid"],
+        "notes": "Exceptionally sweet, juicy flesh and small seed cavity; a flavor favorite where summers are long." }
+    ]
+  },
+  "watermelon": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Mini Love", "type": "icebox", "days": 70,
+        "tags": ["short-season", "compact", "hybrid"],
+        "notes": "AAS winner with short vines and 7-lb red melons; good for small gardens and cooler, shorter summers." },
+      { "name": "Blacktail Mountain", "type": "icebox", "days": 72,
+        "tags": ["short-season", "open-pollinated"],
+        "notes": "Bred for cool nights; ripens 6–12 lb melons where summers are short, and handles heat too." },
+      { "name": "Sugar Baby", "type": "icebox", "days": 78,
+        "tags": ["short-season", "heirloom", "open-pollinated"],
+        "notes": "Classic dark-green 8–10 lb icebox melon; dependable in short seasons and small spaces." },
+      { "name": "Crimson Sweet", "type": "picnic", "days": 82,
+        "tags": ["disease-resistant", "heirloom", "open-pollinated"],
+        "notes": "Striped 20–25 lb melons, very sweet; resists fusarium wilt and anthracnose. A reliable all-rounder." },
+      { "name": "Charleston Gray", "type": "picnic", "days": 85,
+        "tags": ["heat-tolerant", "disease-resistant", "heirloom", "open-pollinated"],
+        "notes": "Long gray-green melons with tough rinds; disease resistant and well suited to hot Southern summers." },
+      { "name": "Jubilee", "type": "picnic", "days": 90,
+        "tags": ["disease-resistant", "heirloom", "open-pollinated"],
+        "notes": "Huge oblong striped melons (25–40 lb) for long, hot seasons; resistant to fusarium wilt." }
+    ]
+  },
+  "okra": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Annie Oakley II", "type": "green", "days": 50,
+        "tags": ["short-season", "compact", "hybrid"],
+        "notes": "Compact, early spineless hybrid; one of the best okras for northern gardens and short summers." },
+      { "name": "Jambalaya", "type": "green", "days": 50,
+        "tags": ["short-season", "compact", "container", "hybrid"],
+        "notes": "Compact plants with early, heavy yields of dark green pods; good for containers and shorter seasons." },
+      { "name": "Cajun Delight", "type": "green", "days": 52,
+        "tags": ["short-season", "hybrid"],
+        "notes": "AAS winner that bears early and keeps producing; a good choice for cooler regions as well as the South." },
+      { "name": "Clemson Spineless", "type": "green", "days": 56,
+        "tags": ["heat-tolerant", "heirloom", "open-pollinated"],
+        "notes": "The standard spineless okra since 1939; tall, productive and thrives in the hottest summers." },
+      { "name": "Burgundy", "type": "red", "days": 58,
+        "tags": ["heat-tolerant", "open-pollinated"],
+        "notes": "AAS winner with red stems and pods that stay tender longer; ornamental and productive in heat." }
+    ]
+  },
+  "sweet-potato": {
+    "basis": "slips",
+    "varieties": [
+      { "name": "Georgia Jet", "type": "orange", "days": 90,
+        "tags": ["short-season"],
+        "notes": "Fast-sizing, moist orange roots; one of the best choices where summers are short or cool." },
+      { "name": "O'Henry", "type": "white", "days": 92,
+        "tags": ["compact"],
+        "notes": "White-skinned, cream-fleshed Beauregard sport with a semi-bush habit; drier and less sweet." },
+      { "name": "Beauregard", "type": "orange", "days": 95,
+        "tags": ["disease-resistant", "storage"],
+        "notes": "The most widely grown sweet potato; high yields, early and adaptable, stores well. Good for the North." },
+      { "name": "Covington", "type": "orange", "days": 102,
+        "tags": ["disease-resistant", "storage"],
+        "notes": "Uniform, smooth roots with rich orange flesh; resists fusarium and root-knot nematode. Stores well." },
+      { "name": "Vardaman", "type": "orange", "days": 105,
+        "tags": ["compact"],
+        "notes": "Bush-type with short vines and purple-tinged foliage; good for small gardens with a long season." },
+      { "name": "Murasaki", "type": "Japanese", "days": 105,
+        "tags": ["disease-resistant", "storage"],
+        "notes": "Purple skin and white, dry, chestnut-sweet flesh; Japanese type that stores well and resists pests." }
+    ]
+  },
+  "tomatillo": {
+    "basis": "transplant",
+    "varieties": [
+      { "name": "Toma Verde", "type": "green", "days": 60,
+        "tags": ["short-season", "open-pollinated"],
+        "notes": "Early, large flat-round green fruit; the standard salsa verde tomatillo and reliable in short seasons." },
+      { "name": "Amarylla", "type": "yellow", "days": 60,
+        "tags": ["short-season", "heirloom", "open-pollinated"],
+        "notes": "Small yellow fruits that are sweeter than green types; early and very productive." },
+      { "name": "Purple de Milpa", "type": "purple", "days": 70,
+        "tags": ["heirloom", "open-pollinated"],
+        "notes": "Small purple-blushed fruit with sharper, sweeter flavor; keeps well in the husk for weeks." }
+    ]
+  },
+  "malabar-spinach": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Green Malabar", "type": "green", "days": 65,
+        "tags": ["heat-tolerant", "open-pollinated"],
+        "notes": "Basella alba: green stems and glossy leaves; a vigorous climber that keeps cropping through summer heat." },
+      { "name": "Red Malabar", "type": "red", "days": 70,
+        "tags": ["heat-tolerant", "open-pollinated"],
+        "notes": "Basella rubra: red-purple stems and veins, ornamental on a trellis; same heat-proof summer greens." }
+    ]
+  },
+  "amaranth": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Red Leaf", "type": "red", "days": 50,
+        "tags": ["heat-tolerant", "open-pollinated"],
+        "notes": "Green leaves blushed burgundy (sold as red callaloo); cut young for baby greens or let regrow all summer." }
+    ]
+  }
+}

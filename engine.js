@@ -58,6 +58,26 @@
     };
   }
 
+  // Average winter chill hours (hours between 32 and 45°F, Oct–Mar). Each day's temperature is modeled as a
+  // sine wave between its normal low and high; day-to-day weather is approximated by averaging over a normal
+  // spread (σ = 8°F) around those normals, since averages alone hide the cold snaps that supply chill in mild areas.
+  function chillHours(tmax, tmin) {
+    const below = (x, lo, hi) => { // fraction of a sinusoidal day spent at or below x
+      if (x <= lo) return 0; if (x >= hi) return 1;
+      const m = (hi + lo) / 2, a = (hi - lo) / 2;
+      return 1 - Math.acos((x - m) / a) / Math.PI;
+    };
+    const OFF = [-16, -8, 0, 8, 16], W = [0.054, 0.242, 0.399, 0.242, 0.054], WS = W.reduce((a, b) => a + b, 0);
+    let h = 0;
+    for (const d of [...range(274, 365), ...range(1, 90)]) {
+      for (let k = 0; k < OFF.length; k++) {
+        const lo = tmin[d] + OFF[k], hi = tmax[d] + OFF[k];
+        h += 24 * (below(45, lo, hi) - below(32, lo, hi)) * W[k] / WS;
+      }
+    }
+    return Math.round(h / 10) * 10;
+  }
+
   function prepare(clim, zone, lat) {
     const tmax = interpMonthly(clim.tmax), tmin = interpMonthly(clim.tmin);
     const tavg = tmax.map((x, i) => (x + tmin[i]) / 2);
@@ -70,8 +90,9 @@
     const hotDays = clim.d90.reduce((a, b) => a + b, 0);
     // winter is "mild" when the coldest month averages above 45°F
     const mAvg = clim.tmax.map((x, i) => (x + clim.tmin[i]) / 2);
+    const chill = chillHours(tmax, tmin);
     const mildWinter = Math.min(...mAvg) > 50, warmSummer = Math.max(...clim.tmax) >= 85;
-    return { ...clim, zone, z, lat, tmax, tmin, tavg, frost32, frost28, frostFreeDays, hotDays, mildWinter, warmSummer };
+    return { ...clim, zone, z, lat, tmax, tmin, tavg, frost32, frost28, frostFreeDays, hotDays, mildWinter, warmSummer, chill };
   }
 
   // ---------- Helpers over day ranges (inclusive, wrapping) ----------
@@ -164,6 +185,37 @@
     res.indoors = r.lead ? slotsToMonths([...new Set(slots.indoors)]) : [];
     res.harvest = daysToMonths([...new Set(harvest)]);
     return res;
+  }
+
+  // ---------- Per-variety timing ----------
+  const METHOD_FOR_BASIS = { transplant: "transplant", sow: "sow" };
+  // When to plant `crop` in month m (1-12) at this location: the middle of the valid planting days that month.
+  function plantDayIn(crop, C, m) {
+    const r = ruleFor(crop, C);
+    if (!r || r.kind !== "annual") return null;
+    const method = METHOD_FOR_BASIS[crop.basis] && r.methods.includes(METHOD_FOR_BASIS[crop.basis])
+      ? METHOD_FOR_BASIS[crop.basis] : r.methods.includes("plant") ? "plant" : r.methods[0];
+    const ok = [];
+    for (let d = MSTART[m - 1]; d < MSTART[m - 1] + MDAYS[m - 1]; d += 2) if (plantingOK(r, C, d, method)) ok.push(d);
+    if (!ok.length) return null;
+    return { day: ok[Math.floor(ok.length / 2)], method, rule: r };
+  }
+  // First-harvest date for a variety with `days` to maturity, planted in month m. ok=false: it wouldn't finish in time.
+  function varietyTiming(crop, C, m, days) {
+    const p = plantDayIn(crop, C, m);
+    if (!p) return null;
+    const rv = { ...p.rule, days: [days, days] };
+    const mature = matureDay(rv, C, p.day, days, p.method);
+    return { plantDay: p.day, mature: mature == null ? null : wrap(mature), ok: mature != null && plantingOK(rv, C, p.day, p.method),
+             waitDays: mature == null ? null : mature - p.day };
+  }
+  // the rule actually used at this location (zone variants / annual fallback applied)
+  function ruleFor(crop, C) {
+    let r = crop.rule;
+    const v = (r.variants || []).find(v => (v.minZone == null || C.z >= v.minZone) && (v.maxLat == null || C.lat < v.maxLat));
+    if (v) r = { ...r, ...v.rule };
+    if (r.zones && C.z < r.zones[0] && r.annualElse) r = r.annualElse;
+    return r;
   }
 
   // ---------- Fall-planted, overwintering crops (garlic, bulb onions, favas) ----------
@@ -304,7 +356,7 @@
     return out;
   }
 
-  const api = { climateFrom, prepare, evaluate, localTips, monthOf, zoneNum, MSTART, wrap };
+  const api = { climateFrom, prepare, evaluate, localTips, monthOf, zoneNum, MSTART, wrap, varietyTiming, plantDayIn };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   root.GardenEngine = api;
 })(typeof window !== "undefined" ? window : globalThis);

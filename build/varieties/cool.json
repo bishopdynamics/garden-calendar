@@ -1,0 +1,287 @@
+{
+  "beet": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Early Wonder Tall Top", "type": "red", "days": 50, "tags": ["short-season", "heirloom", "open-pollinated"],
+        "notes": "Quick, adaptable red beet with lush tops for greens; a good first sowing where springs are short." },
+      { "name": "Detroit Dark Red", "type": "red", "days": 59, "tags": ["heirloom", "open-pollinated", "storage"],
+        "notes": "The classic all-purpose red beet; smooth, deep-red roots for fresh eating, canning and storage." },
+      { "name": "Red Ace", "type": "red", "days": 50, "tags": ["hybrid"],
+        "notes": "Vigorous hybrid with even germination and sweet, uniform roots; reliable when conditions are less than ideal." },
+      { "name": "Chioggia", "type": "candy-stripe", "days": 55, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Italian heirloom with red-and-white bullseye rings inside; mild and sweet, best roasted or raw." },
+      { "name": "Touchstone Gold", "type": "golden", "days": 55, "tags": ["open-pollinated"],
+        "notes": "Golden beet with better germination than older yellows; mild flavor and doesn't bleed onto other foods." },
+      { "name": "Bull's Blood", "type": "red", "days": 58, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Grown mainly for its glossy deep-burgundy leaves, great in salads; roots are usable when young." },
+      { "name": "Cylindra", "type": "cylindrical", "days": 60, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Long, carrot-shaped red roots give uniform slices and more yield per foot of row; good for canning." },
+      { "name": "Lutz Green Leaf", "type": "red", "days": 65, "tags": ["heirloom", "open-pollinated", "storage"],
+        "notes": "Large late beet that stays tender at big sizes and keeps for months; sow for a fall storage crop." }
+    ]
+  },
+  "broccoli": {
+    "basis": "transplant",
+    "varieties": [
+      { "name": "Green Magic", "type": "heading", "days": 57, "tags": ["heat-tolerant", "hybrid"],
+        "notes": "Heat-tolerant hybrid with smooth, domed heads; a top choice for spring crops that mature into warm weather." },
+      { "name": "Imperial", "type": "heading", "days": 66, "tags": ["heat-tolerant", "hybrid"],
+        "notes": "Bred to head well in heat; a strong pick for late-spring and summer plantings in warm climates." },
+      { "name": "Belstar", "type": "heading", "days": 65, "tags": ["hybrid"],
+        "notes": "Widely adaptable hybrid with tight blue-green heads and good side shoots; works in spring and fall." },
+      { "name": "Marathon", "type": "heading", "days": 68, "tags": ["cold-hardy", "hybrid"],
+        "notes": "Very cold-tolerant hybrid for fall and overwintered crops; heads well in cool weather, poor in summer heat." },
+      { "name": "Waltham 29", "type": "heading", "days": 74, "tags": ["cold-hardy", "heirloom", "open-pollinated"],
+        "notes": "Old cold-tolerant standard for fall harvests; big blue-green heads plus side shoots. Not for hot weather." },
+      { "name": "Calabrese", "type": "heading", "days": 60, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Italian heirloom with a medium central head followed by many side shoots over a long season." },
+      { "name": "De Cicco", "type": "sprouting", "days": 48, "tags": ["short-season", "heirloom", "open-pollinated"],
+        "notes": "Fast Italian heirloom with small heads and abundant side shoots; good where the cool season is short." }
+    ]
+  },
+  "brussels": {
+    "basis": "transplant",
+    "varieties": [
+      { "name": "Long Island Improved", "type": "green", "days": 90, "tags": ["heirloom", "open-pollinated", "compact"],
+        "notes": "Classic compact heirloom; dependable for home gardens where falls are long and cool." },
+      { "name": "Jade Cross", "type": "green", "days": 90, "tags": ["heat-tolerant", "hybrid"],
+        "notes": "AAS-winning hybrid with more heat tolerance than heirlooms; a better bet where autumns stay warm." },
+      { "name": "Gladius", "type": "green", "days": 98, "tags": ["hybrid"],
+        "notes": "Early, uniform sprouts that hold well on the stalk; sturdy plants resist toppling." },
+      { "name": "Dagan", "type": "green", "days": 100, "tags": ["hybrid"],
+        "notes": "Productive hybrid with smooth, dark-green sprouts; a reliable main-season fall crop." },
+      { "name": "Silvia", "type": "green", "days": 103, "tags": ["hybrid"],
+        "notes": "Tall, high-yielding hybrid with sweet, well-spaced sprouts that are easy to pick." },
+      { "name": "Divino", "type": "green", "days": 110, "tags": ["hybrid"],
+        "notes": "Late-season hybrid for sweet sprouts picked after frost; best where falls are long and cold." }
+    ]
+  },
+  "cabbage": {
+    "basis": "transplant",
+    "varieties": [
+      { "name": "Golden Acre", "type": "green", "days": 65, "tags": ["short-season", "compact", "open-pollinated"],
+        "notes": "Early round-headed cabbage on compact plants; matures before summer heat or in short seasons." },
+      { "name": "Early Jersey Wakefield", "type": "pointed", "days": 65, "tags": ["short-season", "heirloom", "open-pollinated"],
+        "notes": "Early heirloom with small cone-shaped heads; tender and sweet, and fairly resistant to splitting." },
+      { "name": "Charleston Wakefield", "type": "pointed", "days": 70, "tags": ["heat-tolerant", "heirloom", "open-pollinated"],
+        "notes": "Larger, more heat-tolerant cousin of Jersey Wakefield; a long-time favorite in the South." },
+      { "name": "Copenhagen Market", "type": "green", "days": 72, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Danish heirloom with round, solid 3–4 lb heads; a dependable early-to-mid season kraut cabbage." },
+      { "name": "Red Express", "type": "red", "days": 62, "tags": ["short-season", "compact", "open-pollinated"],
+        "notes": "Fast, compact red cabbage with small solid heads; good where seasons are short or space is tight." },
+      { "name": "Alcosa", "type": "savoy", "days": 72, "tags": ["compact", "hybrid"],
+        "notes": "Small, early savoy with crinkled, tender leaves; manageable size for home gardens." },
+      { "name": "Deadon", "type": "savoy", "days": 105, "tags": ["cold-hardy", "hybrid"],
+        "notes": "January King-type with red-purple outer leaves; very frost hardy, sweetens in cold for late fall harvest." },
+      { "name": "Danish Ballhead", "type": "green", "days": 100, "tags": ["cold-hardy", "heirloom", "open-pollinated", "storage"],
+        "notes": "Hardy late heirloom with dense heads that keep for months in cold storage; plant for fall harvest." }
+    ]
+  },
+  "cauliflower": {
+    "basis": "transplant",
+    "varieties": [
+      { "name": "Snow Crown", "type": "white", "days": 50, "tags": ["short-season", "hybrid"],
+        "notes": "Fast, forgiving hybrid; one of the easiest cauliflowers for beginners and short cool seasons." },
+      { "name": "Twister", "type": "white", "days": 62, "tags": ["heat-tolerant", "hybrid"],
+        "notes": "Heat-tolerant white cauliflower with well-wrapped heads; a better choice where spring warms quickly." },
+      { "name": "Amazing", "type": "white", "days": 68, "tags": ["open-pollinated"],
+        "notes": "Open-pollinated white with dense heads and leaves that curl over to self-blanch; spring or fall." },
+      { "name": "Snowball Y Improved", "type": "white", "days": 70, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Classic home-garden white; needs leaves tied over heads to keep curds white. Best as a fall crop." },
+      { "name": "Cheddar", "type": "orange", "days": 58, "tags": ["hybrid"],
+        "notes": "Bright orange heads high in beta-carotene; color deepens in sun and holds when cooked. No blanching needed." },
+      { "name": "Graffiti", "type": "purple", "days": 80, "tags": ["hybrid"],
+        "notes": "Vivid purple heads that need no blanching; color fades to blue-green if boiled, so roast or steam." },
+      { "name": "Veronica", "type": "romanesco", "days": 78, "tags": ["hybrid"],
+        "notes": "Romanesco with lime-green spiraled points; needs a long, steady cool season and even water." }
+    ]
+  },
+  "celery": {
+    "basis": "transplant",
+    "varieties": [
+      { "name": "Tango", "type": "green", "days": 80, "tags": ["open-pollinated"],
+        "notes": "Uniform, tender green celery that is easier than most; a good pick for first-time growers." },
+      { "name": "Tall Utah 52-70R Improved", "type": "green", "days": 90, "tags": ["open-pollinated"],
+        "notes": "Standard tall green celery with thick, crisp stalks; widely sold and dependable with steady water." },
+      { "name": "Merengo", "type": "green", "days": 85, "tags": ["hybrid"],
+        "notes": "Vigorous hybrid with smooth, dark-green stalks; sow for a fall harvest if cool spring nights cause bolting." },
+      { "name": "Kelvin", "type": "green", "days": 80, "tags": ["hybrid"],
+        "notes": "Tall hybrid with heavy, uniform, dark-green stalks and good flavor; a productive main-season choice." }
+    ]
+  },
+  "chard": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Fordhook Giant", "type": "white-stem", "days": 55, "tags": ["heat-tolerant", "heirloom", "open-pollinated"],
+        "notes": "Big, savoyed leaves on thick white stems; yields through hot summers and into fall." },
+      { "name": "Bright Lights", "type": "rainbow", "days": 55, "tags": ["open-pollinated"],
+        "notes": "Mix of red, yellow, orange, pink and white stems; as ornamental as it is productive." },
+      { "name": "Ruby Red", "type": "red-stem", "days": 59, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Also sold as Rhubarb chard; crimson stalks and dark leaves. Can bolt if young plants get a cold snap." },
+      { "name": "Peppermint", "type": "rainbow", "days": 60, "tags": [],
+        "notes": "Pink-and-white striped stems on glossy leaves; great as baby leaf or full-size bunches." },
+      { "name": "Five Color Silverbeet", "type": "rainbow", "days": 60, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Australian heirloom with mixed-color stems and mild leaves; a good alternative to Bright Lights." },
+      { "name": "Perpetual Spinach", "type": "leaf beet", "days": 50, "tags": ["heat-tolerant", "bolt-resistant", "open-pollinated"],
+        "notes": "Thin-stemmed leaf chard that tastes like spinach and resists bolting; a summer spinach substitute in heat." }
+    ]
+  },
+  "collards": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Georgia Southern", "type": "open-leaf", "days": 65, "tags": ["heat-tolerant", "cold-hardy", "heirloom", "open-pollinated"],
+        "notes": "Classic Southern collard tolerant of both heat and frost; a long-season choice in warm climates." },
+      { "name": "Vates", "type": "open-leaf", "days": 70, "tags": ["cold-hardy", "heirloom", "open-pollinated", "compact"],
+        "notes": "Compact, slow-bolting Virginia heirloom; very cold hardy for fall and winter harvests." },
+      { "name": "Champion", "type": "open-leaf", "days": 60, "tags": ["cold-hardy", "open-pollinated", "compact"],
+        "notes": "Improved Vates type with compact plants and a longer harvest before bolting; good in cold areas." },
+      { "name": "Flash", "type": "open-leaf", "days": 55, "tags": ["bolt-resistant", "hybrid"],
+        "notes": "Vigorous, uniform hybrid with smooth dark leaves; slow to bolt, so it extends spring harvests." },
+      { "name": "Top Bunch 2.0", "type": "semi-savoy", "days": 50, "tags": ["short-season", "hybrid"],
+        "notes": "Fast hybrid with tender, slightly savoyed leaves; quick to first harvest from direct sowing." }
+    ]
+  },
+  "fava": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Broad Windsor", "type": "large-seeded", "days": 80, "tags": ["heirloom", "open-pollinated"],
+        "notes": "The standard fava, with big flat beans in 6–8 inch pods; sow very early in spring or in fall where mild." },
+      { "name": "Aquadulce Claudia", "type": "large-seeded", "days": 85, "tags": ["cold-hardy", "heirloom", "open-pollinated"],
+        "notes": "The classic fall-sown fava; overwinters where winters are mild for an early spring crop." },
+      { "name": "Vroma", "type": "large-seeded", "days": 75, "tags": [],
+        "notes": "Productive, relatively early fava with long pods; a good spring-sown choice where summers turn hot fast." },
+      { "name": "Extra Precoce a Grano Violetto", "type": "purple-seeded", "days": 85, "tags": ["cold-hardy", "heirloom", "open-pollinated"],
+        "notes": "Italian heirloom with purple beans; early, frost-tolerant, for early spring or fall sowing." }
+    ]
+  },
+  "kohlrabi": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Early White Vienna", "type": "green", "days": 55, "tags": ["heirloom", "open-pollinated", "compact"],
+        "notes": "Classic pale-green heirloom; crisp and mild when picked at 2–3 inches." },
+      { "name": "Purple Vienna", "type": "purple", "days": 55, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Purple-skinned heirloom with white flesh; slightly hardier than white types, good for fall." },
+      { "name": "Konan", "type": "green", "days": 43, "tags": ["short-season", "hybrid"],
+        "notes": "Fast, uniform hybrid with smooth round bulbs that stay tender; good for quick spring crops." },
+      { "name": "Kolibri", "type": "purple", "days": 45, "tags": ["short-season", "hybrid"],
+        "notes": "Quick purple hybrid with crisp, sweet white flesh; stays tender a bit longer than heirlooms." },
+      { "name": "Azur Star", "type": "purple", "days": 48, "tags": ["open-pollinated"],
+        "notes": "Early, flattened blue-purple bulbs; a good open-pollinated choice for early spring sowing." },
+      { "name": "Kossak", "type": "giant", "days": 80, "tags": ["hybrid", "storage"],
+        "notes": "Giant fall kohlrabi up to 8 inches that stays tender, not woody; stores for months in the cold." }
+    ]
+  },
+  "leek": {
+    "basis": "transplant",
+    "varieties": [
+      { "name": "King Richard", "type": "summer", "days": 75, "tags": ["short-season", "open-pollinated"],
+        "notes": "Fast, long-shanked summer leek; good where seasons are short but not frost hardy, so harvest by late fall." },
+      { "name": "Megaton", "type": "fall", "days": 90, "tags": ["hybrid"],
+        "notes": "High-yielding hybrid with very long, thick shanks; holds well in the garden into fall." },
+      { "name": "Tadorna", "type": "fall", "days": 100, "tags": ["cold-hardy", "open-pollinated"],
+        "notes": "Blue-green fall leek that stands well in cold weather; a solid choice for late-fall harvests." },
+      { "name": "Giant Musselburgh", "type": "winter", "days": 105, "tags": ["cold-hardy", "heirloom", "open-pollinated"],
+        "notes": "Scottish heirloom with thick shanks; one of the hardiest leeks for overwintering in the ground." },
+      { "name": "Oslo", "type": "winter", "days": 110, "tags": ["cold-hardy", "hybrid"],
+        "notes": "Late hybrid bred for overwintering; stout plants hold through cold for winter and early spring harvest." },
+      { "name": "Bandit", "type": "winter", "days": 120, "tags": ["cold-hardy", "open-pollinated"],
+        "notes": "Very hardy overwintering leek with thick shanks and dark blue-green leaves; harvest winter to spring." }
+    ]
+  },
+  "mustard": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Red Giant", "type": "broadleaf", "days": 45, "tags": ["bolt-resistant", "cold-hardy", "open-pollinated"],
+        "notes": "Purple-tinged broad leaves with a hot bite; very slow to bolt and cold hardy enough to overwinter in mild areas." },
+      { "name": "Southern Giant Curled", "type": "curled", "days": 45, "tags": ["heat-tolerant", "heirloom", "open-pollinated"],
+        "notes": "Classic Southern frilly mustard; large, bright-green leaves tolerate heat better than most greens." },
+      { "name": "Green Wave", "type": "curled", "days": 45, "tags": ["heat-tolerant", "bolt-resistant", "open-pollinated"],
+        "notes": "Very spicy curled mustard that is slow to bolt; a good pick for late-spring sowings." },
+      { "name": "Florida Broadleaf", "type": "broadleaf", "days": 45, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Large, smooth, mild leaves for cooking greens; a Southern staple for fall and winter sowing." },
+      { "name": "Golden Frills", "type": "frilly", "days": 45, "tags": ["heat-tolerant", "cold-hardy", "open-pollinated"],
+        "notes": "Lacy chartreuse leaves with mild heat; tolerates both heat and cold, great as baby salad greens." },
+      { "name": "Ruby Streaks", "type": "frilly", "days": 40, "tags": ["cold-hardy", "open-pollinated"],
+        "notes": "Finely cut purple-green leaves with mild spice; a colorful salad mustard for cool seasons." },
+      { "name": "Tendergreen", "type": "mustard spinach", "days": 35, "tags": ["short-season", "heat-tolerant", "open-pollinated"],
+        "notes": "Komatsuna-type 'mustard spinach' with mild, smooth leaves; grows fast and handles more heat than spinach." }
+    ]
+  },
+  "bok-choy": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Joi Choi", "type": "white-stem", "days": 50, "tags": ["bolt-resistant", "cold-hardy", "hybrid"],
+        "notes": "Large, vigorous white-stem pac choi; slow to bolt and tolerant of cold, a reliable spring or fall pick." },
+      { "name": "Black Summer", "type": "green-stem", "days": 45, "tags": ["heat-tolerant", "hybrid"],
+        "notes": "Dark-leaved, green-stemmed choi bred for summer; holds better in heat than most bok choy." },
+      { "name": "Bopak", "type": "white-stem", "days": 50, "tags": ["heat-tolerant", "hybrid"],
+        "notes": "Tall, heavy, uniform white-stem heads with mild flavor; tolerates warm weather well." },
+      { "name": "Mei Qing Choi", "type": "green-stem", "days": 45, "tags": ["cold-hardy", "hybrid"],
+        "notes": "Compact Shanghai-type with pale green stems; a good medium-size choi for spring and fall." },
+      { "name": "Li Ren Choi", "type": "baby", "days": 37, "tags": ["short-season", "compact", "hybrid"],
+        "notes": "Green-stem baby choi that fills out at small size; quick to harvest and good for close spacing." },
+      { "name": "Toy Choi", "type": "baby", "days": 30, "tags": ["short-season", "compact", "container", "hybrid"],
+        "notes": "Miniature white-stem choi ready in about a month; ideal for containers and quick crops before heat." }
+    ]
+  },
+  "arugula": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Arugula (Roquette)", "type": "salad", "days": 40, "tags": ["cold-hardy", "open-pollinated"],
+        "notes": "Standard salad arugula with nutty, peppery lobed leaves; very fast in cool weather, bolts in heat." },
+      { "name": "Astro", "type": "salad", "days": 38, "tags": ["heat-tolerant", "open-pollinated"],
+        "notes": "Early, heat-tolerant arugula with milder, strap-shaped leaves; extends harvests into warm weather." },
+      { "name": "Esmee", "type": "salad", "days": 40, "tags": ["cold-hardy", "open-pollinated"],
+        "notes": "Oakleaf-shaped, ruffled leaves with mild flavor; good for overwintering under cover." },
+      { "name": "Sylvetta", "type": "wild", "days": 50, "tags": ["cold-hardy", "bolt-resistant", "open-pollinated"],
+        "notes": "Wild arugula (Diplotaxis): slower-growing, deeply lobed, more pungent, slower to bolt; often perennial." },
+      { "name": "Bellezia", "type": "wild", "days": 51, "tags": ["cold-hardy", "open-pollinated"],
+        "notes": "Larger, more vigorous wild arugula with dark, serrated leaves; regrows well after cutting." }
+    ]
+  },
+  "parsnip": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Hollow Crown", "type": "long", "days": 105, "tags": ["cold-hardy", "heirloom", "open-pollinated"],
+        "notes": "Classic heirloom with long, smooth roots; needs deep, loose soil. Sweetens after frost." },
+      { "name": "All American", "type": "medium", "days": 95, "tags": ["short-season", "open-pollinated"],
+        "notes": "Thick, wedge-shaped roots that size up a bit sooner; better for shorter seasons or heavier soil." },
+      { "name": "Harris Model", "type": "long", "days": 120, "tags": ["cold-hardy", "open-pollinated"],
+        "notes": "Smooth, white heirloom-type roots with little side-rooting; leave in the ground through frost." },
+      { "name": "Javelin", "type": "long", "days": 110, "tags": ["hybrid", "disease-resistant"],
+        "notes": "Slender, uniform hybrid with good canker resistance; easier to dig than giant types." },
+      { "name": "Gladiator", "type": "long", "days": 110, "tags": ["hybrid", "disease-resistant"],
+        "notes": "Vigorous hybrid with quick early growth and smooth white roots; canker resistant." }
+    ]
+  },
+  "turnip": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Purple Top White Globe", "type": "storage", "days": 55, "tags": ["heirloom", "open-pollinated", "storage"],
+        "notes": "The classic purple-shouldered turnip; harvest small for sweetness or let size up for fall storage." },
+      { "name": "Hakurei", "type": "salad", "days": 38, "tags": ["short-season", "hybrid"],
+        "notes": "Smooth white salad turnip, sweet enough to eat raw; tender tops are excellent too." },
+      { "name": "Tokyo Cross", "type": "salad", "days": 35, "tags": ["short-season", "hybrid"],
+        "notes": "AAS-winning white turnip ready at 2 inches in about five weeks; good for quick spring or fall crops." },
+      { "name": "Scarlet Queen", "type": "salad", "days": 43, "tags": ["hybrid"],
+        "notes": "Red-skinned salad turnip with white flesh and red-stemmed greens; colorful and mild." },
+      { "name": "Golden Ball", "type": "storage", "days": 55, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Also called Orange Jelly; yellow-fleshed heirloom with fine, sweet flavor that keeps well." },
+      { "name": "Seven Top", "type": "greens", "days": 45, "tags": ["cold-hardy", "heirloom", "open-pollinated"],
+        "notes": "Grown for leaves, not roots; hardy Southern turnip green that can be cut repeatedly through winter." }
+    ]
+  },
+  "rutabaga": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "American Purple Top", "type": "yellow", "days": 90, "tags": ["cold-hardy", "heirloom", "open-pollinated", "storage"],
+        "notes": "The standard rutabaga with purple shoulders and yellow flesh; sweetens with frost and stores well." },
+      { "name": "Laurentian", "type": "yellow", "days": 95, "tags": ["cold-hardy", "open-pollinated", "storage"],
+        "notes": "Canadian-bred, uniform purple-top roots with mild yellow flesh; a reliable keeper." },
+      { "name": "Helenor", "type": "yellow", "days": 90, "tags": ["cold-hardy", "open-pollinated", "storage"],
+        "notes": "Smooth, uniform roots with sweet orange-yellow flesh; good eating quality fresh or stored." },
+      { "name": "Joan", "type": "yellow", "days": 95, "tags": ["cold-hardy", "open-pollinated", "storage"],
+        "notes": "Refined American Purple Top type with smooth, round roots and sweet, mild flesh that improves after frost." }
+    ]
+  }
+}

@@ -59,6 +59,20 @@ def commons_info(filename):
     }
 
 
+def load_varieties():
+    """Merge build/varieties/*.json (crop id -> {basis, varieties}); later files must not redefine a crop."""
+    merged = {}
+    for f in sorted((Path(__file__).parent / "varieties").glob("*.json")):
+        for cid, entry in json.loads(f.read_text()).items():
+            if cid in merged:
+                raise SystemExit(f"{f.name}: crop {cid} already defined in another varieties file")
+            merged[cid] = entry
+    return merged
+
+
+VARIETIES = load_varieties()
+
+
 def main():
     credits_path = Path(__file__).parent / "credits.json"
     credits = json.loads(credits_path.read_text()) if credits_path.exists() else {}
@@ -99,6 +113,9 @@ def main():
     for c in CROPS:
         d = {k: c[k] for k in ("id", "name", "cat", "season", "days", "sun", "spacing", "tips", "wiki", "hydro", "hydro_note", "rule")}
         d["localTips"] = c.get("localTips", {})
+        v = VARIETIES.get(c["id"], {})
+        d["basis"] = v.get("basis")
+        d["varieties"] = v.get("varieties", [])
         cr = credits.get(c["id"])
         d["img"] = f"images/{c['id']}.jpg" if cr and (IMG / f"{c['id']}.jpg").exists() else None
         d["credit"] = cr

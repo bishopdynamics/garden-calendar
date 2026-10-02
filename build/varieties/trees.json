@@ -1,0 +1,2225 @@
+{
+ "orange": {
+  "varieties": [
+   {
+    "name": "Washington Navel",
+    "type": "navel",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "seedless"
+    ],
+    "notes": "The classic seedless winter eating orange; easy to peel. Juice turns bitter on standing, so eat it fresh rather than juicing."
+   },
+   {
+    "name": "Cara Cara",
+    "type": "navel",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "seedless"
+    ],
+    "notes": "Pink-fleshed navel: sweeter and lower in acid than Washington, with berry notes. Same winter season and easy peel."
+   },
+   {
+    "name": "Lane Late",
+    "type": "navel",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "tags": [
+     "seedless"
+    ],
+    "notes": "Late navel that ripens after Washington and holds well on the tree, stretching the navel season into late spring."
+   },
+   {
+    "name": "Hamlin",
+    "type": "juice orange",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": null,
+    "notes": "Early, fall-ripening juice orange from Florida; among the more cold-tolerant sweet oranges, often picked before freezes."
+   },
+   {
+    "name": "Valencia",
+    "type": "juice orange",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "notes": "The top juice orange; ripens spring into summer and holds on the tree for months. Juice keeps its sweetness."
+   },
+   {
+    "name": "Moro",
+    "type": "blood orange",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "notes": "Deepest-colored blood orange, raspberry-tinged. Flesh colors best where winter nights are cool; may stay pale in hot or humid areas."
+   },
+   {
+    "name": "Trovita",
+    "type": "juice orange",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "heat-tolerant"
+    ],
+    "notes": "Thin-skinned, few-seeded orange that sets and sweetens well in hot, dry inland and desert climates where navels struggle."
+   },
+   {
+    "name": "Seville",
+    "type": "sour orange",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "notes": "Bitter orange for marmalade and cooking, not fresh eating. Tough, fragrant tree; also a traditional citrus rootstock."
+   }
+  ]
+ },
+ "lemon": {
+  "varieties": [
+   {
+    "name": "Improved Meyer",
+    "type": "Meyer",
+    "years": "1–2",
+    "ripens": "year-round",
+    "chill": null,
+    "zones": [
+     8.5,
+     11
+    ],
+    "tags": [
+     "cold-hardy",
+     "container",
+     "compact"
+    ],
+    "notes": "Sweeter, thin-skinned lemon-orange hybrid; the hardiest, most compact lemon and the best choice for pots brought indoors in winter."
+   },
+   {
+    "name": "Eureka",
+    "type": "true lemon",
+    "years": "2–3",
+    "ripens": "year-round",
+    "chill": null,
+    "zones": [
+     9.5,
+     11
+    ],
+    "notes": "The common grocery lemon; nearly thornless and fruits much of the year. Less cold-tolerant than Lisbon; best in mild coastal climates."
+   },
+   {
+    "name": "Lisbon",
+    "type": "true lemon",
+    "years": "2–3",
+    "ripens": "year-round",
+    "chill": null,
+    "zones": [
+     9.5,
+     11
+    ],
+    "tags": [
+     "heat-tolerant"
+    ],
+    "notes": "Vigorous, thorny tree with fruit shaded inside the canopy; tolerates heat, wind and cold better than Eureka. Crop more concentrated."
+   },
+   {
+    "name": "Variegated Pink Eureka",
+    "type": "true lemon",
+    "years": "2–3",
+    "ripens": "year-round",
+    "chill": null,
+    "zones": [
+     9.5,
+     11
+    ],
+    "tags": [
+     "container"
+    ],
+    "notes": "Eureka sport with cream-striped leaves, striped young fruit and pink flesh; grown as much for looks as for juice."
+   },
+   {
+    "name": "Ponderosa",
+    "type": "citron hybrid",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "zones": [
+     9.5,
+     11
+    ],
+    "tags": [
+     "container"
+    ],
+    "notes": "Novelty lemon-citron hybrid with grapefruit-sized, thick-rinded, seedy fruit. Cold-tender; a popular container plant."
+   }
+  ]
+ },
+ "mandarin": {
+  "varieties": [
+   {
+    "name": "Owari Satsuma",
+    "type": "satsuma",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": null,
+    "zones": [
+     8,
+     11
+    ],
+    "tags": [
+     "cold-hardy",
+     "seedless"
+    ],
+    "notes": "The most cold-hardy mandarin (mature trees take the low 20s °F); seedless, easy-peel, ripens in fall before hard freezes."
+   },
+   {
+    "name": "Clementine",
+    "type": "clementine",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": null,
+    "notes": "Sweet, easy-peel winter mandarin; nearly seedless when grown alone, seedier near other citrus. Tends to bear in alternate years."
+   },
+   {
+    "name": "Kishu",
+    "type": "mandarin",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": null,
+    "tags": [
+     "seedless",
+     "container",
+     "compact"
+    ],
+    "notes": "Tiny, seedless, very easy-peel mandarins on a small tree; a good container citrus and a favorite with kids."
+   },
+   {
+    "name": "Gold Nugget",
+    "type": "mandarin",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "tags": [
+     "seedless"
+    ],
+    "notes": "Seedless, rich, sweet late mandarin with bumpy rind; holds on the tree from late winter into summer."
+   },
+   {
+    "name": "Pixie",
+    "type": "mandarin",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "tags": [
+     "seedless"
+    ],
+    "notes": "Seedless, mild, very sweet late mandarin; easy peel and stores well on the tree. Tends to bear in alternate years."
+   },
+   {
+    "name": "Tango",
+    "type": "mandarin",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "tags": [
+     "seedless"
+    ],
+    "notes": "Seedless form of W. Murcott: sweet, juicy, easy-peel fruit in late winter to spring, even with other citrus nearby."
+   }
+  ]
+ },
+ "lime": {
+  "varieties": [
+   {
+    "name": "Bearss",
+    "type": "Persian lime",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "seedless"
+    ],
+    "notes": "The common seedless lime (Persian/Tahiti); larger fruit, milder acid, and about as cold-hardy as a lemon."
+   },
+   {
+    "name": "Mexican",
+    "type": "key lime",
+    "years": "2–3",
+    "ripens": "year-round",
+    "chill": null,
+    "zones": [
+     10,
+     11
+    ],
+    "tags": [
+     "container"
+    ],
+    "notes": "True Key lime: small, seedy, intensely aromatic fruit. The most frost-tender common citrus; protect below about 30 °F."
+   },
+   {
+    "name": "Kaffir",
+    "type": "makrut lime",
+    "years": "2–3",
+    "ripens": "year-round",
+    "chill": null,
+    "zones": [
+     10,
+     11
+    ],
+    "tags": [
+     "container"
+    ],
+    "notes": "Grown for its fragrant double-lobed leaves (and bumpy zest) for Southeast Asian cooking, not juice. Tender; good in containers."
+   },
+   {
+    "name": "Rangpur",
+    "type": "mandarin-lime",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "zones": [
+     9,
+     11
+    ],
+    "tags": [
+     "heat-tolerant"
+    ],
+    "notes": "Not a true lime: very sour orange-fleshed fruit used like lime. Notably more cold- and heat-tolerant than true limes."
+   },
+   {
+    "name": "Finger Lime",
+    "type": "Australian lime",
+    "years": "3–4",
+    "ripens": "late",
+    "chill": null,
+    "tags": [
+     "container"
+    ],
+    "notes": "Slender fruit filled with caviar-like juice beads; a garnish crop. Thorny, slow, tolerates part shade; good in containers."
+   }
+  ]
+ },
+ "avocado": {
+  "varieties": [
+   {
+    "name": "Mexicola",
+    "type": "Mexican",
+    "years": "3–4",
+    "ripens": "early",
+    "chill": null,
+    "zones": [
+     9,
+     11
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Small, thin-black-skinned, rich fruit; among the hardiest avocados (mature trees to about 18–20 °F). Type A."
+   },
+   {
+    "name": "Bacon",
+    "type": "Mexican hybrid",
+    "years": "3–4",
+    "ripens": "early",
+    "chill": null,
+    "zones": [
+     9,
+     11
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Smooth green, mild fruit in late fall–winter; cold-tolerant to about 24 °F. Type B; a good pollinizer for Hass."
+   },
+   {
+    "name": "Zutano",
+    "type": "Mexican hybrid",
+    "years": "3–4",
+    "ripens": "early",
+    "chill": null,
+    "zones": [
+     9,
+     11
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Hardy (to about 26 °F), upright, prolific; light, mild fall–winter fruit. Type B pollinizer for Hass."
+   },
+   {
+    "name": "Fuerte",
+    "type": "Mexican hybrid",
+    "years": "3–4",
+    "ripens": "mid",
+    "chill": null,
+    "zones": [
+     9.5,
+     11
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Classic green-skinned winter avocado with rich flavor; hardier than Hass (to about 26 °F). Type B; tends to alternate bear."
+   },
+   {
+    "name": "Hass",
+    "type": "Guatemalan hybrid",
+    "years": "3–4",
+    "ripens": "mid",
+    "chill": null,
+    "zones": [
+     10,
+     11
+    ],
+    "notes": "The standard pebbly black avocado; rich and long-holding. Damaged near 30 °F, so best in frost-free spots. Type A."
+   },
+   {
+    "name": "Lamb Hass",
+    "type": "Guatemalan hybrid",
+    "years": "3–4",
+    "ripens": "late",
+    "chill": null,
+    "zones": [
+     10,
+     11
+    ],
+    "tags": [
+     "compact"
+    ],
+    "notes": "Hass-type with larger fruit on a compact, upright tree; ripens after Hass, extending the season into fall. Type A."
+   },
+   {
+    "name": "Reed",
+    "type": "Guatemalan",
+    "years": "3–4",
+    "ripens": "late",
+    "chill": null,
+    "zones": [
+     10,
+     11
+    ],
+    "notes": "Large, round, green, buttery fruit in summer–fall that doesn't brown when cut. Upright tree; frost-tender. Type A."
+   },
+   {
+    "name": "Wurtz",
+    "type": "Guatemalan hybrid",
+    "years": "3–4",
+    "ripens": "mid",
+    "chill": null,
+    "zones": [
+     10,
+     11
+    ],
+    "tags": [
+     "compact",
+     "container"
+    ],
+    "notes": "Also sold as Little Cado: a semi-dwarf (to ~10–15 ft) Hass-like tree, the usual choice for large pots and small yards. Type A."
+   }
+  ]
+ },
+ "fig": {
+  "varieties": [
+   {
+    "name": "Chicago Hardy",
+    "type": "hardy fig",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": 100,
+    "zones": [
+     5,
+     10
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Hardiest common fig: regrows from roots after freezes and still fruits on new wood the same year. The pick for zones 5–6."
+   },
+   {
+    "name": "Celeste",
+    "type": "hardy fig",
+    "years": "1–2",
+    "ripens": "early",
+    "chill": 100,
+    "zones": [
+     6,
+     9
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Small, very sweet 'sugar fig' with a closed eye that resists souring in humid summers; a Southeast favorite, fairly cold-hardy."
+   },
+   {
+    "name": "Brown Turkey",
+    "type": "hardy fig",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": 100,
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Widely adapted, reliable brown fig with a breba plus main crop; resprouts and fruits after winter dieback."
+   },
+   {
+    "name": "Desert King",
+    "type": "breba fig",
+    "years": "1–2",
+    "ripens": "early",
+    "chill": 100,
+    "tags": [
+     "short-season"
+    ],
+    "notes": "Big early breba crop of green, strawberry-fleshed figs; one of the best where summers are cool or short. Prune lightly."
+   },
+   {
+    "name": "Black Mission",
+    "type": "warm-climate fig",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": 100,
+    "tags": [
+     "heat-tolerant"
+    ],
+    "notes": "The classic purple-black California fig; rich flavor, two crops a year. Large tree that wants long, hot summers."
+   },
+   {
+    "name": "Kadota",
+    "type": "warm-climate fig",
+    "years": "1–2",
+    "ripens": "late",
+    "chill": 100,
+    "tags": [
+     "heat-tolerant"
+    ],
+    "notes": "Green-yellow skin, amber flesh; very sweet but needs real heat to ripen. Excellent for preserves and drying."
+   },
+   {
+    "name": "Panache",
+    "type": "warm-climate fig",
+    "years": "1–2",
+    "ripens": "late",
+    "chill": 100,
+    "tags": [
+     "heat-tolerant"
+    ],
+    "notes": "Striped 'tiger' fig with red, very flavorful flesh. Ripens late and needs a long, hot season."
+   },
+   {
+    "name": "Violette de Bordeaux",
+    "type": "dwarf fig",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": 100,
+    "tags": [
+     "compact",
+     "container"
+    ],
+    "notes": "Small purple-black fig with rich red flesh on a naturally compact plant; an excellent container fig."
+   }
+  ]
+ },
+ "peach": {
+  "varieties": [
+   {
+    "name": "Flordaprince",
+    "type": "yellow semi-freestone",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 150,
+    "tags": [
+     "low-chill",
+     "heat-tolerant",
+     "self-fertile"
+    ],
+    "notes": "Very low-chill Florida peach for frost-light winters; ripens in May in warm areas and handles desert heat."
+   },
+   {
+    "name": "Tropic Snow",
+    "type": "white freestone",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 200,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Low-chill white peach with balanced sweet-tart flavor for mild-winter climates; early ripening."
+   },
+   {
+    "name": "Mid-Pride",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 250,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "One of the best-flavored yellow peaches for mild winters (Gulf Coast, low desert, coastal California)."
+   },
+   {
+    "name": "Babcock",
+    "type": "white freestone",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Classic sweet, low-acid white peach; low chill yet blooms late enough to dodge many frosts. Widely adapted."
+   },
+   {
+    "name": "Saturn",
+    "type": "donut peach",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Flat 'donut' white peach, sweet and mild; a low-chill favorite that also grows in moderate climates."
+   },
+   {
+    "name": "Redhaven",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 800,
+    "tags": [
+     "cold-hardy",
+     "self-fertile"
+    ],
+    "notes": "The benchmark early freestone; reliable, bud-hardy and productive across most of the eastern and central US."
+   },
+   {
+    "name": "Frost",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 700,
+    "tags": [
+     "disease-resistant",
+     "self-fertile"
+    ],
+    "notes": "Resistant to peach leaf curl, so it skips the winter spray in rainy climates such as the Pacific Northwest."
+   },
+   {
+    "name": "Contender",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 800,
+    "zones": [
+     4,
+     9
+    ],
+    "tags": [
+     "cold-hardy",
+     "disease-resistant",
+     "self-fertile"
+    ],
+    "notes": "Late-blooming, frost-tolerant buds and bacterial spot resistance; a top peach for cold, frost-prone areas."
+   },
+   {
+    "name": "Elberta",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 600,
+    "tags": [
+     "heirloom",
+     "self-fertile"
+    ],
+    "notes": "The famous old canning and eating peach; large and richly flavored. Widely adapted in moderate winters."
+   },
+   {
+    "name": "O'Henry",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": 750,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Large, firm, full-red late peach with superb flavor; good for freezing."
+   },
+   {
+    "name": "Reliance",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 1000,
+    "zones": [
+     4,
+     8
+    ],
+    "tags": [
+     "cold-hardy",
+     "high-chill",
+     "self-fertile"
+    ],
+    "notes": "One of the hardiest peaches; flower buds survive about -25 °F, so it crops after severe winters and late cold snaps."
+   }
+  ]
+ },
+ "nectarine": {
+  "varieties": [
+   {
+    "name": "Panamint",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 250,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Dependable, intensely flavored red nectarine for warm-winter climates."
+   },
+   {
+    "name": "Snow Queen",
+    "type": "white freestone",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Sweet, juicy early white nectarine; a long-time low-chill favorite."
+   },
+   {
+    "name": "Double Delight",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Rich, top-rated yellow nectarine with showy double pink flowers; low chill."
+   },
+   {
+    "name": "Arctic Star",
+    "type": "white semi-freestone",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Very early, super-sweet low-acid white nectarine with dark red skin."
+   },
+   {
+    "name": "Fantasia",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": 500,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Large, popular yellow freestone; tangy when firm-ripe, rich and sweet when left longer. Moderate chill."
+   },
+   {
+    "name": "Heavenly White",
+    "type": "white freestone",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 650,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Very large white nectarine with outstanding sweet-tart, complex flavor."
+   },
+   {
+    "name": "Independence",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 700,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Tangy-sweet red nectarine; winter- and frost-hardy and a very reliable producer."
+   },
+   {
+    "name": "Harko",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 800,
+    "tags": [
+     "cold-hardy",
+     "disease-resistant",
+     "self-fertile"
+    ],
+    "notes": "Cold-hardy Canadian nectarine; tolerant of bacterial spot and brown rot. Good for humid, cold-winter areas."
+   },
+   {
+    "name": "Mericrest",
+    "type": "yellow freestone",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 800,
+    "tags": [
+     "cold-hardy",
+     "self-fertile"
+    ],
+    "notes": "Very cold- and frost-hardy with late bloom; crops after sub-zero winters. Rich, tangy flavor."
+   }
+  ]
+ },
+ "apricot": {
+  "varieties": [
+   {
+    "name": "Gold Kist",
+    "type": "freestone",
+    "years": "3",
+    "ripens": "early",
+    "chill": 300,
+    "zones": [
+     7,
+     9
+    ],
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "The most reliable apricot for mild winters; heavy-bearing, good quality, ripens weeks before Blenheim."
+   },
+   {
+    "name": "Katy",
+    "type": "freestone",
+    "years": "3",
+    "ripens": "early",
+    "chill": 300,
+    "zones": [
+     7,
+     9
+    ],
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Large, sweet, low-acid apricot for warm-winter climates; early."
+   },
+   {
+    "name": "Blenheim",
+    "type": "freestone",
+    "years": "3",
+    "ripens": "mid",
+    "chill": 400,
+    "zones": [
+     7,
+     9
+    ],
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Also sold as Royal: the classic sweet, aromatic California apricot for eating, canning and drying. Blooms early."
+   },
+   {
+    "name": "Tomcot",
+    "type": "freestone",
+    "years": "3",
+    "ripens": "early",
+    "chill": 500,
+    "zones": [
+     4,
+     9
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Large, reliable apricot from Washington State that keeps producing in frost-prone spring climates."
+   },
+   {
+    "name": "Moorpark",
+    "type": "freestone",
+    "years": "3",
+    "ripens": "late",
+    "chill": 600,
+    "zones": [
+     6,
+     9
+    ],
+    "tags": [
+     "heirloom",
+     "self-fertile"
+    ],
+    "notes": "Old favorite with exceptionally rich flavor and aroma; for fresh eating and canning."
+   },
+   {
+    "name": "Puget Gold",
+    "type": "freestone",
+    "years": "3",
+    "ripens": "late",
+    "chill": 600,
+    "zones": [
+     6,
+     9
+    ],
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Bred to crop in western Washington; a good choice where spring rain and frost usually ruin apricots."
+   },
+   {
+    "name": "Harcot",
+    "type": "freestone",
+    "years": "3",
+    "ripens": "early",
+    "chill": 700,
+    "zones": [
+     4,
+     9
+    ],
+    "tags": [
+     "cold-hardy",
+     "disease-resistant",
+     "self-fertile"
+    ],
+    "notes": "Canadian apricot with late, frost-hardy bloom and resistance to brown rot; sweet and rich."
+   },
+   {
+    "name": "Harglow",
+    "type": "freestone",
+    "years": "3",
+    "ripens": "late",
+    "chill": 800,
+    "zones": [
+     4,
+     9
+    ],
+    "tags": [
+     "cold-hardy",
+     "disease-resistant",
+     "self-fertile"
+    ],
+    "notes": "Late-blooming Canadian apricot that resists brown rot and cracking; among the best for cold or humid climates."
+   }
+  ]
+ },
+ "plum": {
+  "varieties": [
+   {
+    "name": "Methley",
+    "type": "Japanese plum",
+    "years": "3",
+    "ripens": "early",
+    "chill": 250,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Early, sweet red-fleshed plum; very cold-hardy for a Japanese plum yet low chill. Pollinates other Japanese plums."
+   },
+   {
+    "name": "Beauty",
+    "type": "Japanese plum",
+    "years": "3",
+    "ripens": "early",
+    "chill": 250,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Sweet, early plum that crops more reliably than Santa Rosa in cool, rainy springs."
+   },
+   {
+    "name": "Santa Rosa",
+    "type": "Japanese plum",
+    "years": "3",
+    "ripens": "early",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "The classic tangy-sweet purple plum; widely adapted, and a common pollinizer for other Japanese plums and pluots."
+   },
+   {
+    "name": "Satsuma",
+    "type": "Japanese plum",
+    "years": "3",
+    "ripens": "mid",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "needs-pollinizer"
+    ],
+    "notes": "Dark red, meaty, mild flesh; superb for jam. Plant with Santa Rosa or Beauty for pollination."
+   },
+   {
+    "name": "Burgundy",
+    "type": "Japanese plum",
+    "years": "3",
+    "ripens": "mid",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Sweet, mild maroon plum with a long harvest on a narrow, upright tree."
+   },
+   {
+    "name": "Stanley",
+    "type": "European plum",
+    "years": "3",
+    "ripens": "late",
+    "chill": 800,
+    "tags": [
+     "cold-hardy",
+     "self-fertile"
+    ],
+    "notes": "Hardy, late-blooming, reliable blue prune plum for fresh eating, canning and drying."
+   },
+   {
+    "name": "Italian",
+    "type": "European plum",
+    "years": "3",
+    "ripens": "late",
+    "chill": 800,
+    "tags": [
+     "cold-hardy",
+     "self-fertile"
+    ],
+    "notes": "Rich, sweet freestone prune plum, excellent dried or baked. Vigorous, cold-hardy tree with late bloom."
+   },
+   {
+    "name": "Toka",
+    "type": "hybrid plum",
+    "years": "3",
+    "ripens": "mid",
+    "chill": 400,
+    "zones": [
+     3,
+     9
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Spicy-sweet American hybrid plum hardy to zone 3; the go-to pollinizer for other cold-climate hybrid plums."
+   },
+   {
+    "name": "Superior",
+    "type": "hybrid plum",
+    "years": "3",
+    "ripens": "mid",
+    "chill": 500,
+    "zones": [
+     4,
+     8
+    ],
+    "tags": [
+     "cold-hardy",
+     "needs-pollinizer"
+    ],
+    "notes": "Large, firm red plum from Minnesota; bears young and heavily. Plant with Toka for pollination."
+   },
+   {
+    "name": "Alderman",
+    "type": "hybrid plum",
+    "years": "3",
+    "ripens": "mid",
+    "chill": 800,
+    "zones": [
+     4,
+     9
+    ],
+    "tags": [
+     "cold-hardy",
+     "needs-pollinizer"
+    ],
+    "notes": "Large burgundy plum with sweet, juicy yellow flesh on a vigorous, very hardy tree; needs another hybrid plum nearby."
+   },
+   {
+    "name": "Flavor King",
+    "type": "pluot",
+    "years": "3",
+    "ripens": "late",
+    "chill": 400,
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "Spicy, intensely sweet red-fleshed pluot on a naturally small tree; pollinate with Santa Rosa or another pluot."
+   },
+   {
+    "name": "Dapple Dandy",
+    "type": "pluot",
+    "years": "3",
+    "ripens": "mid",
+    "chill": 500,
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "Speckled 'dinosaur egg' pluot with cream-and-red flesh and rich plum-apricot flavor; needs a pollinizer."
+   },
+   {
+    "name": "Flavor Grenade",
+    "type": "pluot",
+    "years": "3",
+    "ripens": "late",
+    "chill": 400,
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "Crisp, green-and-red pluot that hangs on the tree for weeks; pollinate with Santa Rosa or Flavor King."
+   }
+  ]
+ },
+ "sweet-cherry": {
+  "varieties": [
+   {
+    "name": "Minnie Royal",
+    "type": "sweet cherry",
+    "years": "3–5",
+    "ripens": "early",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "needs-pollinizer"
+    ],
+    "notes": "Low-chill red cherry for mild winters; plant with Royal Lee (they bloom together) or Royal Crimson."
+   },
+   {
+    "name": "Royal Lee",
+    "type": "sweet cherry",
+    "years": "3–5",
+    "ripens": "early",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "needs-pollinizer"
+    ],
+    "notes": "Firm, flavorful low-chill cherry; needs Minnie Royal or Royal Crimson as a pollinizer."
+   },
+   {
+    "name": "Royal Crimson",
+    "type": "sweet cherry",
+    "years": "3–5",
+    "ripens": "early",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "self-fertile",
+     "compact"
+    ],
+    "notes": "Self-fertile low-chill cherry on a compact tree; ripens in May and also pollinates Minnie Royal and Royal Lee."
+   },
+   {
+    "name": "Stella",
+    "type": "sweet cherry",
+    "years": "3–5",
+    "ripens": "late",
+    "chill": 400,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "The original self-fertile sweet cherry; large, dark, Lambert-like fruit and a universal pollinizer."
+   },
+   {
+    "name": "Lapins",
+    "type": "sweet cherry",
+    "years": "3–5",
+    "ripens": "late",
+    "chill": 500,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Self-fertile, crack-resistant dark red cherry, sometimes sold as 'self-fertile Bing'."
+   },
+   {
+    "name": "Bing",
+    "type": "sweet cherry",
+    "years": "3–5",
+    "ripens": "mid",
+    "chill": 700,
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "The classic large, dark, sweet cherry; needs a pollinizer such as Van, Rainier or Lapins and is prone to cracking in rain."
+   },
+   {
+    "name": "Rainier",
+    "type": "sweet cherry",
+    "years": "3–5",
+    "ripens": "mid",
+    "chill": 700,
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "Yellow-and-red blush cherry, very sweet; cold-hardy tree. Pollinate with Bing, Van, Lapins or Black Tartarian."
+   },
+   {
+    "name": "Van",
+    "type": "sweet cherry",
+    "years": "3–5",
+    "ripens": "mid",
+    "chill": 700,
+    "zones": [
+     4,
+     9
+    ],
+    "tags": [
+     "cold-hardy",
+     "needs-pollinizer"
+    ],
+    "notes": "Very cold-hardy, heavy-bearing Bing-type cherry; pollinizes nearly all sweet cherries."
+   },
+   {
+    "name": "BlackGold",
+    "type": "sweet cherry",
+    "years": "3–5",
+    "ripens": "late",
+    "chill": 800,
+    "tags": [
+     "self-fertile",
+     "cold-hardy"
+    ],
+    "notes": "Self-fertile, late-blooming black cherry from Cornell that escapes spring frosts; good in the Northeast and Midwest."
+   }
+  ]
+ },
+ "sour-cherry": {
+  "varieties": [
+   {
+    "name": "Montmorency",
+    "type": "sour cherry",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 500,
+    "tags": [
+     "cold-hardy",
+     "self-fertile"
+    ],
+    "notes": "The classic bright-red pie cherry; extremely winter-hardy and very heavy-bearing."
+   },
+   {
+    "name": "North Star",
+    "type": "sour cherry",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 500,
+    "tags": [
+     "cold-hardy",
+     "compact",
+     "self-fertile"
+    ],
+    "notes": "Naturally dwarf (8–10 ft) Minnesota pie cherry; hardy to -40 °F, crack-resistant, often bears in year two."
+   },
+   {
+    "name": "Meteor",
+    "type": "sour cherry",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 800,
+    "tags": [
+     "cold-hardy",
+     "compact",
+     "self-fertile"
+    ],
+    "notes": "Montmorency-type pie cherry on a small tree; hardy to about -50 °F and blooms a week later."
+   },
+   {
+    "name": "English Morello",
+    "type": "sour cherry",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": 500,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Late, dark red pie cherry with dark juice; small weeping tree that's easy to pick."
+   },
+   {
+    "name": "Carmine Jewel",
+    "type": "bush cherry",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": null,
+    "zones": [
+     2,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "compact",
+     "self-fertile"
+    ],
+    "notes": "Saskatchewan dwarf bush cherry (~6 ft), hardy to zone 2; dark, sweet-tart fruit ripening early."
+   },
+   {
+    "name": "Juliet",
+    "type": "bush cherry",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "zones": [
+     2,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "compact",
+     "self-fertile"
+    ],
+    "notes": "Romance-series bush cherry often rated the best-flavored; sweet enough to eat fresh. Hardy to zone 2."
+   },
+   {
+    "name": "Romeo",
+    "type": "bush cherry",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "zones": [
+     2,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "compact",
+     "self-fertile"
+    ],
+    "notes": "Romance-series bush cherry, dark red and very flavorful; good for juice. Ripens a bit later. Hardy to zone 2."
+   },
+   {
+    "name": "Crimson Passion",
+    "type": "bush cherry",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "zones": [
+     2,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "compact",
+     "self-fertile"
+    ],
+    "notes": "Romance-series bush cherry with the highest sugar of the series; large, dark fruit good fresh. Hardy to zone 2."
+   }
+  ]
+ },
+ "apple": {
+  "varieties": [
+   {
+    "name": "Dorsett Golden",
+    "type": "sweet",
+    "years": "2–4",
+    "ripens": "early",
+    "chill": 100,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Golden Delicious-like apple for very mild winters (Florida, Gulf Coast, low desert); the standard pollinizer for Anna."
+   },
+   {
+    "name": "Anna",
+    "type": "sweet-tart",
+    "years": "2–4",
+    "ripens": "early",
+    "chill": 200,
+    "tags": [
+     "low-chill"
+    ],
+    "notes": "Crisp low-chill apple that crops even in low desert; plant Dorsett Golden nearby for heavier crops."
+   },
+   {
+    "name": "Pink Lady",
+    "type": "sweet-tart",
+    "years": "2–4",
+    "ripens": "late",
+    "chill": 400,
+    "zones": [
+     6,
+     9
+    ],
+    "tags": [
+     "low-chill",
+     "heat-tolerant",
+     "storage"
+    ],
+    "notes": "Very crisp, tart-sweet keeper that needs a long, hot season; ripens a few weeks after Fuji."
+   },
+   {
+    "name": "Granny Smith",
+    "type": "tart",
+    "years": "2–4",
+    "ripens": "late",
+    "chill": 400,
+    "zones": [
+     6,
+     9
+    ],
+    "tags": [
+     "low-chill",
+     "heat-tolerant",
+     "self-fertile",
+     "storage"
+    ],
+    "notes": "Tart green keeper for baking and fresh eating; needs a long, warm summer. Long bloom makes it a good pollinizer."
+   },
+   {
+    "name": "Fuji",
+    "type": "sweet",
+    "years": "2–4",
+    "ripens": "late",
+    "chill": 500,
+    "tags": [
+     "self-fertile",
+     "storage"
+    ],
+    "notes": "Very sweet, crisp, long-keeping apple; productive in mild-winter climates as well as cold ones."
+   },
+   {
+    "name": "Gala",
+    "type": "sweet",
+    "years": "2–4",
+    "ripens": "early",
+    "chill": 500,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Crisp, sweet, early apple adapted to both cold- and warm-winter areas; an excellent pollinizer."
+   },
+   {
+    "name": "Golden Delicious",
+    "type": "sweet",
+    "years": "2–4",
+    "ripens": "mid",
+    "chill": 700,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Reliable all-purpose sweet apple and a widely used pollinizer; adapted to many climates."
+   },
+   {
+    "name": "Liberty",
+    "type": "sweet-tart",
+    "years": "2–4",
+    "ripens": "mid",
+    "chill": 800,
+    "zones": [
+     4,
+     8
+    ],
+    "tags": [
+     "disease-resistant",
+     "cold-hardy"
+    ],
+    "notes": "Highly resistant to scab, cedar-apple rust, mildew and fire blight; the easiest apple for low-spray humid gardens."
+   },
+   {
+    "name": "Honeycrisp",
+    "type": "sweet",
+    "years": "2–4",
+    "ripens": "mid",
+    "chill": 800,
+    "zones": [
+     3,
+     8
+    ],
+    "tags": [
+     "cold-hardy",
+     "needs-pollinizer",
+     "storage"
+    ],
+    "notes": "Explosively crisp, juicy University of Minnesota apple; very winter-hardy. Needs another apple for pollination."
+   },
+   {
+    "name": "Zestar!",
+    "type": "sweet-tart",
+    "years": "2–4",
+    "ripens": "early",
+    "chill": 800,
+    "zones": [
+     3,
+     8
+    ],
+    "tags": [
+     "cold-hardy",
+     "short-season",
+     "needs-pollinizer"
+    ],
+    "notes": "Early, crisp, brown-sugar-tinged Minnesota apple for the far north; ripens in August. Needs a pollinizer."
+   },
+   {
+    "name": "Haralson",
+    "type": "tart",
+    "years": "2–4",
+    "ripens": "mid",
+    "chill": 1000,
+    "zones": [
+     3,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "high-chill",
+     "storage"
+    ],
+    "notes": "Extremely hardy Minnesota apple for pies and storage; often bears by year two. A top pick for zones 3–4."
+   },
+   {
+    "name": "McIntosh",
+    "type": "sweet-tart",
+    "years": "2–4",
+    "ripens": "early",
+    "chill": 900,
+    "zones": [
+     4,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "high-chill"
+    ],
+    "notes": "Aromatic, tender, tangy classic for cold climates; quality suffers where summers are hot."
+   }
+  ]
+ },
+ "pear": {
+  "varieties": [
+   {
+    "name": "Bartlett",
+    "type": "European",
+    "years": "3–5",
+    "ripens": "early",
+    "chill": 600,
+    "notes": "The world's favorite pear, also tolerating hot summers; prone to fire blight in humid areas. Ripen picked fruit indoors."
+   },
+   {
+    "name": "Bosc",
+    "type": "European",
+    "years": "3–5",
+    "ripens": "late",
+    "chill": 600,
+    "tags": [
+     "needs-pollinizer",
+     "storage"
+    ],
+    "notes": "Long-necked russeted pear with superb spicy flavor; great for baking. Very fire-blight prone in warm, wet climates."
+   },
+   {
+    "name": "Seckel",
+    "type": "European",
+    "years": "3–5",
+    "ripens": "mid",
+    "chill": 500,
+    "tags": [
+     "disease-resistant"
+    ],
+    "notes": "Small, very sweet 'sugar pear' with spicy flavor; resists fire blight. Don't rely on Bartlett to pollinate it."
+   },
+   {
+    "name": "Moonglow",
+    "type": "European",
+    "years": "3–5",
+    "ripens": "mid",
+    "chill": 500,
+    "tags": [
+     "disease-resistant",
+     "needs-pollinizer"
+    ],
+    "notes": "Soft, juicy dessert pear with good fire-blight resistance; also a good pollinizer for other pears."
+   },
+   {
+    "name": "Warren",
+    "type": "European",
+    "years": "3–5",
+    "ripens": "late",
+    "chill": 600,
+    "tags": [
+     "disease-resistant",
+     "self-fertile"
+    ],
+    "notes": "Buttery, grit-free dessert pear from Mississippi, highly fire-blight resistant; hardy to about -20 °F."
+   },
+   {
+    "name": "Kieffer",
+    "type": "hybrid",
+    "years": "3–5",
+    "ripens": "late",
+    "chill": 300,
+    "tags": [
+     "disease-resistant",
+     "heat-tolerant",
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Tough Asian-European hybrid for canning and cooking; resists fire blight and thrives in hot, humid Southern climates."
+   },
+   {
+    "name": "Shinseiki",
+    "type": "Asian",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Bright yellow, crisp, juicy Asian pear that bears young and heavily; ripens on the tree."
+   },
+   {
+    "name": "20th Century",
+    "type": "Asian",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 400,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Also sold as Nijisseiki: the classic crisp, juicy, mild yellow Asian pear; keeps well."
+   },
+   {
+    "name": "Hosui",
+    "type": "Asian",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 400,
+    "tags": [
+     "low-chill",
+     "needs-pollinizer"
+    ],
+    "notes": "Often rated the best-tasting Asian pear: large, sweet, russeted. Plant with another Asian or European pear."
+   },
+   {
+    "name": "Shinko",
+    "type": "Asian",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": 450,
+    "tags": [
+     "disease-resistant",
+     "needs-pollinizer"
+    ],
+    "notes": "Late, sweet, russeted Asian pear with notable fire-blight resistance; a good pick for humid regions."
+   }
+  ]
+ },
+ "pomegranate": {
+  "varieties": [
+   {
+    "name": "Wonderful",
+    "type": "pomegranate",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": 150,
+    "tags": [
+     "heat-tolerant",
+     "self-fertile"
+    ],
+    "notes": "The commercial standard: large, deep red, tangy fruit with fairly hard seeds. Needs long, hot summers to ripen well."
+   },
+   {
+    "name": "Grenada",
+    "type": "pomegranate",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 150,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Darker, less tart sport of Wonderful that ripens about a month earlier, before fall rains split fruit."
+   },
+   {
+    "name": "Eversweet",
+    "type": "soft-seeded",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 150,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Very sweet, soft-seeded, nearly clear non-staining juice; ripens even where summers are cooler."
+   },
+   {
+    "name": "Parfianka",
+    "type": "soft-seeded",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 200,
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Soft edible seeds and complex sweet-tart red arils; often rated the best-flavored pomegranate."
+   },
+   {
+    "name": "Sweet",
+    "type": "pomegranate",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 100,
+    "tags": [
+     "self-fertile",
+     "container"
+    ],
+    "notes": "Low-acid, sweet fruit on a small, ornamental tree; better quality than Wonderful in cool-summer areas. Good in containers."
+   },
+   {
+    "name": "Ambrosia",
+    "type": "pomegranate",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": 150,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Enormous pale-pink fruit with sweet-tart purple juice; a heavy-bearing conversation piece."
+   },
+   {
+    "name": "A.C. Sweet",
+    "type": "soft-seeded",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 200,
+    "zones": [
+     6,
+     10
+    ],
+    "tags": [
+     "cold-hardy",
+     "self-fertile"
+    ],
+    "notes": "Utah-favored sweet, soft-seeded pomegranate whose ripe fruit hangs without splitting; one of the more cold-hardy picks."
+   }
+  ]
+ },
+ "persimmon": {
+  "varieties": [
+   {
+    "name": "Fuyu",
+    "type": "Asian non-astringent",
+    "years": "3",
+    "ripens": "late",
+    "chill": 200,
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "The standard crisp, non-astringent persimmon, eaten firm like an apple. Self-fertile and nearly pest-free."
+   },
+   {
+    "name": "Jiro",
+    "type": "Asian non-astringent",
+    "years": "3",
+    "ripens": "late",
+    "chill": 200,
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Fuyu-type crisp persimmon with squarer, slightly larger fruit; eaten firm."
+   },
+   {
+    "name": "Izu",
+    "type": "Asian non-astringent",
+    "years": "3",
+    "ripens": "early",
+    "chill": 200,
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "self-fertile",
+     "compact"
+    ],
+    "notes": "Sweet, non-astringent persimmon on a small tree; ripens about three weeks before Fuyu, good where fall is short."
+   },
+   {
+    "name": "Hachiya",
+    "type": "Asian astringent",
+    "years": "3",
+    "ripens": "late",
+    "chill": 200,
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Large acorn-shaped persimmon; astringent until jelly-soft, then superb for baking. Needs a hot summer."
+   },
+   {
+    "name": "Saijo",
+    "type": "Asian astringent",
+    "years": "3",
+    "ripens": "mid",
+    "chill": 200,
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Small, elongated, very sweet when soft; considered one of the hardier Asian persimmons, with brilliant fall color."
+   },
+   {
+    "name": "Prok",
+    "type": "American",
+    "years": "3–5",
+    "ripens": "early",
+    "chill": null,
+    "zones": [
+     5,
+     9
+    ],
+    "tags": [
+     "cold-hardy",
+     "self-fertile"
+    ],
+    "notes": "Large, nearly seedless American persimmon with honey-sweet flavor; ripens early enough for northern gardens."
+   },
+   {
+    "name": "Meader",
+    "type": "American",
+    "years": "3–5",
+    "ripens": "mid",
+    "chill": null,
+    "zones": [
+     4,
+     8
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Very hardy American persimmon (zone 4) that often sets fruit without a male tree; must be soft-ripe to eat."
+   },
+   {
+    "name": "Early Golden",
+    "type": "American",
+    "years": "3–5",
+    "ripens": "early",
+    "chill": null,
+    "zones": [
+     4,
+     9
+    ],
+    "tags": [
+     "cold-hardy",
+     "heirloom"
+    ],
+    "notes": "Old early-ripening American persimmon selection with good flavor; a parent of many named varieties."
+   }
+  ]
+ },
+ "pawpaw": {
+  "varieties": [
+   {
+    "name": "Shenandoah",
+    "type": "pawpaw",
+    "years": "4–6",
+    "ripens": "mid",
+    "chill": 400,
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "Peterson selection with large fruit, few seeds and mild, creamy flavor. Plant two varieties."
+   },
+   {
+    "name": "Allegheny",
+    "type": "pawpaw",
+    "years": "4–6",
+    "ripens": "mid",
+    "chill": 400,
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "Peterson selection with rich, well-balanced flavor and good productivity. Needs another variety for pollination."
+   },
+   {
+    "name": "Susquehanna",
+    "type": "pawpaw",
+    "years": "4–6",
+    "ripens": "late",
+    "chill": 400,
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "Very large fruit with thick, sweet, buttery flesh and few seeds; late, so best where fall is long."
+   },
+   {
+    "name": "Sunflower",
+    "type": "pawpaw",
+    "years": "4–6",
+    "ripens": "late",
+    "chill": 400,
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "Older Kansas selection with large, buttery, yellow fruit. Sometimes sold as self-fertile, but crops far better with a second variety."
+   }
+  ]
+ },
+ "loquat": {
+  "varieties": [
+   {
+    "name": "Early Red",
+    "type": "loquat",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": null,
+    "notes": "Orange-red, pear-shaped fruit that ripens first, extending the short spring season. Fruits only where winter bloom escapes frost."
+   },
+   {
+    "name": "Big Jim",
+    "type": "loquat",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "notes": "Large, round, easy-peel, sweet-tart fruit with excellent flavor; vigorous and productive."
+   },
+   {
+    "name": "Gold Nugget",
+    "type": "loquat",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Large orange fruit with firm, apricot-like flesh; self-fertile, so a good single tree or pollinizer."
+   },
+   {
+    "name": "Champagne",
+    "type": "loquat",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "notes": "Yellow-skinned, white-fleshed, juicy subacid fruit; plant with Gold Nugget for best crops."
+   },
+   {
+    "name": "Vista White",
+    "type": "loquat",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "notes": "White-fleshed, very sweet, low-acid loquat, among the best-flavored; bruises easily, so it's a garden-only fruit."
+   }
+  ]
+ },
+ "feijoa": {
+  "varieties": [
+   {
+    "name": "Coolidge",
+    "type": "feijoa",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Reliably self-fertile old California selection; the safest choice when planting a single bush."
+   },
+   {
+    "name": "Nazemetz",
+    "type": "feijoa",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Large, sweet, pear-shaped fruit with excellent flavor; self-fertile but bears more heavily with a second variety."
+   },
+   {
+    "name": "Apollo",
+    "type": "feijoa",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "New Zealand variety with large, smooth, sweet fruit lacking grittiness; vigorous, self-fertile, a good pollinizer."
+   }
+  ]
+ },
+ "mulberry": {
+  "varieties": [
+   {
+    "name": "Illinois Everbearing",
+    "type": "hybrid mulberry",
+    "years": "1–2",
+    "ripens": "everbearing",
+    "chill": 500,
+    "zones": [
+     4,
+     8
+    ],
+    "tags": [
+     "cold-hardy",
+     "everbearing",
+     "self-fertile"
+    ],
+    "notes": "Hardy, sweet black mulberry fruiting over much of the summer; leafs out late to dodge spring frosts."
+   },
+   {
+    "name": "Dwarf Everbearing",
+    "type": "dwarf mulberry",
+    "years": "1–2",
+    "ripens": "everbearing",
+    "chill": null,
+    "tags": [
+     "compact",
+     "container",
+     "everbearing",
+     "self-fertile"
+    ],
+    "notes": "Shrubby mulberry that fruits repeatedly in spring and summer; easily kept small or grown in a large pot."
+   },
+   {
+    "name": "Pakistan",
+    "type": "white mulberry",
+    "years": "1–2",
+    "ripens": "early",
+    "chill": 200,
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "low-chill",
+     "heat-tolerant",
+     "self-fertile"
+    ],
+    "notes": "Very long (3 in+), sweet red-black fruit with little staining juice; for mild-winter, hot-summer climates."
+   },
+   {
+    "name": "Black Beauty",
+    "type": "black mulberry",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": 200,
+    "tags": [
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Large, glossy, rich black mulberries on a tree or big shrub; self-fertile and low chill."
+   }
+  ]
+ },
+ "jujube": {
+  "varieties": [
+   {
+    "name": "Li",
+    "type": "jujube",
+    "years": "1–2",
+    "ripens": "early",
+    "chill": 200,
+    "zones": [
+     5,
+     10
+    ],
+    "tags": [
+     "self-fertile",
+     "heat-tolerant"
+    ],
+    "notes": "The most popular jujube: large round fruit, crisp-sweet when yellow-green or chewy when dried. Self-fertile."
+   },
+   {
+    "name": "Lang",
+    "type": "jujube",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": 200,
+    "zones": [
+     5,
+     10
+    ],
+    "tags": [
+     "needs-pollinizer",
+     "heat-tolerant"
+    ],
+    "notes": "Pear-shaped fruit best dried into chewy 'Chinese dates'; plant with Li or another jujube for pollination."
+   },
+   {
+    "name": "Honey Jar",
+    "type": "jujube",
+    "years": "1–2",
+    "ripens": "early",
+    "chill": 200,
+    "zones": [
+     5,
+     9
+    ],
+    "tags": [
+     "compact",
+     "heat-tolerant"
+    ],
+    "notes": "Small, extremely sweet, crunchy fruit on a compact tree; superb fresh. Sets more with a second variety."
+   },
+   {
+    "name": "Shanxi Li",
+    "type": "jujube",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": 200,
+    "zones": [
+     5,
+     9
+    ],
+    "tags": [
+     "self-fertile",
+     "heat-tolerant"
+    ],
+    "notes": "Largest of the common jujubes; apple-like flavor fresh and sweeter dried. Self-fertile and a good pollinizer."
+   },
+   {
+    "name": "Sherwood",
+    "type": "jujube",
+    "years": "1–2",
+    "ripens": "late",
+    "chill": 200,
+    "zones": [
+     5,
+     9
+    ],
+    "tags": [
+     "heat-tolerant"
+    ],
+    "notes": "Late, crisp, sweet jujube from Louisiana on a narrow, nearly thornless upright tree; good for small yards."
+   }
+  ]
+ },
+ "olive": {
+  "varieties": [
+   {
+    "name": "Arbequina",
+    "type": "oil",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": null,
+    "tags": [
+     "self-fertile",
+     "compact",
+     "container"
+    ],
+    "notes": "Compact, precocious, self-fertile Spanish oil olive with small fruit; the usual choice for small yards and large pots."
+   },
+   {
+    "name": "Mission",
+    "type": "dual-purpose",
+    "years": "3–4",
+    "ripens": "late",
+    "chill": null,
+    "tags": [
+     "cold-hardy",
+     "self-fertile"
+    ],
+    "notes": "Classic California olive for curing and oil; among the more cold-hardy olives. Large, upright tree."
+   },
+   {
+    "name": "Manzanillo",
+    "type": "table",
+    "years": "3–4",
+    "ripens": "early",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "The classic large table olive, cured green or black; spreading tree, moderately cold-hardy."
+   },
+   {
+    "name": "Koroneiki",
+    "type": "oil",
+    "years": "3–4",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Greek oil olive with tiny fruit and peppery, high-quality oil; frost-tender, so best in mild-winter areas."
+   }
+  ]
+ },
+ "guava": {
+  "varieties": [
+   {
+    "name": "Ruby Supreme",
+    "type": "tropical guava",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "zones": [
+     10,
+     11
+    ],
+    "notes": "Florida selection with pink-red, sweet, aromatic flesh; good for fresh eating, juice and paste. Frost-tender."
+   },
+   {
+    "name": "Mexican Cream",
+    "type": "tropical guava",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "zones": [
+     10,
+     11
+    ],
+    "tags": [
+     "compact"
+    ],
+    "notes": "Small, sweet, creamy-white fruit on a compact, upright tree; also sold as Tropical Yellow. Frost-tender."
+   },
+   {
+    "name": "Strawberry guava",
+    "type": "cattley guava",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "zones": [
+     9,
+     11
+    ],
+    "tags": [
+     "cold-hardy",
+     "container"
+    ],
+    "notes": "Small red fruit with tart strawberry notes; hardier (to ~25 °F) than tropical guavas. Invasive in Florida; avoid there."
+   },
+   {
+    "name": "Lemon guava",
+    "type": "cattley guava",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "zones": [
+     9,
+     11
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Yellow form of strawberry guava: tangy, lemony fruit on an ornamental shrub; same cold tolerance and invasiveness caution."
+   }
+  ]
+ }
+}

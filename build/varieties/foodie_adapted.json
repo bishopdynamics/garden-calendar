@@ -1,0 +1,498 @@
+{
+  "tomato": {
+    "basis": "transplant",
+    "varieties": [
+      { "name": "Sun Gold", "type": "cherry", "days": 57, "tags": ["hybrid", "indeterminate", "short-season"],
+        "notes": "Orange cherry with exceptional sweetness; early and prolific. Splits after heavy rain, so water evenly." },
+      { "name": "Juliet", "type": "cherry", "days": 60, "tags": ["hybrid", "indeterminate", "disease-resistant"],
+        "notes": "Grape-shaped mini-Roma that resists cracking and holds on the vine; very productive and tolerant of rough conditions." },
+      { "name": "Early Girl", "type": "slicer", "days": 57, "tags": ["hybrid", "indeterminate", "short-season"],
+        "notes": "Reliable early slicer; a good pick where summers are short or cool, and quick to fill a gap between heat waves." },
+      { "name": "Stupice", "type": "slicer", "days": 57, "tags": ["heirloom", "open-pollinated", "indeterminate", "short-season"],
+        "notes": "Czech heirloom that sets fruit in cool weather; small, tangy slicers where summers are short or nights stay chilly." },
+      { "name": "Glacier", "type": "slicer", "days": 55, "tags": ["open-pollinated", "determinate", "short-season", "compact"],
+        "notes": "Compact semi-determinate that ripens small red fruit very early; one of the best for cool, short northern seasons." },
+      { "name": "Celebrity", "type": "slicer", "days": 70, "tags": ["hybrid", "determinate", "disease-resistant"],
+        "notes": "All-America winner with a broad disease package; dependable medium-large slicers in almost any climate." },
+      { "name": "Better Boy", "type": "slicer", "days": 72, "tags": ["hybrid", "indeterminate", "disease-resistant"],
+        "notes": "Big, heavy crops of classic red slicers and good disease resistance; forgiving of imperfect care." },
+      { "name": "Heatmaster", "type": "slicer", "days": 75, "tags": ["hybrid", "determinate", "heat-tolerant"],
+        "notes": "Bred to keep setting fruit when days and nights stay hot; a top choice for the Deep South and desert Southwest." },
+      { "name": "Solar Fire", "type": "slicer", "days": 72, "tags": ["hybrid", "determinate", "heat-tolerant", "disease-resistant"],
+        "notes": "Florida-bred heat-set tomato; keeps producing crack-resistant medium-large fruit through hot, humid summers." },
+      { "name": "Cherokee Purple", "type": "beefsteak", "days": 80, "tags": ["heirloom", "open-pollinated", "indeterminate"],
+        "notes": "Dusky purple-brown heirloom with deep, smoky-sweet flavor; less disease resistance than hybrids." },
+      { "name": "Brandywine", "type": "beefsteak", "days": 85, "tags": ["heirloom", "open-pollinated", "indeterminate"],
+        "notes": "Pink potato-leaf beefsteak famous for flavor; low yields and sets poorly in extreme heat, so give it a long mild season." },
+      { "name": "Black Krim", "type": "beefsteak", "days": 80, "tags": ["heirloom", "open-pollinated", "indeterminate"],
+        "notes": "Dark brick-red Russian heirloom with rich, slightly salty flavor; copes with summer heat better than most beefsteaks." },
+      { "name": "San Marzano", "type": "paste", "days": 80, "tags": ["heirloom", "open-pollinated", "indeterminate"],
+        "notes": "Long Italian sauce tomato, meaty with few seeds; ripens over a long window rather than all at once." },
+      { "name": "Roma", "type": "paste", "days": 75, "tags": ["open-pollinated", "determinate", "disease-resistant"],
+        "notes": "Determinate paste tomato that ripens a concentrated crop, which makes it easy to can or sauce in one batch." }
+    ]
+  },
+  "pepper": {
+    "basis": "transplant",
+    "varieties": [
+      { "name": "California Wonder", "type": "bell", "days": 75, "tags": ["heirloom", "open-pollinated"],
+        "notes": "The standard blocky bell, green ripening to red; thick walls for stuffing. Best with a long warm season." },
+      { "name": "King of the North", "type": "bell", "days": 68, "tags": ["heirloom", "open-pollinated", "short-season"],
+        "notes": "Open-pollinated bell bred for northern gardens; ripens red reliably where summers are short or cool." },
+      { "name": "Big Bertha", "type": "bell", "days": 72, "tags": ["hybrid"],
+        "notes": "Very large, elongated thick-walled bells and heavy yields; the pick for oversized stuffing peppers." },
+      { "name": "Gypsy", "type": "sweet", "days": 65, "tags": ["hybrid", "short-season", "disease-resistant"],
+        "notes": "All-America winner; wedge-shaped yellow-to-red sweet peppers very early and in quantity, even in cooler summers." },
+      { "name": "Corno di Toro", "type": "sweet", "days": 80, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Long curved Italian 'bull's horn' in red or yellow; the classic sweet pepper for roasting and grilling." },
+      { "name": "Sweet Banana", "type": "sweet", "days": 70, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Long pale-yellow sweet pepper ripening to red; mild, prolific, and tolerant of cooler weather than bells." },
+      { "name": "Shishito", "type": "sweet", "days": 60, "tags": ["open-pollinated"],
+        "notes": "Thin-walled Japanese pepper picked green and blistered; mostly mild with the odd hot one. Wildly prolific." },
+      { "name": "Jalapeño", "type": "hot", "days": 70, "tags": ["open-pollinated"],
+        "notes": "The classic garden chile with moderate heat; pick green, or let ripen red for sweeter, hotter fruit and chipotle." },
+      { "name": "Serrano", "type": "hot", "days": 75, "tags": ["open-pollinated"],
+        "notes": "Small thin-walled chile, hotter than jalapeño and crisp raw in salsas; very productive in hot weather." },
+      { "name": "Cayenne", "type": "hot", "days": 75, "tags": ["open-pollinated"],
+        "notes": "Long, slender, hot pods that dry easily for flakes and powder; a reliable producer in most climates." },
+      { "name": "Hungarian Hot Wax", "type": "hot", "days": 70, "tags": ["heirloom", "open-pollinated", "short-season"],
+        "notes": "Waxy yellow 'hot banana' with mild-to-moderate heat; sets well in cool summers and great for pickling." },
+      { "name": "Poblano", "type": "hot", "days": 75, "tags": ["open-pollinated"],
+        "notes": "Wide, mild stuffing chile for rellenos; dried red it becomes ancho. Needs a long warm season to ripen red." },
+      { "name": "Anaheim", "type": "hot", "days": 75, "tags": ["open-pollinated"],
+        "notes": "Long, mild green chile for roasting and peeling; dries red for ristras. Thrives in hot, dry climates." },
+      { "name": "Habanero", "type": "chinense", "days": 100, "tags": ["open-pollinated"],
+        "notes": "Very hot lantern pods with a fruity aroma; slow, so start early or grow in a pot where summers are short." },
+      { "name": "Scotch Bonnet", "type": "chinense", "days": 100, "tags": ["open-pollinated"],
+        "notes": "Caribbean habanero relative, just as hot but sweeter and fruitier; the jerk chile. Wants a long, hot season." },
+      { "name": "Ghost Pepper (Bhut Jolokia)", "type": "chinense", "days": 120, "tags": [],
+        "notes": "Superhot (around 1 million SHU) and very slow; best in hot climates or started early and grown in a large pot." }
+    ]
+  },
+  "eggplant": {
+    "basis": "transplant",
+    "varieties": [
+      { "name": "Black Beauty", "type": "globe", "days": 80, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Classic large glossy-purple globe; needs a long, hot summer to produce well." },
+      { "name": "Ichiban", "type": "Asian", "days": 65, "tags": ["hybrid", "short-season"],
+        "notes": "Long, slender Japanese type; thin-skinned, tender and productive, and earlier than big globe varieties." },
+      { "name": "Hansel", "type": "mini", "days": 55, "tags": ["hybrid", "short-season", "compact", "container"],
+        "notes": "All-America winner; clusters of finger-size purple fruit on compact plants. A top pick for short seasons and pots." },
+      { "name": "Fairy Tale", "type": "mini", "days": 50, "tags": ["hybrid", "short-season", "compact", "container"],
+        "notes": "Small purple-and-white striped fruit, sweet with few seeds, on a dwarf plant; very early and good in containers." },
+      { "name": "Ping Tung Long", "type": "Asian", "days": 65, "tags": ["heirloom", "open-pollinated", "heat-tolerant", "disease-resistant"],
+        "notes": "Long lavender Taiwanese heirloom; tender skin, sweet flesh, and among the most heat- and disease-tolerant eggplants." },
+      { "name": "Listada de Gandia", "type": "globe", "days": 80, "tags": ["heirloom", "open-pollinated", "heat-tolerant"],
+        "notes": "Purple-and-white striped Italian heirloom with mild, rich flesh; sets well in hot weather." },
+      { "name": "Rosa Bianca", "type": "globe", "days": 80, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Round lavender-and-white Italian heirloom; creamy, mild and not bitter. The cook's globe eggplant." },
+      { "name": "Casper", "type": "white", "days": 70, "tags": ["open-pollinated"],
+        "notes": "Pure-white slender fruit with mild, mushroom-like flesh; pick before the skin toughens." }
+    ]
+  },
+  "bush-bean": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Provider", "type": "bush", "days": 50, "tags": ["open-pollinated", "short-season", "disease-resistant"],
+        "notes": "Germinates in cool soil better than most; early, dependable and the go-to bush snap where springs are cold." },
+      { "name": "Contender", "type": "bush", "days": 50, "tags": ["open-pollinated", "heat-tolerant", "disease-resistant"],
+        "notes": "Early bush snap that keeps setting in heat better than most; stringless if picked young." },
+      { "name": "Blue Lake Bush 274", "type": "bush", "days": 55, "tags": ["open-pollinated"],
+        "notes": "Classic round, stringless snap with a concentrated set; great for canning and freezing in one picking." },
+      { "name": "Royal Burgundy", "type": "bush", "days": 55, "tags": ["open-pollinated", "short-season"],
+        "notes": "Purple pods (turn green when cooked) on plants that tolerate cool soil; easy to spot at picking time." },
+      { "name": "Dragon Tongue", "type": "bush", "days": 60, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Flat cream pods streaked purple; tender as a snap bean and good as a shelling bean if left to fill." },
+      { "name": "Kentucky Wonder", "type": "pole", "days": 65, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Old-time pole bean with rich flavor; needs a trellis and picks over a long season." },
+      { "name": "Blue Lake Pole", "type": "pole", "days": 65, "tags": ["open-pollinated"],
+        "notes": "Pole version of the classic Blue Lake; months of stringless pods from one trellis where seasons are long." },
+      { "name": "Rattlesnake", "type": "pole", "days": 70, "tags": ["heirloom", "open-pollinated", "heat-tolerant"],
+        "notes": "Purple-streaked pole snap that keeps producing in hot, humid summers when other beans drop their blossoms." }
+    ]
+  },
+  "cucumber": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Marketmore 76", "type": "slicing", "days": 60, "tags": ["open-pollinated", "disease-resistant"],
+        "notes": "Dark-green slicer with broad disease resistance; the dependable standard in most climates." },
+      { "name": "Straight Eight", "type": "slicing", "days": 58, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Old All-America slicer with uniform 8 in. fruit; reliable almost anywhere." },
+      { "name": "Diva", "type": "slicing", "days": 58, "tags": ["hybrid", "parthenocarpic", "disease-resistant"],
+        "notes": "Thin-skinned, seedless, never bitter; sets fruit without pollinators, so ideal under row cover or in a greenhouse." },
+      { "name": "Spacemaster", "type": "slicing", "days": 60, "tags": ["open-pollinated", "compact", "container"],
+        "notes": "Short-vined bush slicer for containers and small beds; full-size fruit on a compact plant." },
+      { "name": "National Pickling", "type": "pickling", "days": 55, "tags": ["open-pollinated"],
+        "notes": "Blocky, blunt-ended pickler bred for even brining; pick small for gherkins or larger for spears." },
+      { "name": "Suyo Long", "type": "Asian", "days": 60, "tags": ["heirloom", "open-pollinated", "heat-tolerant"],
+        "notes": "Ribbed Chinese burpless type to 15 in.; sweet, heat-tolerant and stays non-bitter when stressed. Trellis it." },
+      { "name": "Armenian", "type": "specialty", "days": 63, "tags": ["heirloom", "open-pollinated", "heat-tolerant"],
+        "notes": "Long, pale, ribbed fruit (botanically a melon); thrives in hot, dry summers and is never bitter." },
+      { "name": "Lemon", "type": "specialty", "days": 65, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Round yellow heirloom, mild and crisp; very productive and pick before it turns deep yellow." }
+    ]
+  },
+  "zucchini": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Black Beauty", "type": "zucchini", "days": 50, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Classic dark-green bush zucchini; productive and widely available." },
+      { "name": "Dunja", "type": "zucchini", "days": 47, "tags": ["hybrid", "disease-resistant"],
+        "notes": "Open, spineless plant with strong powdery-mildew and virus resistance; keeps producing longer into late summer." },
+      { "name": "Costata Romanesco", "type": "zucchini", "days": 55, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Ribbed Italian heirloom with superb nutty flavor and edible blossoms; big plant, lower yield." },
+      { "name": "Eight Ball", "type": "round", "days": 50, "tags": ["hybrid", "compact"],
+        "notes": "All-America winner; round dark-green fruit picked at baseball size for stuffing. Compact plant." },
+      { "name": "Early Prolific Straightneck", "type": "yellow", "days": 50, "tags": ["heirloom", "open-pollinated", "short-season"],
+        "notes": "Smooth pale-yellow straightneck on an early bush plant; easier to wash and slice than a crookneck." },
+      { "name": "Yellow Crookneck", "type": "yellow", "days": 53, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Bumpy-skinned Southern heirloom with a curved neck; buttery flavor, best picked under 6 in." },
+      { "name": "Zephyr", "type": "yellow", "days": 54, "tags": ["hybrid"],
+        "notes": "Slender yellow fruit with a pale-green tip; firm, nutty flesh that holds up on the grill." },
+      { "name": "Tromboncino", "type": "vining", "days": 70, "tags": ["heirloom", "open-pollinated", "disease-resistant"],
+        "notes": "Climbing Italian moschata with long curved fruit; resists squash vine borer, so a good choice where borers are bad." }
+    ]
+  },
+  "winter-squash": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Table Queen", "type": "acorn", "days": 85, "tags": ["heirloom", "open-pollinated", "short-season"],
+        "notes": "The classic ribbed dark-green acorn; one fruit halves into two servings. Quick enough for short seasons." },
+      { "name": "Honey Bear", "type": "acorn", "days": 85, "tags": ["hybrid", "compact", "container", "disease-resistant", "short-season"],
+        "notes": "All-America winner on a compact semi-bush plant with powdery-mildew tolerance; small, sweet single-serving fruit." },
+      { "name": "Delicata", "type": "delicata", "days": 100, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Cream-and-green striped fruit with thin edible skin and sweet, nutty flesh; roast without peeling." },
+      { "name": "Waltham Butternut", "type": "butternut", "days": 105, "tags": ["open-pollinated", "storage", "disease-resistant"],
+        "notes": "The benchmark butternut: long solid neck, small seed cavity, keeps for months and resists squash vine borer." },
+      { "name": "Honeynut", "type": "butternut", "days": 110, "tags": ["hybrid"],
+        "notes": "Mini butternut, sweeter and denser than Waltham; ripens tan to deep orange. Full-size vine, single-serving fruit." },
+      { "name": "Sunshine", "type": "kabocha", "days": 95, "tags": ["hybrid"],
+        "notes": "All-America winner; scarlet kabocha with smooth, sweet, stringless flesh that tastes good right after curing." },
+      { "name": "Vegetable Spaghetti", "type": "spaghetti", "days": 90, "tags": ["open-pollinated"],
+        "notes": "The original spaghetti squash; pale-yellow oblong fruit whose flesh pulls into strands when cooked." },
+      { "name": "Tivoli", "type": "spaghetti", "days": 98, "tags": ["hybrid", "compact"],
+        "notes": "All-America winner; bush-habit spaghetti squash that fits a small bed or large container." }
+    ]
+  },
+  "pumpkin": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Jack Be Little", "type": "miniature", "days": 95, "tags": ["open-pollinated"],
+        "notes": "Palm-size ribbed orange minis for decorating; many fruit per vine and edible when roasted." },
+      { "name": "Sugar Pie", "type": "pie", "days": 100, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Small, sweet pumpkin with thick, dry flesh; the one to grow for baking rather than carving." },
+      { "name": "Long Island Cheese", "type": "pie", "days": 108, "tags": ["heirloom", "open-pollinated", "storage"],
+        "notes": "Flat, buff, cheese-wheel heirloom with smooth sweet flesh for pies; stores for months." },
+      { "name": "Connecticut Field", "type": "carving", "days": 110, "tags": ["heirloom", "open-pollinated"],
+        "notes": "The traditional American jack-o'-lantern pumpkin; large, smooth orange fruit on long vines." },
+      { "name": "Howden", "type": "carving", "days": 115, "tags": ["open-pollinated"],
+        "notes": "The jack-o'-lantern standard: big, tall, ribbed, uniform fruit with sturdy handle stems." },
+      { "name": "Rouge Vif d'Etampes", "type": "heirloom", "days": 115, "tags": ["heirloom", "open-pollinated"],
+        "notes": "The flattened red-orange 'Cinderella' pumpkin; striking decoration and good for soups." },
+      { "name": "Atlantic Giant", "type": "giant", "days": 120, "tags": ["open-pollinated"],
+        "notes": "The variety behind record-setting giants; needs huge space, rich soil, steady water and a long season." }
+    ]
+  },
+  "carrot": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Scarlet Nantes", "type": "Nantes", "days": 68, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Cylindrical, blunt-tipped, sweet and nearly coreless; the benchmark for fresh eating." },
+      { "name": "Bolero", "type": "Nantes", "days": 75, "tags": ["hybrid", "storage", "disease-resistant", "cold-hardy"],
+        "notes": "Nantes hybrid with leaf-blight resistance and excellent storage; a top pick for fall and overwintered crops." },
+      { "name": "Danvers 126", "type": "Danvers", "days": 75, "tags": ["open-pollinated", "heat-tolerant"],
+        "notes": "Tapered, strong-topped carrot that copes with heavier soil and heat better than most." },
+      { "name": "Chantenay Red Cored", "type": "Chantenay", "days": 70, "tags": ["heirloom", "open-pollinated", "storage"],
+        "notes": "Short, broad-shouldered roots for heavy or shallow soil and deep containers; stores well." },
+      { "name": "Imperator 58", "type": "Imperator", "days": 70, "tags": ["open-pollinated"],
+        "notes": "Long, tapered supermarket shape; needs deep, loose, stone-free soil to size up." },
+      { "name": "Little Finger", "type": "baby", "days": 55, "tags": ["heirloom", "open-pollinated", "container"],
+        "notes": "True baby carrot, 3–4 in. long; quick, sweet, and suited to containers and shallow soil." },
+      { "name": "Paris Market", "type": "round", "days": 68, "tags": ["heirloom", "open-pollinated", "container"],
+        "notes": "Golf-ball-round roots that handle heavy, rocky or shallow soil; good in containers." },
+      { "name": "Cosmic Purple", "type": "specialty", "days": 70, "tags": ["open-pollinated"],
+        "notes": "Purple skin over an orange core; sweet and colorful, best raw or lightly cooked." }
+    ]
+  },
+  "lettuce": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Black-Seeded Simpson", "type": "leaf", "days": 45, "tags": ["heirloom", "open-pollinated", "short-season"],
+        "notes": "Fast, light-green leaf lettuce; the classic early cut-and-come-again crop." },
+      { "name": "Red Sails", "type": "leaf", "days": 50, "tags": ["open-pollinated", "bolt-resistant"],
+        "notes": "All-America winner; bronze-red ruffled leaves that are slow to bolt and slow to turn bitter." },
+      { "name": "Buttercrunch", "type": "butterhead", "days": 55, "tags": ["open-pollinated", "heat-tolerant"],
+        "notes": "All-America butterhead with thick, tender leaves; holds longer in warm weather than most bibbs." },
+      { "name": "Parris Island Cos", "type": "romaine", "days": 65, "tags": ["open-pollinated", "disease-resistant"],
+        "notes": "Standard tall green romaine; crisp, upright, and tolerant of mosaic virus and tipburn." },
+      { "name": "Jericho", "type": "romaine", "days": 60, "tags": ["open-pollinated", "heat-tolerant", "bolt-resistant"],
+        "notes": "Romaine bred in Israel's desert heat; stays sweet and slow to bolt when other lettuces turn bitter." },
+      { "name": "Nevada", "type": "summer crisp", "days": 55, "tags": ["open-pollinated", "heat-tolerant", "bolt-resistant"],
+        "notes": "Batavian with crunchy, juicy leaves; strongly resistant to bolting and tipburn in summer heat." },
+      { "name": "Little Gem", "type": "romaine", "days": 50, "tags": ["heirloom", "open-pollinated", "compact"],
+        "notes": "Miniature romaine, crisp and sweet; fast and tight-spaced, so it fits between cool spells and heat waves." },
+      { "name": "Winter Density", "type": "romaine", "days": 55, "tags": ["heirloom", "open-pollinated", "cold-hardy"],
+        "notes": "Compact romaine-bibb cross that tolerates frost; good for fall, overwintering and early spring sowings." }
+    ]
+  },
+  "kale": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Lacinato", "type": "Tuscan", "days": 60, "tags": ["heirloom", "open-pollinated", "heat-tolerant"],
+        "notes": "Dark blistered strap leaves (dinosaur kale); sweet, holds texture when cooked, and tolerates warm weather well." },
+      { "name": "Red Russian", "type": "Russian", "days": 50, "tags": ["heirloom", "open-pollinated", "cold-hardy"],
+        "notes": "Flat oak-like leaves with purple stems; tender and mild enough for salads, and very frost-hardy." },
+      { "name": "Winterbor", "type": "curly", "days": 60, "tags": ["hybrid", "cold-hardy"],
+        "notes": "Tall, heavily curled blue-green kale; one of the most cold-hardy, for harvest well into winter." },
+      { "name": "Dwarf Blue Curled", "type": "curly", "days": 55, "tags": ["heirloom", "open-pollinated", "cold-hardy", "compact"],
+        "notes": "Low, compact curly kale (often sold as Vates) for small beds and containers; overwinters in many areas." },
+      { "name": "Redbor", "type": "curly", "days": 55, "tags": ["hybrid", "cold-hardy"],
+        "notes": "Deep purple, tightly curled hybrid; as ornamental as it is edible, and sweetens after frost." },
+      { "name": "Siberian", "type": "Siberian", "days": 55, "tags": ["heirloom", "open-pollinated", "cold-hardy"],
+        "notes": "Broad, frilly blue-green leaves on a tough plant; extremely winter-hardy and a strong overwintering kale." },
+      { "name": "Portuguese (Tronchuda)", "type": "tronchuda", "days": 65, "tags": ["heirloom", "open-pollinated", "heat-tolerant"],
+        "notes": "Smooth, cabbage-like leaves with thick white ribs; the caldo verde green, and copes with heat better than most." }
+    ]
+  },
+  "onion": {
+    "basis": "transplant",
+    "varieties": [
+      { "name": "Texas Early Grano 502", "type": "yellow", "days": 110, "tags": ["open-pollinated", "short-day"],
+        "notes": "Sweet, mild yellow short-day onion, the parent of the 1015Y; plant in fall or late winter in the South." },
+      { "name": "Yellow Granex", "type": "yellow", "days": 100, "tags": ["hybrid", "short-day"],
+        "notes": "The Vidalia-type sweet onion: flat, very mild bulbs for short-day regions. A poor keeper, so eat fresh." },
+      { "name": "Red Creole", "type": "red", "days": 110, "tags": ["open-pollinated", "short-day", "storage", "heat-tolerant"],
+        "notes": "Firm, pungent red short-day onion that thrives in hot climates; the best keeper of the short-day group." },
+      { "name": "Red Burgundy", "type": "red", "days": 100, "tags": ["open-pollinated", "short-day"],
+        "notes": "Mild red short-day onion with red-ringed flesh; good raw in salads. Not a long keeper." },
+      { "name": "Candy", "type": "yellow", "days": 85, "tags": ["hybrid", "day-neutral-onion"],
+        "notes": "Sweet, jumbo yellow onion that bulbs across most of the country; the safest pick if unsure of day length." },
+      { "name": "Walla Walla", "type": "yellow", "days": 110, "tags": ["open-pollinated", "long-day", "cold-hardy"],
+        "notes": "Famous jumbo sweet onion for northern gardens; long-day, so it won't bulb in the South. Eat fresh, not a keeper." },
+      { "name": "Yellow Sweet Spanish", "type": "yellow", "days": 110, "tags": ["open-pollinated", "long-day"],
+        "notes": "Large, mild long-day globe for the North; keeps moderately well and is widely sold as plants and seed." }
+    ]
+  },
+  "scallion": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Evergreen Hardy White", "type": "bunching", "days": 65, "tags": ["open-pollinated", "cold-hardy"],
+        "notes": "Perennial clumping bunching onion that survives hard winters and divides itself; cut and it keeps coming." },
+      { "name": "Tokyo Long White", "type": "bunching", "days": 70, "tags": ["open-pollinated"],
+        "notes": "Long, thick white shanks for grilling and cooking; hill soil around stems to blanch them longer." },
+      { "name": "White Lisbon", "type": "bunching", "days": 60, "tags": ["heirloom", "open-pollinated", "short-season"],
+        "notes": "Fast, classic seed-rack scallion with mild white stems; sow every few weeks for a steady supply." },
+      { "name": "Parade", "type": "bunching", "days": 60, "tags": ["open-pollinated"],
+        "notes": "Uniform, upright non-bulbing scallion for tidy bunches; holds without swelling if left in the ground." },
+      { "name": "Deep Purple", "type": "bunching", "days": 60, "tags": ["open-pollinated"],
+        "notes": "Purple-red shanks that keep their color raw; same easy culture as the white types." }
+    ]
+  },
+  "garlic": {
+    "basis": "cloves",
+    "varieties": [
+      { "name": "California Early", "type": "softneck", "days": 230, "tags": ["heat-tolerant", "storage"],
+        "notes": "Mild artichoke softneck that needs little winter chill; a dependable default for mild-winter regions." },
+      { "name": "Inchelium Red", "type": "softneck", "days": 240, "tags": ["heirloom", "storage"],
+        "notes": "Large, mild artichoke softneck that stores well; widely adapted from cold to fairly mild winters." },
+      { "name": "Silverskin", "type": "softneck", "days": 250, "tags": ["storage"],
+        "notes": "Longest-storing garlic (up to a year) and the classic braiding type; strong flavor and suited to mild winters." },
+      { "name": "Music", "type": "hardneck", "days": 240, "tags": ["cold-hardy", "storage"],
+        "notes": "Porcelain hardneck with big cloves and scapes; needs real winter cold and is unreliable where winters are mild." },
+      { "name": "German Extra Hardy", "type": "hardneck", "days": 240, "tags": ["cold-hardy", "storage"],
+        "notes": "Very winter-hardy porcelain with few, large, strong-flavored cloves; a top choice for the coldest zones." },
+      { "name": "Chesnok Red", "type": "hardneck", "days": 240, "tags": ["heirloom", "cold-hardy"],
+        "notes": "Purple-stripe hardneck that keeps its rich flavor when baked; best where winters are cold." },
+      { "name": "Creole Red", "type": "creole", "days": 230, "tags": ["heat-tolerant", "storage"],
+        "notes": "Low-chill Creole with rose-purple cloves and excellent storage; one of the best for the South and Southwest." },
+      { "name": "Elephant Garlic", "type": "leek", "days": 240, "tags": [],
+        "notes": "A leek relative, not true garlic: huge, very mild cloves. Undemanding about winter chill." }
+    ]
+  },
+  "potato": {
+    "basis": "tubers",
+    "varieties": [
+      { "name": "Dark Red Norland", "type": "red", "days": 80, "tags": ["short-season", "disease-resistant"],
+        "notes": "Early red-skinned, white-fleshed potato; great for new potatoes and short northern seasons." },
+      { "name": "Yukon Gold", "type": "yellow", "days": 85, "tags": ["short-season", "storage"],
+        "notes": "All-purpose buttery yellow flesh; early-mid season, good for new potatoes and stores well." },
+      { "name": "Red LaSoda", "type": "red", "days": 90, "tags": ["heat-tolerant"],
+        "notes": "Red potato bred for the South; the most reliable red for a warm-climate spring crop." },
+      { "name": "Red Pontiac", "type": "red", "days": 95, "tags": ["storage"],
+        "notes": "Vigorous red-skinned potato that adapts to many soils and stores well; good in containers." },
+      { "name": "Kennebec", "type": "white", "days": 100, "tags": ["storage", "disease-resistant"],
+        "notes": "Big white all-purpose tubers, disease-tolerant and forgiving; excellent for fries and chips." },
+      { "name": "All Blue", "type": "purple", "days": 100, "tags": ["heirloom", "storage"],
+        "notes": "Blue skin and flesh that holds color when cooked; moist texture best for salads and roasting." },
+      { "name": "Russian Banana", "type": "fingerling", "days": 105, "tags": ["heirloom"],
+        "notes": "Yellow fingerling with firm, waxy flesh; superb roasted or in salads, not for mashing." },
+      { "name": "Russet Burbank", "type": "russet", "days": 115, "tags": ["storage"],
+        "notes": "The classic late baking potato with floury flesh; needs a long season and even moisture to size up." }
+    ]
+  },
+  "radish": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Cherry Belle", "type": "round", "days": 24, "tags": ["open-pollinated", "short-season"],
+        "notes": "Round bright-red salad radish; fast, mild and crisp. The classic quick crop." },
+      { "name": "French Breakfast", "type": "oblong", "days": 25, "tags": ["heirloom", "open-pollinated", "short-season"],
+        "notes": "Oblong red radish with a white tip; mild and tender. Pick promptly, as it turns pithy fast in warm weather." },
+      { "name": "Champion", "type": "round", "days": 28, "tags": ["open-pollinated"],
+        "notes": "Larger round red radish that stays crisp and mild past the size where smaller types go pithy." },
+      { "name": "White Icicle", "type": "long", "days": 30, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Long white tapered root; crisp, slightly hotter, and holds a little better into warm weather." },
+      { "name": "Watermelon", "type": "winter", "days": 60, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Green-skinned with bright pink flesh; mild and sweet. Best sown for a fall crop in cooling weather." },
+      { "name": "Minowase", "type": "daikon", "days": 55, "tags": ["open-pollinated"],
+        "notes": "Long white Japanese daikon for pickling and braising; sow in late summer, as it bolts in warming spring weather." },
+      { "name": "Black Spanish Round", "type": "winter", "days": 60, "tags": ["heirloom", "open-pollinated", "storage", "cold-hardy"],
+        "notes": "Black-skinned, white-fleshed winter radish; pungent and stores for months. Sow for fall." },
+      { "name": "Rat-Tail", "type": "pod", "days": 50, "tags": ["heirloom", "open-pollinated", "heat-tolerant"],
+        "notes": "Grown for crisp, spicy edible seed pods rather than roots; thrives in summer heat that ruins other radishes." }
+    ]
+  },
+  "spinach": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Bloomsdale Long Standing", "type": "savoy", "days": 45, "tags": ["heirloom", "open-pollinated", "bolt-resistant"],
+        "notes": "Crinkled dark-green savoy; the classic, and slower to bolt than most open-pollinated spinach." },
+      { "name": "Winter Bloomsdale", "type": "savoy", "days": 45, "tags": ["open-pollinated", "cold-hardy"],
+        "notes": "Very cold-hardy savoy for fall sowing and overwintering under mulch; gives an early spring crop." },
+      { "name": "Space", "type": "smooth", "days": 40, "tags": ["hybrid", "disease-resistant"],
+        "notes": "Smooth-leaf hybrid; fast, upright and easy to wash, with downy-mildew resistance. Good for baby leaf." },
+      { "name": "Tyee", "type": "semi-savoy", "days": 40, "tags": ["hybrid", "bolt-resistant", "disease-resistant"],
+        "notes": "Upright semi-savoy with strong bolt resistance; the safest pick for a late spring sowing." },
+      { "name": "New Zealand Spinach", "type": "summer substitute", "days": 60, "tags": ["open-pollinated", "heat-tolerant"],
+        "notes": "Not a true spinach, but crops all summer when real spinach bolts; the practical hot-season stand-in." },
+      { "name": "Malabar Spinach", "type": "summer substitute", "days": 70, "tags": ["open-pollinated", "heat-tolerant"],
+        "notes": "Climbing tropical vine with thick, succulent leaves that thrives in heat; best cooked in stir-fries and soups." }
+    ]
+  },
+  "pea": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Sugar Snap", "type": "snap", "days": 65, "tags": ["open-pollinated"],
+        "notes": "All-America winner; plump, sweet edible pods eaten whole. Tall climber that needs a 6 ft trellis." },
+      { "name": "Sugar Ann", "type": "snap", "days": 52, "tags": ["open-pollinated", "short-season", "compact", "container"],
+        "notes": "Dwarf 2 ft snap pea and the earliest of all; needs little or no support, so it suits containers." },
+      { "name": "Oregon Sugar Pod II", "type": "snow", "days": 60, "tags": ["open-pollinated", "disease-resistant"],
+        "notes": "Flat, tender snow-pea pods on semi-dwarf vines; resists powdery mildew and enation virus." },
+      { "name": "Mammoth Melting Sugar", "type": "snow", "days": 70, "tags": ["heirloom", "open-pollinated", "heat-tolerant"],
+        "notes": "Large, tender snow pods on tall vines; the classic stir-fry pea and more forgiving of warm spells than most." },
+      { "name": "Green Arrow", "type": "shelling", "days": 68, "tags": ["open-pollinated", "disease-resistant"],
+        "notes": "Heavy-yielding English shelling pea with slim pods of 8–11 peas, mostly in pairs; easy to pick." },
+      { "name": "Little Marvel", "type": "shelling", "days": 60, "tags": ["heirloom", "open-pollinated", "short-season", "compact"],
+        "notes": "Compact, early dwarf shelling pea with sweet peas; needs little support." },
+      { "name": "Wando", "type": "shelling", "days": 68, "tags": ["open-pollinated", "heat-tolerant", "cold-hardy"],
+        "notes": "Tolerates both cold and early heat better than other shelling peas; good for late spring or fall sowings." },
+      { "name": "Tom Thumb", "type": "shelling", "days": 55, "tags": ["heirloom", "open-pollinated", "container", "compact", "cold-hardy"],
+        "notes": "Tiny 8–9 in. heirloom for pots and window boxes; frost-tolerant and genuinely productive." }
+    ]
+  },
+  "cilantro": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Calypso", "type": "leaf", "days": 53, "tags": ["open-pollinated", "bolt-resistant"],
+        "notes": "One of the slowest-bolting cilantros, with compact, leafy plants; best for stretching harvest into warm weather." },
+      { "name": "Santo", "type": "leaf", "days": 53, "tags": ["open-pollinated", "bolt-resistant"],
+        "notes": "Widely available slow-bolting standard; leafy and dependable for spring and fall sowings." },
+      { "name": "Leisure", "type": "leaf", "days": 53, "tags": ["open-pollinated", "bolt-resistant"],
+        "notes": "Slow-bolting with lush, finely cut leaves; a reliable choice for repeated cuttings." },
+      { "name": "Cruiser", "type": "leaf", "days": 53, "tags": ["open-pollinated", "bolt-resistant"],
+        "notes": "Upright, thick-stemmed and uniform plants that are easy to cut in bunches; slow to bolt." }
+    ]
+  },
+  "dill": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Bouquet", "type": "seed", "days": 43, "tags": ["open-pollinated", "short-season"],
+        "notes": "Classic pickling dill with big early flower heads; quick to leaf, but grow it mainly for seed and heads." },
+      { "name": "Fernleaf", "type": "leaf", "days": 58, "tags": ["open-pollinated", "compact", "container", "bolt-resistant"],
+        "notes": "All-America winner; compact 18 in. plants slow to bolt. The best dill for containers and leaf harvest." },
+      { "name": "Mammoth Long Island", "type": "seed", "days": 70, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Tall 4–5 ft heirloom grown for heavy seed heads; the traditional dill-pickle variety." },
+      { "name": "Dukat", "type": "leaf", "days": 60, "tags": ["open-pollinated", "bolt-resistant"],
+        "notes": "Sweet, extra-leafy dill that holds its foliage longer before flowering; good for repeated leaf cuts." }
+    ]
+  },
+  "parsley": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Italian Flat Leaf", "type": "flat-leaf", "days": 75, "tags": ["heirloom", "open-pollinated"],
+        "notes": "The cooking parsley: stronger flavor and easier to chop than curly. The default choice." },
+      { "name": "Giant of Italy", "type": "flat-leaf", "days": 80, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Tall, thick-stemmed flat-leaf with the biggest leaves and heaviest yield per plant." },
+      { "name": "Moss Curled", "type": "curly", "days": 75, "tags": ["heirloom", "open-pollinated", "cold-hardy"],
+        "notes": "Tightly ruffled garnish parsley; sturdy, frost-tolerant and tidy in borders and containers." },
+      { "name": "Forest Green", "type": "curly", "days": 75, "tags": ["open-pollinated"],
+        "notes": "Vigorous dark curly type on long stems that stays presentable through a long cutting season." },
+      { "name": "Hamburg Rooted", "type": "root", "days": 90, "tags": ["heirloom", "open-pollinated", "cold-hardy"],
+        "notes": "Grown for its parsnip-like white root as much as its leaves; a winter soup vegetable. Direct-sow only." }
+    ]
+  },
+  "basil": {
+    "basis": "sow",
+    "varieties": [
+      { "name": "Genovese", "type": "sweet", "days": 68, "tags": ["heirloom", "open-pollinated"],
+        "notes": "Classic large-leaf Italian pesto basil; susceptible to downy mildew in humid summers." },
+      { "name": "Prospera", "type": "sweet", "days": 68, "tags": ["hybrid", "disease-resistant"],
+        "notes": "Genovese-type bred for downy-mildew resistance; the pick where basil collapses to mildew in humid late summer." },
+      { "name": "Italian Large Leaf", "type": "sweet", "days": 74, "tags": ["open-pollinated"],
+        "notes": "Big, soft leaves, sweeter and less clove-like than Genovese; the other standard pesto basil." },
+      { "name": "Sweet Thai", "type": "Thai", "days": 64, "tags": ["open-pollinated", "heat-tolerant"],
+        "notes": "Anise-scented leaves on purple stems; holds up in heat and is slower to go woody than sweet basil." },
+      { "name": "Mrs. Burns' Lemon", "type": "lemon", "days": 60, "tags": ["heirloom", "open-pollinated", "heat-tolerant"],
+        "notes": "Intensely lemon-scented basil from the Southwest; vigorous in heat. Great for fish, salads and tea." },
+      { "name": "Dark Opal", "type": "purple", "days": 70, "tags": ["open-pollinated"],
+        "notes": "Deep purple leaves with a milder, clove-like flavor; colors vinegars and oils and doubles as an ornamental." },
+      { "name": "Cinnamon", "type": "specialty", "days": 65, "tags": ["open-pollinated"],
+        "notes": "Spicy cinnamon scent over sweet basil, with purple stems and flowers; good in fruit salads and desserts." },
+      { "name": "Holy Basil (Tulsi)", "type": "holy", "days": 60, "tags": ["open-pollinated", "heat-tolerant"],
+        "notes": "A different species: musky, peppery and clove-heavy; the basil for tea and pad kra pao. Thrives in heat." }
+    ]
+  },
+  "rosemary": {
+    "varieties": [
+      { "name": "Tuscan Blue", "type": "upright", "years": "1", "ripens": "year-round", "chill": null, "tags": [],
+        "notes": "Fast, tall upright rosemary with broad, flavorful leaves on straight stems; the best for cooking and skewers." },
+      { "name": "Arp", "type": "upright", "years": "1", "ripens": "year-round", "chill": null, "zones": [6, 10], "tags": ["cold-hardy"],
+        "notes": "One of the most cold-hardy rosemaries, with an open, gray-green habit; the pick where winters are borderline." },
+      { "name": "Madeline Hill", "type": "upright", "years": "1", "ripens": "year-round", "chill": null, "zones": [6, 10], "tags": ["cold-hardy"],
+        "notes": "Also sold as 'Hill Hardy'; good flavor and among the hardiest rosemaries for overwintering in the ground." },
+      { "name": "Blue Spires", "type": "upright", "years": "1", "ripens": "year-round", "chill": null, "tags": [],
+        "notes": "Dense, very upright plant with heavy blue bloom; makes a tidy edible hedge in mild climates." },
+      { "name": "Prostrate", "type": "trailing", "years": "1", "ripens": "year-round", "chill": null, "tags": ["container"],
+        "notes": "Trailing form that spills over walls, raised beds and pots; milder flavor and less cold-hardy than uprights." }
+    ]
+  },
+  "thyme": {
+    "varieties": [
+      { "name": "English Thyme", "type": "culinary", "years": "1", "ripens": "year-round", "chill": null, "tags": ["cold-hardy"],
+        "notes": "Broad-leaf kitchen standard; sturdy, productive and the easiest for cutting sprigs." },
+      { "name": "French Thyme", "type": "culinary", "years": "1", "ripens": "year-round", "chill": null, "tags": [],
+        "notes": "Narrow gray leaves, sweeter and more refined than English; slightly less cold-hardy. The bouquet-garni thyme." },
+      { "name": "German Winter", "type": "culinary", "years": "1", "ripens": "year-round", "chill": null, "tags": ["cold-hardy"],
+        "notes": "The toughest culinary thyme: dense, very winter-hardy and quick to rebound after a hard cut." },
+      { "name": "Lemon Thyme", "type": "lemon", "years": "1", "ripens": "year-round", "chill": null, "tags": [],
+        "notes": "True lemon scent over thyme, great with chicken and fish; variegated forms are common and just as usable." },
+      { "name": "Creeping Thyme", "type": "groundcover", "years": "1", "ripens": "year-round", "chill": null, "tags": ["cold-hardy"],
+        "notes": "Flat, flowering mat for paths and between stepping stones; edible but mild. Grow for groundcover, not the kitchen." }
+    ]
+  },
+  "mint": {
+    "varieties": [
+      { "name": "Spearmint", "type": "spearmint", "years": "1", "ripens": "everbearing", "chill": null, "tags": ["cold-hardy"],
+        "notes": "The cooking and mojito mint: sweet with low menthol. If a recipe just says 'mint', this is it." },
+      { "name": "Peppermint", "type": "peppermint", "years": "1", "ripens": "everbearing", "chill": null, "tags": ["cold-hardy"],
+        "notes": "Sharp, cooling menthol; the tea and candy mint, usually too strong for savory dishes." },
+      { "name": "Kentucky Colonel", "type": "spearmint", "years": "1", "ripens": "everbearing", "chill": null, "tags": ["cold-hardy"],
+        "notes": "Large-leaved, heavy-yielding spearmint; the classic julep mint and easy to pick by the handful." },
+      { "name": "Moroccan", "type": "spearmint", "years": "1", "ripens": "everbearing", "chill": null, "tags": [],
+        "notes": "Upright spearmint with clean, intensely sweet flavor; the classic for mint tea." },
+      { "name": "Chocolate Mint", "type": "peppermint", "years": "1", "ripens": "everbearing", "chill": null, "tags": [],
+        "notes": "Peppermint with a cocoa-like note and dark stems; good in desserts and after-dinner tea." },
+      { "name": "Apple Mint", "type": "apple", "years": "1", "ripens": "everbearing", "chill": null, "tags": ["heat-tolerant"],
+        "notes": "Fuzzy round leaves with a soft fruity flavor and little menthol; handles heat and part shade well." }
+    ]
+  }
+}

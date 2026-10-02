@@ -1,0 +1,1628 @@
+{
+ "artichoke": {
+  "varieties": [
+   {
+    "name": "Green Globe",
+    "type": "globe",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "open-pollinated"
+    ],
+    "notes": "The classic perennial globe artichoke; big green buds for years where winters are mild."
+   },
+   {
+    "name": "Imperial Star",
+    "type": "annual globe",
+    "years": "1",
+    "ripens": "early",
+    "chill": null,
+    "tags": [
+     "short-season"
+    ],
+    "notes": "Bred to bud the first year from seed, so it can be grown as an annual where winters are too cold."
+   },
+   {
+    "name": "Violetto",
+    "type": "purple",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "heirloom"
+    ],
+    "notes": "Italian purple artichoke with smaller, elongated buds; tender and good for frying whole."
+   },
+   {
+    "name": "Colorado Star",
+    "type": "purple annual",
+    "years": "1",
+    "ripens": "early",
+    "chill": null,
+    "tags": [
+     "short-season"
+    ],
+    "notes": "Purple-budded variety that buds in its first year, so it works as an annual in cold-winter areas."
+   },
+   {
+    "name": "Big Heart",
+    "type": "globe",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "thornless"
+    ],
+    "notes": "Spineless plant with very large, round buds; easier to handle than spiny types."
+   }
+  ]
+ },
+ "asparagus": {
+  "varieties": [
+   {
+    "name": "Jersey Knight",
+    "type": "green",
+    "years": "2–3",
+    "ripens": "mid",
+    "tags": [
+     "hybrid",
+     "disease-resistant"
+    ],
+    "notes": "All-male hybrid with thick spears; vigorous and resistant to rust and fusarium. Widely adapted."
+   },
+   {
+    "name": "Jersey Giant",
+    "type": "green",
+    "years": "2–3",
+    "ripens": "early",
+    "tags": [
+     "hybrid",
+     "disease-resistant",
+     "cold-hardy"
+    ],
+    "notes": "All-male hybrid with heavy yields and good rust resistance; a cold-tolerant standard."
+   },
+   {
+    "name": "Jersey Supreme",
+    "type": "green",
+    "years": "2–3",
+    "ripens": "early",
+    "tags": [
+     "hybrid",
+     "disease-resistant"
+    ],
+    "notes": "All-male hybrid that spears early and adapts to both cold and warmer climates."
+   },
+   {
+    "name": "Millennium",
+    "type": "green",
+    "years": "2–3",
+    "ripens": "late",
+    "zones": [
+     3,
+     8
+    ],
+    "tags": [
+     "cold-hardy",
+     "hybrid"
+    ],
+    "notes": "Canadian all-male type bred for cold, short-season climates; long-lived and very productive."
+   },
+   {
+    "name": "UC 157",
+    "type": "green",
+    "years": "2–3",
+    "ripens": "early",
+    "tags": [
+     "hybrid",
+     "heat-tolerant"
+    ],
+    "notes": "California hybrid bred for mild winters and heat; the top choice where winters are warm."
+   },
+   {
+    "name": "Purple Passion",
+    "type": "purple",
+    "years": "2–3",
+    "ripens": "mid",
+    "tags": [
+     "open-pollinated"
+    ],
+    "notes": "Sweet purple spears that are tender enough to eat raw; turns green when cooked."
+   },
+   {
+    "name": "Mary Washington",
+    "type": "green",
+    "years": "2–3",
+    "ripens": "mid",
+    "tags": [
+     "heirloom",
+     "open-pollinated"
+    ],
+    "notes": "Old open-pollinated standard with rust resistance; cheaper crowns but lower yields than all-male hybrids."
+   }
+  ]
+ },
+ "rhubarb": {
+  "varieties": [
+   {
+    "name": "Canada Red",
+    "type": "red",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Red-stalked variety that stays red when cooked; sweet and tender, with few seed stalks."
+   },
+   {
+    "name": "Victoria",
+    "type": "green",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "heirloom"
+    ],
+    "notes": "Old reliable variety with green stalks blushed red; vigorous and heavy-yielding, often grown from seed."
+   },
+   {
+    "name": "Crimson Red",
+    "type": "red",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Bright red stalks with tart, full flavor; a popular red variety sold as crowns."
+   },
+   {
+    "name": "Valentine",
+    "type": "red",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Deep red, thick stalks that keep their color when cooked; good for sauces and pies."
+   },
+   {
+    "name": "Glaskins Perpetual",
+    "type": "green-red",
+    "years": "1–2",
+    "ripens": "everbearing",
+    "tags": [
+     "heat-tolerant"
+    ],
+    "notes": "Seed-grown type that can be picked lightly in year one and over a longer season; copes with warmer summers."
+   }
+  ]
+ },
+ "horseradish": {
+  "varieties": [
+   {
+    "name": "Maliner Kren",
+    "type": "Bohemian",
+    "years": "1",
+    "ripens": "late",
+    "chill": null,
+    "notes": "Classic Bohemian horseradish with large, white, very pungent roots; the type most nurseries sell."
+   },
+   {
+    "name": "Bohemian",
+    "type": "Bohemian",
+    "years": "1",
+    "ripens": "late",
+    "chill": null,
+    "notes": "General strain sold under this name; vigorous with smooth, hot roots. Few named varieties exist."
+   },
+   {
+    "name": "Variegata",
+    "type": "variegated",
+    "years": "1",
+    "ripens": "late",
+    "chill": null,
+    "notes": "Ornamental cream-splashed leaves on a plant with usable roots; less aggressive spreader."
+   }
+  ]
+ },
+ "sunchoke": {
+  "varieties": [
+   {
+    "name": "Stampede",
+    "type": "white",
+    "years": "1",
+    "ripens": "early",
+    "chill": null,
+    "tags": [
+     "short-season"
+    ],
+    "notes": "Matures early with large, knobby tubers; the best pick where summers are short."
+   },
+   {
+    "name": "Fuseau",
+    "type": "white",
+    "years": "1",
+    "ripens": "late",
+    "chill": null,
+    "notes": "Long, smooth, spindle-shaped tubers that are much easier to clean and peel."
+   },
+   {
+    "name": "Red Fuseau",
+    "type": "red",
+    "years": "1",
+    "ripens": "late",
+    "chill": null,
+    "notes": "Smooth, elongated tubers with rosy skin; easy to scrub and attractive on the plate."
+   },
+   {
+    "name": "Clearwater",
+    "type": "white",
+    "years": "1",
+    "ripens": "mid",
+    "chill": null,
+    "notes": "White, fairly smooth, rounded tubers on shorter plants; flowers less, so energy goes to tubers."
+   }
+  ]
+ },
+ "strawberry": {
+  "varieties": [
+   {
+    "name": "Albion",
+    "type": "day-neutral",
+    "years": "1",
+    "ripens": "everbearing",
+    "tags": [
+     "day-neutral",
+     "disease-resistant"
+    ],
+    "notes": "Large, firm, sweet berries from spring to fall; handles heat better than most."
+   },
+   {
+    "name": "Seascape",
+    "type": "day-neutral",
+    "years": "1",
+    "ripens": "everbearing",
+    "tags": [
+     "day-neutral"
+    ],
+    "notes": "Reliable day-neutral that fruits all season, even on first-year plants; widely adapted."
+   },
+   {
+    "name": "San Andreas",
+    "type": "day-neutral",
+    "years": "1",
+    "ripens": "everbearing",
+    "tags": [
+     "day-neutral",
+     "disease-resistant"
+    ],
+    "notes": "Sweet, firm berries over a long season with good disease resistance; Albion's sibling."
+   },
+   {
+    "name": "Tristar",
+    "type": "day-neutral",
+    "years": "1",
+    "ripens": "everbearing",
+    "tags": [
+     "day-neutral",
+     "cold-hardy",
+     "disease-resistant"
+    ],
+    "notes": "Small, very sweet berries all summer from a hardy plant; a good everbearer where winters are cold."
+   },
+   {
+    "name": "Chandler",
+    "type": "june-bearing",
+    "years": "1",
+    "ripens": "early",
+    "tags": [
+     "june-bearing",
+     "heat-tolerant"
+    ],
+    "notes": "Large, flavorful berries; plant in fall in mild-winter regions for a big spring crop."
+   },
+   {
+    "name": "Sweet Charlie",
+    "type": "june-bearing",
+    "years": "1",
+    "ripens": "early",
+    "tags": [
+     "june-bearing",
+     "heat-tolerant",
+     "disease-resistant"
+    ],
+    "notes": "Very early, sweet berries bred in Florida for warm climates and fall planting."
+   },
+   {
+    "name": "Earliglow",
+    "type": "june-bearing",
+    "years": "1",
+    "ripens": "early",
+    "tags": [
+     "june-bearing",
+     "disease-resistant"
+    ],
+    "notes": "One of the earliest and best-flavored June-bearers, with strong disease resistance."
+   },
+   {
+    "name": "Honeoye",
+    "type": "june-bearing",
+    "years": "1",
+    "ripens": "early",
+    "tags": [
+     "june-bearing",
+     "cold-hardy"
+    ],
+    "notes": "Heavy crops of bright, tart-sweet berries on a very hardy plant; a cold-climate favorite."
+   },
+   {
+    "name": "Allstar",
+    "type": "june-bearing",
+    "years": "1",
+    "ripens": "mid",
+    "tags": [
+     "june-bearing",
+     "disease-resistant"
+    ],
+    "notes": "Large, light-red, mild berries on a vigorous, disease-resistant plant; widely adapted."
+   },
+   {
+    "name": "Jewel",
+    "type": "june-bearing",
+    "years": "1",
+    "ripens": "mid",
+    "tags": [
+     "june-bearing"
+    ],
+    "notes": "Large, glossy, firm berries with excellent flavor; a top choice for freezing and fresh eating."
+   },
+   {
+    "name": "Sparkle",
+    "type": "june-bearing",
+    "years": "1",
+    "ripens": "late",
+    "tags": [
+     "june-bearing",
+     "cold-hardy"
+    ],
+    "notes": "Old favorite with soft, intensely flavored berries for jam; very hardy."
+   },
+   {
+    "name": "Ozark Beauty",
+    "type": "everbearing",
+    "years": "1",
+    "ripens": "everbearing",
+    "tags": [
+     "everbearing",
+     "cold-hardy"
+    ],
+    "notes": "Classic everbearer: a June crop and a smaller late-summer crop of large, sweet berries."
+   }
+  ]
+ },
+ "blueberry": {
+  "varieties": [
+   {
+    "name": "Sunshine Blue",
+    "type": "southern highbush",
+    "years": "2",
+    "ripens": "mid",
+    "chill": 150,
+    "tags": [
+     "low-chill",
+     "self-fertile",
+     "compact",
+     "container"
+    ],
+    "notes": "Compact, evergreen-ish and self-fertile; one of the lowest-chill blueberries and great in containers."
+   },
+   {
+    "name": "Misty",
+    "type": "southern highbush",
+    "years": "2",
+    "ripens": "early",
+    "chill": 300,
+    "tags": [
+     "low-chill",
+     "needs-pollinizer"
+    ],
+    "notes": "Low-chill, vigorous bush for mild winters; plant a second southern highbush for best crops."
+   },
+   {
+    "name": "Emerald",
+    "type": "southern highbush",
+    "years": "2",
+    "ripens": "early",
+    "chill": 250,
+    "tags": [
+     "low-chill",
+     "needs-pollinizer"
+    ],
+    "notes": "Very large, firm berries on a vigorous low-chill bush; plant two varieties for best set."
+   },
+   {
+    "name": "O'Neal",
+    "type": "southern highbush",
+    "years": "2",
+    "ripens": "early",
+    "chill": 400,
+    "tags": [
+     "low-chill",
+     "needs-pollinizer"
+    ],
+    "notes": "Big, high-quality early berries; a standard in warm climates. Plant two varieties for heavier crops."
+   },
+   {
+    "name": "Climax",
+    "type": "rabbiteye",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 450,
+    "tags": [
+     "low-chill",
+     "needs-pollinizer",
+     "heat-tolerant"
+    ],
+    "notes": "Early rabbiteye that ripens its crop in a short window; plant with another rabbiteye."
+   },
+   {
+    "name": "Premier",
+    "type": "rabbiteye",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 550,
+    "tags": [
+     "needs-pollinizer",
+     "heat-tolerant"
+    ],
+    "notes": "Large, flavorful early rabbiteye; needs a second rabbiteye blooming at the same time."
+   },
+   {
+    "name": "Brightwell",
+    "type": "rabbiteye",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": 400,
+    "tags": [
+     "low-chill",
+     "needs-pollinizer",
+     "heat-tolerant"
+    ],
+    "notes": "Productive, upright rabbiteye that blooms late enough to dodge frosts; plant two varieties."
+   },
+   {
+    "name": "Powderblue",
+    "type": "rabbiteye",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": 600,
+    "tags": [
+     "needs-pollinizer",
+     "heat-tolerant",
+     "disease-resistant"
+    ],
+    "notes": "Vigorous, disease-resistant late rabbiteye with crack-resistant berries; needs a partner."
+   },
+   {
+    "name": "Tifblue",
+    "type": "rabbiteye",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": 650,
+    "tags": [
+     "needs-pollinizer",
+     "heat-tolerant"
+    ],
+    "notes": "The most productive rabbiteye and the standard others are judged by; pair with Powderblue."
+   },
+   {
+    "name": "Duke",
+    "type": "northern highbush",
+    "years": "2",
+    "ripens": "early",
+    "chill": 800,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Heavy, reliable early crop of firm, mild berries; blooms late, so it dodges spring frosts."
+   },
+   {
+    "name": "Bluecrop",
+    "type": "northern highbush",
+    "years": "2",
+    "ripens": "mid",
+    "chill": 800,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "The most widely grown highbush: dependable yields of firm, light-blue berries."
+   },
+   {
+    "name": "Patriot",
+    "type": "northern highbush",
+    "years": "2",
+    "ripens": "early",
+    "chill": 1000,
+    "zones": [
+     3,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "self-fertile"
+    ],
+    "notes": "Very cold-hardy with large berries and tolerance of wet soils; good for zone 3–4 gardens."
+   },
+   {
+    "name": "Northblue",
+    "type": "half-high",
+    "years": "2",
+    "ripens": "mid",
+    "chill": 800,
+    "zones": [
+     3,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "compact",
+     "container"
+    ],
+    "notes": "Knee-high half-high bred in Minnesota; survives deep cold under snow and fits containers."
+   },
+   {
+    "name": "Chippewa",
+    "type": "half-high",
+    "years": "2",
+    "ripens": "mid",
+    "chill": 1000,
+    "zones": [
+     3,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "compact",
+     "container"
+    ],
+    "notes": "Compact half-high with sweet, large berries; one of the hardiest for zone 3 gardens."
+   }
+  ]
+ },
+ "blackberry": {
+  "varieties": [
+   {
+    "name": "Kiowa",
+    "type": "thorny erect",
+    "years": "2",
+    "ripens": "mid",
+    "chill": 200,
+    "tags": [
+     "low-chill",
+     "heat-tolerant"
+    ],
+    "notes": "Huge berries on thorny canes; the lowest-chill Arkansas blackberry, suited to hot, mild-winter areas."
+   },
+   {
+    "name": "Ouachita",
+    "type": "thornless erect",
+    "years": "2",
+    "ripens": "mid",
+    "chill": 300,
+    "tags": [
+     "thornless",
+     "low-chill"
+    ],
+    "notes": "Thornless, upright canes with sweet, firm berries; low chill and widely adapted from the South north."
+   },
+   {
+    "name": "Natchez",
+    "type": "thornless erect",
+    "years": "2",
+    "ripens": "early",
+    "chill": 400,
+    "tags": [
+     "thornless",
+     "low-chill"
+    ],
+    "notes": "Early, very large, long berries on thornless canes; good in warm climates."
+   },
+   {
+    "name": "Arapaho",
+    "type": "thornless erect",
+    "years": "2",
+    "ripens": "early",
+    "chill": 500,
+    "tags": [
+     "thornless",
+     "disease-resistant"
+    ],
+    "notes": "Early, firm, small-seeded berries on upright thornless canes; good disease resistance."
+   },
+   {
+    "name": "Navaho",
+    "type": "thornless erect",
+    "years": "2",
+    "ripens": "late",
+    "chill": 800,
+    "tags": [
+     "thornless",
+     "high-chill"
+    ],
+    "notes": "Very sweet, firm berries over a long season on upright thornless canes; needs a cold winter."
+   },
+   {
+    "name": "Triple Crown",
+    "type": "thornless semi-erect",
+    "years": "2",
+    "ripens": "late",
+    "chill": 800,
+    "tags": [
+     "thornless",
+     "high-chill"
+    ],
+    "notes": "Huge yields of large, sweet berries on vigorous semi-trailing canes; needs a trellis."
+   },
+   {
+    "name": "Prime-Ark Freedom",
+    "type": "primocane thornless",
+    "years": "1",
+    "ripens": "everbearing",
+    "tags": [
+     "thornless",
+     "everbearing"
+    ],
+    "notes": "First thornless primocane blackberry: fruits on first-year canes in late summer as well as on old canes."
+   }
+  ]
+ },
+ "raspberry": {
+  "varieties": [
+   {
+    "name": "Heritage",
+    "type": "primocane red",
+    "years": "1",
+    "ripens": "everbearing",
+    "chill": 400,
+    "tags": [
+     "everbearing",
+     "self-fertile"
+    ],
+    "notes": "The classic fall-bearing red: mow canes each winter for a big late-summer crop. Widely adapted."
+   },
+   {
+    "name": "Caroline",
+    "type": "primocane red",
+    "years": "1",
+    "ripens": "everbearing",
+    "tags": [
+     "everbearing",
+     "disease-resistant"
+    ],
+    "notes": "Fall-bearer with bigger, more flavorful berries than Heritage and an earlier start."
+   },
+   {
+    "name": "Anne",
+    "type": "primocane yellow",
+    "years": "1",
+    "ripens": "everbearing",
+    "tags": [
+     "everbearing"
+    ],
+    "notes": "Pale golden, very sweet fall raspberries; a dessert favorite."
+   },
+   {
+    "name": "Bababerry",
+    "type": "primocane red",
+    "years": "1",
+    "ripens": "everbearing",
+    "tags": [
+     "everbearing",
+     "low-chill",
+     "heat-tolerant"
+    ],
+    "notes": "Southern California selection with very low chill needs; one of few raspberries for hot, mild-winter areas."
+   },
+   {
+    "name": "Dorman Red",
+    "type": "floricane red",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "heat-tolerant",
+     "low-chill"
+    ],
+    "notes": "Heat-tolerant trailing raspberry for the Southeast; mild flavor but reliable where others fail."
+   },
+   {
+    "name": "Boyne",
+    "type": "floricane red",
+    "years": "2",
+    "ripens": "early",
+    "zones": [
+     3,
+     7
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Very hardy summer-bearer with sweet, dark red berries; great for zone 3 gardens."
+   },
+   {
+    "name": "Latham",
+    "type": "floricane red",
+    "years": "2",
+    "ripens": "mid",
+    "zones": [
+     3,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "heirloom"
+    ],
+    "notes": "Old, very hardy summer-bearer with good yields and some virus resistance."
+   },
+   {
+    "name": "Jewel",
+    "type": "floricane black",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "disease-resistant"
+    ],
+    "notes": "Productive, disease-resistant black raspberry with glossy, rich-flavored fruit."
+   },
+   {
+    "name": "Raspberry Shortcake",
+    "type": "floricane red",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "thornless",
+     "compact",
+     "container"
+    ],
+    "notes": "Thornless dwarf bush (2–3 ft) for containers and patios; sweet summer berries."
+   }
+  ]
+ },
+ "grape": {
+  "varieties": [
+   {
+    "name": "Concord",
+    "type": "american",
+    "years": "2–3",
+    "ripens": "late",
+    "tags": [
+     "cold-hardy",
+     "self-fertile"
+    ],
+    "notes": "The classic blue-black juice and jelly grape; hardy and tolerant of humid summers."
+   },
+   {
+    "name": "Marquette",
+    "type": "cold-hardy hybrid",
+    "years": "2–3",
+    "ripens": "mid",
+    "zones": [
+     3,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "self-fertile"
+    ],
+    "notes": "Minnesota wine grape hardy to about -30°F; the best red wine grape for very cold areas."
+   },
+   {
+    "name": "Frontenac",
+    "type": "cold-hardy hybrid",
+    "years": "2–3",
+    "ripens": "mid",
+    "zones": [
+     3,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "disease-resistant",
+     "self-fertile"
+    ],
+    "notes": "Extremely hardy, disease-resistant wine and jelly grape for zone 3–4 gardens."
+   },
+   {
+    "name": "Somerset Seedless",
+    "type": "cold-hardy hybrid",
+    "years": "2–3",
+    "ripens": "early",
+    "zones": [
+     4,
+     8
+    ],
+    "tags": [
+     "cold-hardy",
+     "seedless",
+     "short-season",
+     "self-fertile"
+    ],
+    "notes": "Very hardy red seedless table grape that ripens early; ideal where summers are short."
+   },
+   {
+    "name": "Reliance",
+    "type": "american hybrid",
+    "years": "2–3",
+    "ripens": "early",
+    "tags": [
+     "cold-hardy",
+     "seedless",
+     "self-fertile"
+    ],
+    "notes": "Hardy red seedless table grape with sweet, fruity flavor; dependable in cold, humid climates."
+   },
+   {
+    "name": "Himrod",
+    "type": "american hybrid",
+    "years": "2–3",
+    "ripens": "early",
+    "tags": [
+     "seedless",
+     "self-fertile"
+    ],
+    "notes": "Early golden seedless table grape with honey-sweet flavor; moderately hardy."
+   },
+   {
+    "name": "Flame Seedless",
+    "type": "vinifera table",
+    "years": "2–3",
+    "ripens": "early",
+    "chill": 100,
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "seedless",
+     "heat-tolerant",
+     "low-chill",
+     "self-fertile"
+    ],
+    "notes": "Crisp red seedless table grape for hot, dry summers; not cold-hardy or disease-tolerant in humid climates."
+   },
+   {
+    "name": "Thompson Seedless",
+    "type": "vinifera table",
+    "years": "2–3",
+    "ripens": "mid",
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "seedless",
+     "heat-tolerant",
+     "self-fertile"
+    ],
+    "notes": "The classic green seedless grape and raisin grape; needs long, hot, dry summers."
+   },
+   {
+    "name": "Carlos",
+    "type": "muscadine",
+    "years": "2–3",
+    "ripens": "mid",
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "self-fertile",
+     "heat-tolerant",
+     "disease-resistant"
+    ],
+    "notes": "Bronze, self-fertile muscadine; vigorous, disease-resistant and a good pollinizer for female types."
+   },
+   {
+    "name": "Triumph",
+    "type": "muscadine",
+    "years": "2–3",
+    "ripens": "early",
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "self-fertile",
+     "heat-tolerant"
+    ],
+    "notes": "Early bronze self-fertile muscadine with good flavor; cold-hardy for a muscadine."
+   },
+   {
+    "name": "Supreme",
+    "type": "muscadine",
+    "years": "2–3",
+    "ripens": "mid",
+    "zones": [
+     7,
+     10
+    ],
+    "tags": [
+     "needs-pollinizer",
+     "heat-tolerant"
+    ],
+    "notes": "Very large, sweet black muscadine; female, so plant a self-fertile muscadine within 50 ft."
+   }
+  ]
+ },
+ "hardy-kiwi": {
+  "varieties": [
+   {
+    "name": "Anna",
+    "type": "arguta female",
+    "years": "3–5",
+    "ripens": "late",
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "Also sold as 'Ananasnaya'; sweet, aromatic kiwiberries. Needs an arguta male within about 50 ft."
+   },
+   {
+    "name": "Ken's Red",
+    "type": "arguta female",
+    "years": "3–5",
+    "ripens": "mid",
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "Red-skinned, red-fleshed kiwiberries with sweet-tart flavor; needs an arguta male."
+   },
+   {
+    "name": "Geneva",
+    "type": "arguta female",
+    "years": "3–5",
+    "ripens": "early",
+    "tags": [
+     "needs-pollinizer",
+     "short-season"
+    ],
+    "notes": "Early-ripening, very sweet kiwiberries; good where fall frost comes early. Needs an arguta male."
+   },
+   {
+    "name": "Issai",
+    "type": "arguta self-fertile",
+    "years": "2–3",
+    "ripens": "mid",
+    "zones": [
+     5,
+     8
+    ],
+    "tags": [
+     "self-fertile",
+     "compact"
+    ],
+    "notes": "Self-fertile and fruits young, on a smaller vine; less hardy than other argutas and crops better with a male."
+   },
+   {
+    "name": "Arctic Beauty",
+    "type": "kolomikta",
+    "years": "3–5",
+    "ripens": "early",
+    "zones": [
+     3,
+     7
+    ],
+    "tags": [
+     "cold-hardy",
+     "needs-pollinizer"
+    ],
+    "notes": "Super-hardy species with pink-and-white leaves; female needs a kolomikta male (arguta males won't do)."
+   }
+  ]
+ },
+ "cranberry": {
+  "varieties": [
+   {
+    "name": "Stevens",
+    "type": "american",
+    "years": "2–3",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "The most widely planted variety: large, dark red berries on a vigorous, productive vine."
+   },
+   {
+    "name": "Early Black",
+    "type": "american",
+    "years": "2–3",
+    "ripens": "early",
+    "tags": [
+     "self-fertile",
+     "short-season"
+    ],
+    "notes": "Small, very dark berries that ripen early; good where fall frost comes early."
+   },
+   {
+    "name": "Ben Lear",
+    "type": "american",
+    "years": "2–3",
+    "ripens": "early",
+    "tags": [
+     "self-fertile",
+     "short-season"
+    ],
+    "notes": "Large, deep red early berries; best used fresh as they keep less well."
+   },
+   {
+    "name": "Howes",
+    "type": "american",
+    "years": "2–3",
+    "ripens": "late",
+    "tags": [
+     "self-fertile",
+     "storage",
+     "heirloom"
+    ],
+    "notes": "Old late variety with firm berries that store exceptionally well."
+   },
+   {
+    "name": "Pilgrim",
+    "type": "american",
+    "years": "2–3",
+    "ripens": "late",
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Very large, purplish-red berries on a vigorous vine; heavy cropper."
+   }
+  ]
+ },
+ "passionfruit": {
+  "varieties": [
+   {
+    "name": "Frederick",
+    "type": "purple hybrid",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Reliable, self-fertile purple hybrid with large, tangy-sweet fruit; the go-to in California."
+   },
+   {
+    "name": "Possum Purple",
+    "type": "purple",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Self-fertile purple passion fruit with sweet, aromatic pulp; vigorous and productive."
+   },
+   {
+    "name": "Black Knight",
+    "type": "purple",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "self-fertile",
+     "compact",
+     "container"
+    ],
+    "notes": "Compact, self-fertile vine with dark purple fruit; manageable on small trellises and in large pots."
+   },
+   {
+    "name": "Incense",
+    "type": "maypop hybrid",
+    "years": "1–2",
+    "ripens": "mid",
+    "chill": null,
+    "zones": [
+     7,
+     11
+    ],
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Hardy hybrid with fragrant purple flowers; roots survive mild freezes and resprout. Sets best with a maypop nearby."
+   },
+   {
+    "name": "Maypop",
+    "type": "native maypop",
+    "years": "1–2",
+    "ripens": "late",
+    "chill": null,
+    "zones": [
+     6,
+     10
+    ],
+    "tags": [
+     "cold-hardy",
+     "needs-pollinizer"
+    ],
+    "notes": "The native Passiflora incarnata; dies to the ground in winter and resprouts. Plant two seedlings to get fruit."
+   }
+  ]
+ },
+ "dragonfruit": {
+  "varieties": [
+   {
+    "name": "American Beauty",
+    "type": "red flesh",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Self-fertile red-fleshed variety with deep magenta pulp and good sweetness."
+   },
+   {
+    "name": "Dark Star",
+    "type": "red flesh",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Self-fertile, vigorous, with sweet red-purple flesh; a popular home-garden pick."
+   },
+   {
+    "name": "Vietnamese White",
+    "type": "white flesh",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "The common white-fleshed type; self-fertile, vigorous and productive but mildly sweet."
+   },
+   {
+    "name": "Sugar Dragon",
+    "type": "red flesh",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Self-fertile red-fleshed variety known for very high sugar content."
+   },
+   {
+    "name": "Physical Graffiti",
+    "type": "pink flesh",
+    "years": "2–3",
+    "ripens": "mid",
+    "chill": null,
+    "notes": "Large fruit with pink-magenta flesh and excellent flavor; sets better with a second variety."
+   },
+   {
+    "name": "Yellow Dragon",
+    "type": "yellow",
+    "years": "2–3",
+    "ripens": "late",
+    "chill": null,
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Selenicereus megalanthus: small, spiny yellow fruit, the sweetest dragon fruit; slow and self-fertile."
+   }
+  ]
+ },
+ "currant": {
+  "varieties": [
+   {
+    "name": "Red Lake",
+    "type": "red",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile",
+     "cold-hardy"
+    ],
+    "notes": "Long-time standard red currant: big clusters of bright red, tart berries for jelly."
+   },
+   {
+    "name": "Rovada",
+    "type": "red",
+    "years": "2",
+    "ripens": "late",
+    "tags": [
+     "self-fertile",
+     "disease-resistant"
+    ],
+    "notes": "Very long clusters of large red berries that are easy to pick; heavy yields."
+   },
+   {
+    "name": "Jonkheer van Tets",
+    "type": "red",
+    "years": "2",
+    "ripens": "early",
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Early, heavy-bearing Dutch red currant with large, tart berries."
+   },
+   {
+    "name": "Pink Champagne",
+    "type": "pink",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Translucent pink berries that are sweeter than red currants; good for fresh eating."
+   },
+   {
+    "name": "Blanka",
+    "type": "white",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Large, sweet, translucent white berries on a productive bush."
+   },
+   {
+    "name": "Consort",
+    "type": "black",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile",
+     "disease-resistant",
+     "cold-hardy"
+    ],
+    "notes": "Immune to white pine blister rust, so legal in many areas that restrict black currants."
+   },
+   {
+    "name": "Titania",
+    "type": "black",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile",
+     "disease-resistant"
+    ],
+    "notes": "Large, rich-flavored black currants on a rust-resistant, productive bush."
+   },
+   {
+    "name": "Crandall",
+    "type": "clove currant",
+    "years": "2",
+    "ripens": "late",
+    "zones": [
+     3,
+     8
+    ],
+    "tags": [
+     "heat-tolerant",
+     "disease-resistant"
+    ],
+    "notes": "Native clove currant with fragrant yellow flowers and sweet black fruit; tolerates more heat and drought."
+   }
+  ]
+ },
+ "gooseberry": {
+  "varieties": [
+   {
+    "name": "Hinnonmaki Red",
+    "type": "red",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile",
+     "disease-resistant",
+     "cold-hardy"
+    ],
+    "notes": "Finnish variety with sweet-tart red berries and good mildew resistance; very hardy."
+   },
+   {
+    "name": "Hinnonmaki Yellow",
+    "type": "yellow",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile",
+     "disease-resistant",
+     "cold-hardy"
+    ],
+    "notes": "Sweet, apricot-flavored green-yellow berries; hardy and mildew-resistant."
+   },
+   {
+    "name": "Invicta",
+    "type": "green",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile",
+     "disease-resistant"
+    ],
+    "notes": "Heavy crops of large green berries for cooking; strong mildew resistance."
+   },
+   {
+    "name": "Pixwell",
+    "type": "pink",
+    "years": "2",
+    "ripens": "mid",
+    "zones": [
+     3,
+     7
+    ],
+    "tags": [
+     "self-fertile",
+     "cold-hardy"
+    ],
+    "notes": "Very hardy old American variety with fewer thorns; berries hang away from the canes for easy picking."
+   },
+   {
+    "name": "Captivator",
+    "type": "red",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile",
+     "thornless",
+     "disease-resistant"
+    ],
+    "notes": "Nearly thornless Canadian variety with sweet red berries and good mildew resistance."
+   },
+   {
+    "name": "Poorman",
+    "type": "red",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile",
+     "heirloom"
+    ],
+    "notes": "Old American gooseberry with sweet red berries good for fresh eating; vigorous and productive."
+   }
+  ]
+ },
+ "haskap": {
+  "varieties": [
+   {
+    "name": "Tundra",
+    "type": "U. Saskatchewan",
+    "years": "2–3",
+    "ripens": "early",
+    "tags": [
+     "needs-pollinizer",
+     "cold-hardy"
+    ],
+    "notes": "Firm, flavorful berries that hold well; pollinate with 'Honey Bee' or 'Borealis'."
+   },
+   {
+    "name": "Borealis",
+    "type": "U. Saskatchewan",
+    "years": "2–3",
+    "ripens": "early",
+    "tags": [
+     "needs-pollinizer",
+     "cold-hardy",
+     "compact"
+    ],
+    "notes": "Large, sweet, soft berries on a compact bush; plant with 'Tundra' or 'Honey Bee'."
+   },
+   {
+    "name": "Indigo Gem",
+    "type": "U. Saskatchewan",
+    "years": "2–3",
+    "ripens": "early",
+    "tags": [
+     "needs-pollinizer",
+     "cold-hardy"
+    ],
+    "notes": "Productive, vigorous bush with tangy berries; pair with 'Honey Bee' or another early bloomer."
+   },
+   {
+    "name": "Aurora",
+    "type": "U. Saskatchewan",
+    "years": "2–3",
+    "ripens": "mid",
+    "tags": [
+     "needs-pollinizer",
+     "cold-hardy"
+    ],
+    "notes": "Large, sweet berries on an upright bush; 'Honey Bee' is the usual partner."
+   },
+   {
+    "name": "Honey Bee",
+    "type": "U. Saskatchewan",
+    "years": "2–3",
+    "ripens": "mid",
+    "tags": [
+     "needs-pollinizer",
+     "cold-hardy"
+    ],
+    "notes": "Grown mainly as a pollinizer for 'Aurora', 'Tundra', 'Borealis' and 'Indigo Gem'; good fruit too."
+   },
+   {
+    "name": "Boreal Beauty",
+    "type": "U. Saskatchewan",
+    "years": "2–3",
+    "ripens": "late",
+    "tags": [
+     "needs-pollinizer",
+     "cold-hardy"
+    ],
+    "notes": "Late-blooming, late-ripening type; plant with 'Boreal Beast' or 'Boreal Blizzard', which bloom at the same time."
+   },
+   {
+    "name": "Boreal Beast",
+    "type": "U. Saskatchewan",
+    "years": "2–3",
+    "ripens": "late",
+    "tags": [
+     "needs-pollinizer",
+     "cold-hardy"
+    ],
+    "notes": "Late, large-fruited and vigorous; pollinizes 'Boreal Beauty' and 'Boreal Blizzard'."
+   }
+  ]
+ },
+ "elderberry": {
+  "varieties": [
+   {
+    "name": "Adams",
+    "type": "american",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Old standard American elderberry with big clusters; plant two varieties for heavier crops."
+   },
+   {
+    "name": "York",
+    "type": "american",
+    "years": "2",
+    "ripens": "late",
+    "tags": [
+     "needs-pollinizer",
+     "cold-hardy"
+    ],
+    "notes": "Largest berries and clusters of the American types; needs another variety nearby to fruit well."
+   },
+   {
+    "name": "Nova",
+    "type": "american",
+    "years": "2",
+    "ripens": "early",
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Early, sweet, large berries on a smaller bush; a good partner for 'York' or 'Adams'."
+   },
+   {
+    "name": "Johns",
+    "type": "american",
+    "years": "2",
+    "ripens": "early",
+    "tags": [
+     "cold-hardy"
+    ],
+    "notes": "Very vigorous, tall bush with large clusters; great for jelly and as a pollinizer."
+   },
+   {
+    "name": "Bob Gordon",
+    "type": "american",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "disease-resistant"
+    ],
+    "notes": "Missouri selection with very heavy crops; clusters hang down, which deters birds."
+   },
+   {
+    "name": "Wyldewood",
+    "type": "american",
+    "years": "2",
+    "ripens": "late",
+    "tags": [
+     "heat-tolerant"
+    ],
+    "notes": "Oklahoma selection that flowers and ripens over a long season; does well in hot summers."
+   },
+   {
+    "name": "Ranch",
+    "type": "american",
+    "years": "2",
+    "ripens": "mid",
+    "tags": [
+     "compact"
+    ],
+    "notes": "Compact, sturdy Missouri selection that tolerates poor soils; good for smaller yards."
+   },
+   {
+    "name": "Black Lace",
+    "type": "european",
+    "years": "2–3",
+    "ripens": "mid",
+    "zones": [
+     4,
+     7
+    ],
+    "tags": [
+     "needs-pollinizer"
+    ],
+    "notes": "Ornamental S. nigra with dark lacy leaves and pink flowers; fruits best with another nigra nearby."
+   }
+  ]
+ },
+ "serviceberry": {
+  "varieties": [
+   {
+    "name": "Regent",
+    "type": "saskatoon",
+    "years": "2–3",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile",
+     "compact",
+     "cold-hardy"
+    ],
+    "notes": "Compact 4–6 ft saskatoon with sweet fruit; self-fertile and very hardy."
+   },
+   {
+    "name": "Smoky",
+    "type": "saskatoon",
+    "years": "2–4",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile",
+     "cold-hardy"
+    ],
+    "notes": "Classic Alberta saskatoon with sweet, fleshy fruit and heavy yields."
+   },
+   {
+    "name": "Northline",
+    "type": "saskatoon",
+    "years": "2–3",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile",
+     "cold-hardy"
+    ],
+    "notes": "Heavy cropper with large, sweet berries; suckers to form a hedge."
+   },
+   {
+    "name": "Thiessen",
+    "type": "saskatoon",
+    "years": "2–4",
+    "ripens": "early",
+    "tags": [
+     "self-fertile",
+     "cold-hardy"
+    ],
+    "notes": "Largest-fruited saskatoon with excellent flavor; tall, and ripens over a longer period."
+   },
+   {
+    "name": "Honeywood",
+    "type": "saskatoon",
+    "years": "2–4",
+    "ripens": "late",
+    "tags": [
+     "self-fertile",
+     "cold-hardy"
+    ],
+    "notes": "Blooms late, so it escapes spring frosts; large fruit in heavy clusters."
+   },
+   {
+    "name": "Autumn Brilliance",
+    "type": "apple serviceberry",
+    "years": "2–4",
+    "ripens": "mid",
+    "tags": [
+     "self-fertile"
+    ],
+    "notes": "Small ornamental tree with edible berries and brilliant red fall color; widely sold for landscapes."
+   }
+  ]
+ }
+}
