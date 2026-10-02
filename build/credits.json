@@ -472,5 +472,95 @@
   "artist": "Evan-Amos",
   "license": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File:Asparagus-Bundle.jpg"
+ },
+ "rutabaga": {
+  "file": "Rutabaga,_variety_nadmorska.JPG",
+  "artist": "Picasa user Seedambassadors",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Rutabaga,_variety_nadmorska.JPG"
+ },
+ "rhubarb": {
+  "file": "Rheum_rhabarbarum.2006-04-27.uellue.jpg",
+  "artist": "Dieter Weber (User:Uellue)",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Rheum_rhabarbarum.2006-04-27.uellue.jpg"
+ },
+ "horseradish": {
+  "file": "Horseradish root.jpg",
+  "artist": "San906",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:Horseradish_root.jpg"
+ },
+ "sunchoke": {
+  "file": "Jerusalem Artichokes tubers.jpg",
+  "artist": "Christian Guthier",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Jerusalem_Artichokes_tubers.jpg"
+ },
+ "hardy-kiwi": {
+  "file": "Weiki01.jpg",
+  "artist": "Bj\u00f6rn Appel",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Weiki01.jpg"
+ },
+ "cranberry": {
+  "file": "Cranberry_bog.jpg",
+  "artist": "Photo by Keith Weller",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Cranberry_bog.jpg"
+ },
+ "sweet-cherry": {
+  "file": "Prunus_avium_fruit.jpg",
+  "artist": "MPF",
+  "license": "CC BY 2.5",
+  "source": "https://commons.wikimedia.org/wiki/File:Prunus_avium_fruit.jpg"
+ },
+ "sour-cherry": {
+  "file": "Montmorency cherries (3648681426).jpg",
+  "artist": "Martha Dol.",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Montmorency_cherries_(3648681426).jpg"
+ },
+ "pear": {
+  "file": "Pears.jpg",
+  "artist": "Keith Weller",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Pears.jpg"
+ },
+ "pawpaw": {
+  "file": "Asimina_triloba3.jpg",
+  "artist": "Scott Bauer, USDA",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Asimina_triloba3.jpg"
+ },
+ "serviceberry": {
+  "file": "Amelanchier utahensis Utah serviceberry fruit.jpg",
+  "artist": "Dcrjsr",
+  "license": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Amelanchier_utahensis_Utah_serviceberry_fruit.jpg"
+ },
+ "currant": {
+  "file": "Ribes_rubrum_1.jpg",
+  "artist": "",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Ribes_rubrum_1.jpg"
+ },
+ "gooseberry": {
+  "file": "Stachelbeeren.jpg",
+  "artist": "",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Stachelbeeren.jpg"
+ },
+ "haskap": {
+  "file": "Lonicera_coerulea_a3.jpg",
+  "artist": "Opio\u0142a Jerzy (Poland)",
+  "license": "CC BY 2.5",
+  "source": "https://commons.wikimedia.org/wiki/File:Lonicera_coerulea_a3.jpg"
+ },
+ "elderberry": {
+  "file": "Sambucus-berries.jpg",
+  "artist": "Edal Anton Lefterov",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sambucus-berries.jpg"
  }
 }

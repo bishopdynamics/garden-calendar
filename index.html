@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Claremont Garden Calendar</title>
+<title>Garden Calendar</title>
 <style>
 :root {
   --bg: #f6f3ec; --panel: #ffffff; --ink: #24301f; --muted: #6b7363; --line: #e3ddd0;
-  --accent: #3f7a3a; --accent-soft: #e4efdf;
+  --accent: #3f7a3a; --accent-soft: #e4efdf; --warn: #9a5b12; --warn-soft: #fbefdc;
   --indoors: #8a5cc7; --sow: #3f8f3a; --transplant: #2a86a8; --plant: #b07a2a; --harvest: #d0572f; --hydro: #1f63c9;
   --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 14px rgba(0,0,0,.06);
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #161a14; --panel: #20261d; --ink: #e8ecdf; --muted: #9aa392; --line: #333b2e;
-    --accent: #7cc271; --accent-soft: #2b3a27;
+    --accent: #7cc271; --accent-soft: #2b3a27; --warn: #f0b562; --warn-soft: #3a2f1c;
     --indoors: #a784dd; --sow: #6cbb5f; --transplant: #4fb1d3; --plant: #d3a04f; --harvest: #f07a52; --hydro: #6aa6ff;
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 14px rgba(0,0,0,.3);
   }
@@ -25,26 +25,64 @@ body { margin: 0; background: var(--bg); color: var(--ink);
 header { padding: 22px 24px 8px; max-width: 1400px; margin: 0 auto; }
 h1 { margin: 0; font-size: 26px; letter-spacing: -.01em; }
 .sub { color: var(--muted); margin-top: 2px; }
-main { max-width: 1400px; margin: 0 auto; padding: 0 24px 60px; }
+main { max-width: 1400px; margin: 0 auto; padding: 0 24px 40px; }
+button { font: inherit; }
+[hidden] { display: none !important; }
+
+/* Location bar */
+.locbar { margin-top: 14px; background: var(--panel); border-radius: 12px; box-shadow: var(--shadow);
+  padding: 10px 14px; display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; }
+.locbar .place { font-weight: 700; font-size: 16px; }
+.locbar .fact { color: var(--muted); }
+.locbar .fact b { color: var(--ink); font-weight: 600; }
+.locbar .src { flex-basis: 100%; font-size: 12.5px; color: var(--muted); }
+.link-btn { border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 4px 12px;
+  border-radius: 99px; cursor: pointer; font-weight: 600; font-size: 13.5px; margin-left: auto; }
+.link-btn:hover { border-color: var(--accent); }
+
+/* Location chooser */
+.setup { max-width: 560px; margin: 28px auto; background: var(--panel); border-radius: 18px; box-shadow: var(--shadow);
+  padding: 26px 26px 22px; }
+.setup h2 { margin: 0 0 4px; font-size: 22px; }
+.setup p { margin: 0 0 18px; color: var(--muted); }
+.geo-btn { width: 100%; border: 0; background: var(--accent); color: #fff; padding: 12px; border-radius: 12px;
+  font-weight: 650; font-size: 16px; cursor: pointer; }
+.geo-btn:disabled { opacity: .6; cursor: wait; }
+.or { text-align: center; color: var(--muted); margin: 14px 0; font-size: 13px; }
+.searchbox { position: relative; }
+.searchbox input { width: 100%; font: inherit; font-size: 16px; padding: 11px 14px; border-radius: 12px;
+  border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+.searchbox input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.results { list-style: none; margin: 6px 0 0; padding: 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); }
+.results:empty { display: none; }
+.results li { padding: 9px 14px; cursor: pointer; display: flex; justify-content: space-between; gap: 10px; }
+.results li + li { border-top: 1px solid var(--line); }
+.results li.sel, .results li:hover { background: var(--accent-soft); }
+.results small { color: var(--muted); white-space: nowrap; }
+.status { min-height: 1.4em; margin-top: 10px; font-size: 14px; color: var(--muted); }
+.status.err { color: var(--warn); }
+.setup .cancel { margin-top: 8px; border: 0; background: none; color: var(--muted); cursor: pointer; text-decoration: underline; padding: 0; }
 
 .months { display: grid; grid-template-columns: repeat(12, 1fr); gap: 6px; margin: 16px 0 12px; }
 .months button { border: 1px solid var(--line); background: var(--panel); color: var(--ink);
-  padding: 9px 0; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer; position: relative; }
+  padding: 9px 0; border-radius: 10px; font-weight: 600; cursor: pointer; position: relative; }
 .months button:hover { border-color: var(--accent); }
 .months button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
 .months button.today::after { content: ""; position: absolute; left: 50%; bottom: 3px; width: 5px; height: 5px;
   margin-left: -2.5px; border-radius: 50%; background: currentColor; opacity: .6; }
 
 .note { background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; margin-bottom: 14px; }
-.note b { margin-right: 6px; }
+.note > b:first-child { margin-right: 6px; }
+.note ul { margin: 6px 0 0; padding-left: 20px; }
 
 .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 18px; }
 .seg { display: inline-flex; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 3px; }
-.seg button { border: 0; background: transparent; color: var(--muted); font: inherit; font-weight: 600;
+.seg button { border: 0; background: transparent; color: var(--muted); font-weight: 600;
   padding: 6px 12px; border-radius: 7px; cursor: pointer; }
 .seg button.on { background: var(--accent-soft); color: var(--ink); }
-input[type=search] { font: inherit; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line);
+input[type=search]#q { font: inherit; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line);
   background: var(--panel); color: var(--ink); min-width: 200px; flex: 1; max-width: 320px; }
+.toggle { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 14px; cursor: pointer; }
 .count { color: var(--muted); margin-left: auto; }
 
 .legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 14px; }
@@ -56,8 +94,9 @@ h2.group { font-size: 16px; margin: 22px 0 10px; color: var(--muted); font-weigh
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
 .card { background: var(--panel); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow);
   cursor: pointer; display: flex; flex-direction: column; transition: transform .12s; border: 0; padding: 0;
-  text-align: left; color: inherit; font: inherit; }
+  text-align: left; color: inherit; }
 .card:hover { transform: translateY(-2px); }
+.card.unsuited { opacity: .55; }
 .card .ph { aspect-ratio: 4/3; background: var(--line) center/cover no-repeat; }
 .card .body { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
 .card .name { font-weight: 650; font-size: 15px; }
@@ -65,6 +104,7 @@ h2.group { font-size: 16px; margin: 22px 0 10px; color: var(--muted); font-weigh
 .badge { font-size: 11.5px; font-weight: 600; padding: 2px 7px; border-radius: 99px; color: #fff; background: var(--c); }
 .badge.hy { color: var(--hydro); background: color-mix(in srgb, var(--hydro) 10%, var(--panel));
   box-shadow: inset 0 0 0 1.5px var(--hydro); }
+.badge.no { color: var(--warn); background: var(--warn-soft); }
 td.nm .badge { font-size: 10.5px; padding: 1px 6px; }
 .m-head .badges { margin-top: 6px; }
 .legend span.hy::before { background: color-mix(in srgb, var(--hydro) 10%, var(--panel)); box-shadow: inset 0 0 0 1.5px var(--hydro); }
@@ -84,13 +124,13 @@ thead th { position: sticky; top: 0; background: var(--panel); font-size: 12px; 
 thead th.cur { color: var(--accent); }
 tbody tr { cursor: pointer; border-top: 1px solid var(--line); }
 tbody tr:hover { background: var(--accent-soft); }
+tbody tr.unsuited { opacity: .55; }
 td.nm { padding: 5px 12px; white-space: nowrap; font-size: 13.5px; display: flex; align-items: center; gap: 8px; }
 td.nm img { width: 28px; height: 28px; border-radius: 6px; object-fit: cover; }
 td.m { width: 6.5%; padding: 3px 2px; vertical-align: middle; }
 td.m.cur { background: color-mix(in srgb, var(--accent) 10%, transparent); }
 .bars { display: flex; flex-direction: column; gap: 2px; }
 .bars i { height: 6px; border-radius: 3px; background: var(--c); }
-.bars i.none { background: transparent; }
 tr.sec td { background: var(--bg); font-weight: 700; font-size: 12px; text-transform: uppercase;
   letter-spacing: .06em; color: var(--muted); padding: 8px 12px; cursor: default; }
 
@@ -105,6 +145,7 @@ dialog::backdrop { background: rgba(10,15,8,.55); }
 .m-head .tag { color: var(--muted); text-transform: capitalize; }
 .close { border: 0; background: var(--accent-soft); color: var(--ink); font-size: 20px; width: 34px; height: 34px;
   border-radius: 50%; cursor: pointer; flex: none; }
+.warnbox { background: var(--warn-soft); color: var(--warn); border-radius: 10px; padding: 10px 14px; margin: 14px 0 0; font-weight: 600; }
 .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 14px 0; }
 .facts div { background: var(--bg); border-radius: 10px; padding: 8px 12px; }
 .facts small { display: block; color: var(--muted); font-size: 12px; }
@@ -118,70 +159,111 @@ dialog::backdrop { background: rgba(10,15,8,.55); }
 .cal .c { height: 16px; border-radius: 4px; background: var(--bg); }
 .cal .c.on { background: var(--c); }
 .tips { margin: 16px 0 6px; font-size: 15px; }
+.local { background: var(--accent-soft); border-radius: 10px; padding: 10px 14px; margin-top: 10px; }
+.local b { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: 2px; }
+.local p { margin: 4px 0 0; }
 .credit { font-size: 11.5px; color: var(--muted); margin-top: 12px; }
 .credit a { color: inherit; }
 
+footer { max-width: 1400px; margin: 0 auto; padding: 0 24px 40px; font-size: 12.5px; color: var(--muted); }
+footer a { color: inherit; }
+
 @media (max-width: 700px) {
-  header, main { padding-left: 16px; padding-right: 16px; }
+  header, main, footer { padding-left: 16px; padding-right: 16px; }
   .months { grid-template-columns: repeat(6, 1fr); }
   .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .cal { grid-template-columns: 80px repeat(12, 1fr); font-size: 10px; }
+  .facts { grid-template-columns: 1fr; }
   .count { margin-left: 0; }
+  .link-btn { margin-left: 0; }
+  .setup { padding: 20px 16px; }
 }
 </style>
 </head>
 <body>
 <header>
-  <h1>🌱 Claremont Garden Calendar</h1>
-  <div class="sub">What to plant and harvest each month · USDA zone 10a · inland Southern California</div>
+  <h1>🌱 Garden Calendar</h1>
+  <div class="sub">What to plant and harvest each month, wherever you garden in the continental US</div>
+  <div class="locbar" id="locbar" hidden></div>
 </header>
+
 <main>
-  <nav class="months" id="months"></nav>
-  <div class="note" id="note"></div>
+  <section class="setup" id="setup" hidden>
+    <h2>Where's your garden?</h2>
+    <p>Planting times depend on your local frost dates and temperatures. Pick a location and the calendar adjusts to it. All the calculations happen on this device, and the page doesn't send your location anywhere.</p>
+    <button class="geo-btn" id="geo">📍 Use my location</button>
+    <div class="or">or search</div>
+    <div class="searchbox">
+      <input type="search" id="locq" placeholder="ZIP code or city, e.g. 55401 or Duluth, MN" autocomplete="off"
+             role="combobox" aria-controls="results" aria-expanded="false">
+      <ul class="results" id="results" role="listbox"></ul>
+    </div>
+    <div class="status" id="status" role="status"></div>
+    <button class="cancel" id="cancel" hidden>Cancel</button>
+  </section>
 
-  <div class="controls">
-    <div class="seg" id="mode">
-      <button data-v="plant">🌱 Plant</button>
-      <button data-v="harvest">🧺 Harvest</button>
-      <button data-v="all">All crops</button>
+  <div id="app" hidden>
+    <nav class="months" id="months"></nav>
+    <div class="note" id="note"></div>
+
+    <div class="controls">
+      <div class="seg" id="mode">
+        <button data-v="plant">🌱 Plant</button>
+        <button data-v="harvest">🧺 Harvest</button>
+        <button data-v="all">All crops</button>
+      </div>
+      <div class="seg" id="cat">
+        <button data-v="all">All</button>
+        <button data-v="vegetable">Vegetables</button>
+        <button data-v="fruit">Fruits</button>
+        <button data-v="herb">Herbs</button>
+      </div>
+      <div class="seg" id="hydro" title="Can it be grown hydroponically?">
+        <button data-v="any">💧 Any</button>
+        <button data-v="seeds">Hydro from seed</button>
+        <button data-v="cuttings">Hydro from cuttings</button>
+      </div>
+      <div class="seg" id="view">
+        <button data-v="cards">Cards</button>
+        <button data-v="chart">Year chart</button>
+      </div>
+      <input type="search" id="q" placeholder="Search crops…">
+      <label class="toggle"><input type="checkbox" id="unsuited"> <span id="unsuited-label">Show crops that won't grow here</span></label>
+      <span class="count" id="count"></span>
     </div>
-    <div class="seg" id="cat">
-      <button data-v="all">All</button>
-      <button data-v="vegetable">Vegetables</button>
-      <button data-v="fruit">Fruits</button>
-      <button data-v="herb">Herbs</button>
+
+    <div class="legend">
+      <span style="--c:var(--indoors)">Start seeds indoors</span>
+      <span style="--c:var(--sow)">Direct sow</span>
+      <span style="--c:var(--transplant)">Transplant seedlings</span>
+      <span style="--c:var(--plant)">Plant (trees, crowns, bulbs, slips)</span>
+      <span style="--c:var(--harvest)">Harvest</span>
+      <span class="hy">💧 Hydro Seed / Hydro Cutting: can be grown hydroponically that way</span>
     </div>
-    <div class="seg" id="hydro" title="Can it be grown hydroponically?">
-      <button data-v="any">💧 Any</button>
-      <button data-v="seeds">Hydro from seed</button>
-      <button data-v="cuttings">Hydro from cuttings</button>
-    </div>
-    <div class="seg" id="view">
-      <button data-v="cards">Cards</button>
-      <button data-v="chart">Year chart</button>
-    </div>
-    <input type="search" id="q" placeholder="Search crops…">
-    <span class="count" id="count"></span>
+
+    <div id="out"></div>
   </div>
-
-  <div class="legend">
-    <span style="--c:var(--indoors)">Start seeds indoors</span>
-    <span style="--c:var(--sow)">Direct sow</span>
-    <span style="--c:var(--transplant)">Transplant seedlings</span>
-    <span style="--c:var(--plant)">Plant (trees, crowns, bulbs, slips)</span>
-    <span style="--c:var(--harvest)">Harvest</span>
-    <span class="hy">💧 Hydro Seed / Hydro Cutting: can be grown hydroponically that way</span>
-  </div>
-
-  <div id="out"></div>
 </main>
+
+<footer>
+  Planting windows are estimated from 1991–2020 NOAA climate normals (average frost dates and monthly temperatures) at the
+  weather stations nearest you, and hardiness zones from the USDA 2023 Plant Hardiness Zone Map (PRISM, Oregon State University).
+  Your microclimate, elevation and the year's weather can shift things by a few weeks; your local cooperative extension office
+  is the best tie-breaker. Place data: U.S. Census Bureau. Photos: Wikimedia Commons (credits on each crop).
+</footer>
 
 <dialog id="dlg"></dialog>
 
 <script src="data.js"></script>
+<script src="engine.js"></script>
+<script src="geo/stations.js"></script>
+<script src="geo/zips.js"></script>
+<script src="geo/places.js"></script>
 <script>
+const E = window.GardenEngine;
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const MONTHS_LONG = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const MDAYS = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const ACTIONS = [
   { k: "indoors",    label: "Start indoors", c: "var(--indoors)" },
   { k: "sow",        label: "Direct sow",    c: "var(--sow)" },
@@ -192,21 +274,6 @@ const HARVEST = { k: "harvest", label: "Harvest", c: "var(--harvest)" };
 const PLANT_KEYS = ACTIONS.map(a => a.k);
 const SEASON_ORDER = { cool: 0, warm: 1, perennial: 2 };
 const SEASON_LABEL = { cool: "Cool-season crops", warm: "Warm-season crops", perennial: "Perennials, fruit trees & vines" };
-
-const NOTES = [
-  "Bare-root season: the best time to plant low-chill stone fruit, apples, figs, grapes, berries, asparagus and artichokes. Frost is still possible — cover citrus and tender plants on clear, cold nights.",
-  "Last frosts usually pass by late February. Keep planting bare-root trees, sow the last round of peas and greens, and start tomato and pepper seeds indoors.",
-  "Spring planting begins. Transplant the first tomatoes once nights stay above 50°F, sow beans and squash late in the month, and plant citrus and avocados.",
-  "Prime warm-season planting month: tomatoes, peppers, eggplant, squash, melons, corn, beans and sweet potatoes all go in now. Mulch before the heat arrives.",
-  "Finish warm-season planting before June heat. Harvest garlic, onions and potatoes. Deep-water fruit trees as the weather warms.",
-  "Heat is here. Plant heat lovers (okra, cowpeas, sweet potatoes, melons) and sow pumpkins for Halloween. Use shade cloth on young transplants.",
-  "Hottest stretch of the year. Sow a second round of beans, cucumbers and squash, and set out tomato starts for a fall crop. Water early in the morning.",
-  "Start fall crops indoors (broccoli, cabbage, cauliflower, leeks) out of the heat. Plant fall potatoes. Keep summer crops well watered.",
-  "Fall garden begins as nights cool. Transplant brassicas, sow carrots, beets, lettuce, peas and greens. Late September to October is ideal for planting perennials.",
-  "The best planting month of the year in SoCal. Sow nearly all cool-season crops, plant garlic, favas, strawberries and native shrubs. Fall rains (if any) help establish roots.",
-  "Plant strawberries, garlic and short-day onion starts. Keep sowing lettuce, peas, radishes and spinach. Watch for the first frost late in the month.",
-  "Order bare-root trees and plant them as they arrive. Sow favas and peas, plant onion sets. Protect frost-tender citrus, avocados and passion fruit on cold nights.",
-];
 
 const now = new Date().getMonth() + 1;
 const store = {
@@ -219,11 +286,16 @@ const state = {
   cat: store.get("cat", "all"),
   hydro: store.get("hydro", "any"),
   view: store.get("view", "cards"),
+  showUnsuited: store.get("showUnsuited", false),
   q: "",
+  loc: store.get("loc", null),  // { label, lat, lon, zone }
+  C: null,                      // prepared climate for loc
+  crops: [],                    // CROPS + computed months for loc
 };
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[ch]);
+const fmtDay = d => new Date(2001, 0, d).toLocaleDateString("en-US", { month: "short", day: "numeric" });
 const HYDRO_LABEL = { seeds: "Yes, from seeds", cuttings: "Yes, from cuttings", both: "Yes, from seeds or cuttings", no: "Not practical" };
 const hydroChips = c => [
   ...(c.hydro === "seeds" || c.hydro === "both" ? ["Hydro Seed"] : []),
@@ -232,22 +304,187 @@ const hydroChips = c => [
 const plantMonths = c => new Set(PLANT_KEYS.flatMap(k => c[k]));
 const actionsIn = (c, m) => ACTIONS.filter(a => c[a.k].includes(m));
 
+// ---------------- Location data ----------------
+let ZIPS, PLACES;
+function geoData() {
+  if (ZIPS) return;
+  ZIPS = GEO_ZIPS.split(";").map(r => { const [z, la, lo, zn] = r.split(","); return { z, lat: la / 100, lon: lo / 100, zone: zn }; });
+  PLACES = GEO_PLACES.split(";").map(r => {
+    const [n, st, la, lo, zn, pop] = r.split("|");
+    return { n, st, lat: la / 100, lon: lo / 100, zone: zn, pop: +pop, key: n.toLowerCase() };
+  });
+}
+function nearest(list, lat, lon) {
+  const cl = Math.cos(lat * Math.PI / 180);
+  let best = null, bd = Infinity;
+  for (const p of list) {
+    const d = (p.lat - lat) ** 2 + ((p.lon - lon) * cl) ** 2;
+    if (d < bd) { bd = d; best = p; }
+  }
+  return { ...best, mi: Math.sqrt(bd) * 69.05 };
+}
+// prefer a real town (with population) close by for labels
+function nearbyTown(lat, lon) {
+  const p = nearest(PLACES.filter(p => p.pop > 0 && Math.abs(p.lat - lat) < 0.5 && Math.abs(p.lon - lon) < 0.6), lat, lon);
+  return p.n ? p : nearest(PLACES, lat, lon);
+}
+
+function searchPlaces(q) {
+  geoData();
+  q = q.trim().toLowerCase();
+  if (!q) return [];
+  if (/^\d{1,5}$/.test(q)) {
+    return ZIPS.filter(z => z.z.startsWith(q)).slice(0, 8).map(z => {
+      const t = nearbyTown(z.lat, z.lon);
+      return { title: z.z, sub: `${t.n}, ${t.st} · zone ${z.zone}`, loc: { label: `${t.n}, ${t.st} ${z.z}`, lat: z.lat, lon: z.lon, zone: z.zone } };
+    });
+  }
+  const [name, st] = q.split(",").map(s => s.trim());
+  const ok = p => !st || p.st.toLowerCase().startsWith(st);
+  const out = PLACES.filter(p => p.key.startsWith(name) && ok(p)).slice(0, 8);
+  if (out.length < 8) out.push(...PLACES.filter(p => !p.key.startsWith(name) && p.key.includes(" " + name) && ok(p)).slice(0, 8 - out.length));
+  return out.map(p => ({ title: `${p.n}, ${p.st}`, sub: `zone ${p.zone}${p.pop ? ` · pop. ${p.pop.toLocaleString()}` : ""}`,
+                         loc: { label: `${p.n}, ${p.st}`, lat: p.lat, lon: p.lon, zone: p.zone } }));
+}
+
+// ---------------- Location → climate → crop months ----------------
+function applyLocation(loc) {
+  state.loc = loc;
+  state.C = E.prepare(E.climateFrom(STATIONS, loc.lat, loc.lon), loc.zone, loc.lat);
+  state.crops = CROPS.map(c => {
+    const r = E.evaluate(c, state.C);
+    return { ...c, ...r, local: r.suitable ? E.localTips(c, state.C, r) : [] };
+  });
+}
+
+function setLocation(loc) {
+  store.set("loc", loc);
+  applyLocation(loc);
+  showApp();
+}
+
+// ---------------- Setup panel ----------------
+let results = [], sel = -1;
+function showSetup() {
+  $("#setup").hidden = false;
+  $("#app").hidden = true;
+  $("#cancel").hidden = !state.C;
+  $("#status").textContent = "";
+  $("#status").className = "status";
+  $("#locq").value = "";
+  renderResults([]);
+  $("#locq").focus();
+}
+function showApp() {
+  $("#setup").hidden = true;
+  $("#app").hidden = false;
+  renderLocbar();
+  render();
+}
+function renderResults(list) {
+  results = list; sel = list.length ? 0 : -1;
+  $("#results").innerHTML = list.map((r, i) =>
+    `<li role="option" data-i="${i}" class="${i === sel ? "sel" : ""}"><span>${esc(r.title)}</span><small>${esc(r.sub)}</small></li>`).join("");
+  $("#locq").setAttribute("aria-expanded", list.length ? "true" : "false");
+}
+function status(msg, err) { $("#status").textContent = msg; $("#status").className = "status" + (err ? " err" : ""); }
+
+$("#locq").addEventListener("input", e => {
+  const q = e.target.value;
+  const list = searchPlaces(q);
+  renderResults(list);
+  status(q.trim() && !list.length ? (/^\d+$/.test(q.trim()) ? "No continental US ZIP code matches that." : "No city or town matches that. Try a nearby town or your ZIP code.") : "", true);
+});
+$("#locq").addEventListener("keydown", e => {
+  if (!results.length) return;
+  if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+    e.preventDefault();
+    sel = (sel + (e.key === "ArrowDown" ? 1 : results.length - 1)) % results.length;
+    document.querySelectorAll("#results li").forEach((li, i) => li.classList.toggle("sel", i === sel));
+  } else if (e.key === "Enter" && sel >= 0) { e.preventDefault(); setLocation(results[sel].loc); }
+});
+$("#results").addEventListener("click", e => { const li = e.target.closest("li"); if (li) setLocation(results[+li.dataset.i].loc); });
+$("#cancel").addEventListener("click", showApp);
+
+$("#geo").addEventListener("click", () => {
+  if (!navigator.geolocation) return status("This browser can't share its location. Search for your ZIP code or town instead.", true);
+  $("#geo").disabled = true;
+  status("Finding your location…");
+  navigator.geolocation.getCurrentPosition(pos => {
+    $("#geo").disabled = false;
+    geoData();
+    const { latitude: lat, longitude: lon } = pos.coords;
+    const z = nearest(ZIPS, lat, lon);
+    if (z.mi > 40) return status("That location looks like it's outside the continental US, which this calendar covers. Try searching instead.", true);
+    const t = nearbyTown(lat, lon);
+    setLocation({ label: `Near ${t.n}, ${t.st}`, lat, lon, zone: z.zone });
+  }, err => {
+    $("#geo").disabled = false;
+    status(err.code === err.PERMISSION_DENIED ? "Location permission was declined. No problem: search for your ZIP code or town below."
+         : "Couldn't get your location (it may need an internet connection). Search for your ZIP code or town below.", true);
+  }, { timeout: 15000, maximumAge: 3600e3 });
+});
+
+// ---------------- Header location bar ----------------
+function renderLocbar() {
+  const C = state.C, l = state.loc;
+  const frost = C.lf32 == null
+    ? `<span class="fact"><b>Frost-free</b> in a typical year</span>`
+    : `<span class="fact">Last frost <b>~${fmtDay(C.lf32)}</b></span><span class="fact">First frost <b>~${fmtDay(C.ff32)}</b></span>`;
+  const st = C.stations;
+  $("#locbar").hidden = false;
+  $("#locbar").innerHTML = `
+    <span class="place">📍 ${esc(l.label)}</span>
+    <span class="fact">Zone <b>${esc(C.zone)}</b></span>
+    ${frost}
+    <span class="fact"><b>${Math.round(C.hotDays)}</b> days ≥ 90°F/yr</span>
+    <button class="link-btn" id="change">Change location</button>
+    <span class="src">Climate from NOAA station${st.length > 1 ? "s" : ""} ${st.map(s => `${esc(s.name)} (${s.mi < 1 ? "<1" : Math.round(s.mi)} mi)`).join(", ")}</span>`;
+  $("#change").onclick = showSetup;
+}
+
+// ---------------- Monthly note ----------------
+function monthNote(m) {
+  const C = state.C, s = E.MSTART[m - 1], e = s + MDAYS[m - 1] - 1, mid = s + 14;
+  const inMonth = d => d != null && d >= s && d <= e;
+  const hi = Math.round(C.tmax[mid]), lo = Math.round(C.tmin[mid]);
+  const parts = [];
+  if (C.lf32 == null) {
+    if ([12, 1, 2].includes(m)) parts.push("Frost is rare here (most years never reach 32°F), but cover tender plants on unusually cold nights.");
+  } else {
+    if (inMonth(C.lf32)) parts.push(`Your average last spring frost is around <b>${fmtDay(C.lf32)}</b>. Wait until after it to set out tender plants.`);
+    else {
+      const wk = Math.round(((C.lf32 - mid + 365) % 365) / 7);
+      if (wk >= 2 && wk <= 10 && C.lf32 > 30) parts.push(`About <b>${wk} weeks</b> until your average last frost (${fmtDay(C.lf32)}): time to start warm-season seeds indoors.`);
+    }
+    if (inMonth(C.ff32)) parts.push(`The first fall frost usually arrives around <b>${fmtDay(C.ff32)}</b>. Harvest or cover tender crops before then.`);
+    if (hi < 36) parts.push("Deep winter: the ground is likely frozen. A good month to plan, order seeds and check stored crops.");
+  }
+  if (C.d90[m - 1] >= 8) parts.push(`Hot month (about ${Math.round(C.d90[m - 1])} days at 90°F+): water deeply, mulch, and shade young plants.`);
+  const nP = state.crops.filter(c => c.suitable && plantMonths(c).has(m)).length;
+  const nH = state.crops.filter(c => c.suitable && c.harvest.includes(m)).length;
+  return `<b>${MONTHS_LONG[m - 1]}:</b>typical highs ${hi}°F, lows ${lo}°F · ${nP} crop${nP === 1 ? "" : "s"} to plant, ${nH} to harvest.` +
+    (parts.length ? `<ul>${parts.map(p => `<li>${p}</li>`).join("")}</ul>` : "");
+}
+
+// ---------------- Crop views ----------------
 function filtered() {
   const q = state.q.trim().toLowerCase();
-  return CROPS.filter(c =>
+  return state.crops.filter(c =>
+    (c.suitable || state.showUnsuited) &&
     (state.cat === "all" || c.cat === state.cat) &&
     (state.hydro === "any" || c.hydro === state.hydro || c.hydro === "both") &&
     (!q || c.name.toLowerCase().includes(q) || c.tips.toLowerCase().includes(q)) &&
-    (state.mode === "all" || state.view === "chart" ||
+    (state.mode === "all" || state.view === "chart" || !c.suitable ||
       (state.mode === "plant" ? plantMonths(c).has(state.month) : c.harvest.includes(state.month)))
-  ).sort((a, b) => SEASON_ORDER[a.season] - SEASON_ORDER[b.season] || a.name.localeCompare(b.name));
+  ).sort((a, b) => (b.suitable - a.suitable) || SEASON_ORDER[a.season] - SEASON_ORDER[b.season] || a.name.localeCompare(b.name));
 }
 
 function renderMonths() {
   $("#months").innerHTML = MONTHS.map((m, i) =>
     `<button data-m="${i + 1}" class="${i + 1 === state.month ? "on" : ""} ${i + 1 === now ? "today" : ""}"
       title="${MONTHS_LONG[i]}${i + 1 === now ? " (this month)" : ""}">${m}</button>`).join("");
-  $("#note").innerHTML = `<b>${MONTHS_LONG[state.month - 1]}:</b>${esc(NOTES[state.month - 1])}`;
+  $("#note").innerHTML = monthNote(state.month);
 }
 
 function strip(c) {
@@ -259,23 +496,25 @@ function strip(c) {
 }
 
 function card(c) {
-  const acts = state.mode === "harvest" ? (c.harvest.includes(state.month) ? [HARVEST] : [])
+  const acts = !c.suitable ? [] : state.mode === "harvest" ? (c.harvest.includes(state.month) ? [HARVEST] : [])
     : [...actionsIn(c, state.month), ...(state.mode === "all" && c.harvest.includes(state.month) ? [HARVEST] : [])];
-  return `<button class="card" data-id="${c.id}">
+  return `<button class="card ${c.suitable ? "" : "unsuited"}" data-id="${c.id}">
     <div class="ph" style="background-image:url('${c.img || ""}')"></div>
     <div class="body">
       <div class="name">${esc(c.name)}</div>
-      <div class="badges">${acts.map(a => `<span class="badge" style="--c:${a.c}">${a.label}</span>`).join("")}${hydroChips(c)}</div>
-      ${strip(c)}
+      <div class="badges">${c.suitable ? (c.marginal ? `<span class="badge no" title="${esc(c.reason)}">Marginal</span>` : "") : `<span class="badge no">Not suited here</span>`}${
+        acts.map(a => `<span class="badge" style="--c:${a.c}">${a.label}</span>`).join("")}${hydroChips(c)}</div>
+      ${c.suitable ? strip(c) : ""}
     </div></button>`;
 }
 
 function renderCards(list) {
   if (!list.length) return `<div class="empty">Nothing matches for ${MONTHS_LONG[state.month - 1]}.</div>`;
   const groups = {};
-  list.forEach(c => (groups[c.season] ??= []).push(c));
+  list.forEach(c => (groups[c.suitable ? c.season : "unsuited"] ??= []).push(c));
+  const label = { ...SEASON_LABEL, unsuited: "Not suited to this location" };
   return Object.keys(groups).map(s =>
-    `<h2 class="group">${SEASON_LABEL[s]} · ${groups[s].length}</h2><div class="grid">${groups[s].map(card).join("")}</div>`
+    `<h2 class="group">${label[s]} · ${groups[s].length}</h2><div class="grid">${groups[s].map(card).join("")}</div>`
   ).join("");
 }
 
@@ -283,8 +522,9 @@ function renderChart(list) {
   if (!list.length) return `<div class="empty">No crops match.</div>`;
   let rows = "", last = null;
   for (const c of list) {
-    if (c.season !== last) { rows += `<tr class="sec"><td colspan="13">${SEASON_LABEL[c.season]}</td></tr>`; last = c.season; }
-    rows += `<tr data-id="${c.id}"><td class="nm">${c.img ? `<img src="${c.img}" alt="" loading="lazy">` : ""}${esc(c.name)}${hydroChips(c)}</td>${
+    const sec = c.suitable ? c.season : "unsuited";
+    if (sec !== last) { rows += `<tr class="sec"><td colspan="13">${sec === "unsuited" ? "Not suited to this location" : SEASON_LABEL[sec]}</td></tr>`; last = sec; }
+    rows += `<tr data-id="${c.id}" class="${c.suitable ? "" : "unsuited"}"><td class="nm">${c.img ? `<img src="${c.img}" alt="" loading="lazy">` : ""}${esc(c.name)}${c.marginal ? ` <span class="badge no" title="${esc(c.reason)}">Marginal</span>` : ""}${hydroChips(c)}</td>${
       MONTHS.map((_, i) => {
         const m = i + 1;
         const bars = [...ACTIONS, HARVEST].filter(a => c[a.k].includes(m));
@@ -300,38 +540,45 @@ function render() {
   for (const k of ["mode", "cat", "hydro", "view"])
     document.querySelectorAll(`#${k} button`).forEach(b => b.classList.toggle("on", b.dataset.v === state[k]));
   $("#mode").style.display = state.view === "chart" ? "none" : "";
+  const nUnsuited = state.crops.filter(c => !c.suitable).length;
+  $("#unsuited").checked = state.showUnsuited;
+  $("#unsuited-label").textContent = `Show crops that won't grow here (${nUnsuited})`;
+  $("#unsuited").parentElement.hidden = !nUnsuited;
   renderMonths();
   const list = filtered();
+  const n = list.filter(c => c.suitable).length;
   const what = state.view === "chart" ? "crops" :
     state.mode === "plant" ? `to plant in ${MONTHS_LONG[state.month - 1]}` :
     state.mode === "harvest" ? `to harvest in ${MONTHS_LONG[state.month - 1]}` : "crops";
-  $("#count").textContent = `${list.length} ${what}`;
+  $("#count").textContent = `${n} ${what}`;
   $("#out").innerHTML = state.view === "chart" ? renderChart(list) : renderCards(list);
 }
 
 function openCrop(id) {
-  const c = CROPS.find(x => x.id === id);
+  const c = state.crops.find(x => x.id === id);
   const rows = [...ACTIONS, HARVEST].filter(a => c[a.k].length);
   const cr = c.credit;
   $("#dlg").innerHTML = `
     ${c.img ? `<img class="m-img" src="${c.img}" alt="${esc(c.name)}">` : ""}
     <div class="m-body">
       <div class="m-head">
-        <div><h3>${esc(c.name)}</h3><div class="tag">${c.cat} · ${c.season === "perennial" ? "perennial" : c.season + " season"}</div><div class="badges">${hydroChips(c)}</div></div>
+        <div><h3>${esc(c.name)}</h3><div class="tag">${c.cat} · ${c.season === "perennial" ? (c.asAnnual ? "grown as an annual here" : "perennial") : c.season + " season"}</div><div class="badges">${hydroChips(c)}</div></div>
         <button class="close" aria-label="Close">×</button>
       </div>
+      ${c.suitable ? (c.marginal ? `<div class="warnbox">${esc(c.reason)}</div>` : "") : `<div class="warnbox">Not suited to ${esc(state.loc.label)}: ${esc(c.reason)}</div>`}
       <div class="facts">
         <div><small>Time to harvest</small>${esc(c.days)}</div>
         <div><small>Sun</small>${esc(c.sun)}</div>
         <div><small>Spacing</small>${esc(c.spacing)}</div>
         <div class="hydro ${c.hydro}"><small>Grow hydroponically?</small><b>${HYDRO_LABEL[c.hydro]}</b> · ${esc(c.hydro_note)}</div>
       </div>
-      <div class="cal">
+      ${rows.length ? `<div class="cal">
         <div></div>${MONTHS.map((m, i) => `<div class="h ${i + 1 === state.month ? "cur" : ""}">${m[0]}</div>`).join("")}
         ${rows.map(a => `<div class="lbl">${a.label}</div>${
           MONTHS.map((_, i) => `<div class="c ${c[a.k].includes(i + 1) ? "on" : ""}" style="--c:${a.c}"></div>`).join("")}`).join("")}
-      </div>
+      </div>` : ""}
       <p class="tips">${esc(c.tips)}</p>
+      ${c.local.length ? `<div class="local"><b>For your area</b>${c.local.map(t => `<p>${esc(t)}</p>`).join("")}</div>` : ""}
       ${cr ? `<div class="credit">Photo: ${esc(cr.artist || "Unknown")}${cr.license ? `, ${esc(cr.license)}` : ""}, via Wikimedia Commons${
         cr.source ? ` (<a href="${esc(cr.source)}" target="_blank" rel="noopener">source</a>)` : ""}</div>` : ""}
     </div>`;
@@ -348,18 +595,23 @@ for (const k of ["mode", "cat", "hydro", "view"])
     const b = e.target.closest("button"); if (!b) return;
     state[k] = b.dataset.v; store.set(k, state[k]); render();
   });
+$("#unsuited").addEventListener("change", e => { state.showUnsuited = e.target.checked; store.set("showUnsuited", state.showUnsuited); render(); });
 $("#q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("#out").addEventListener("click", e => {
   const el = e.target.closest("[data-id]"); if (el) openCrop(el.dataset.id);
 });
 $("#dlg").addEventListener("click", e => { if (e.target.id === "dlg") $("#dlg").close(); });
 document.addEventListener("keydown", e => {
-  if ($("#dlg").open || e.target.tagName === "INPUT") return;
+  if ($("#dlg").open || e.target.tagName === "INPUT" || $("#app").hidden) return;
   if (e.key === "ArrowLeft") { state.month = (state.month + 10) % 12 + 1; render(); }
   if (e.key === "ArrowRight") { state.month = state.month % 12 + 1; render(); }
 });
 
-render();
+// ---------------- Start ----------------
+if (state.loc) {
+  try { applyLocation(state.loc); showApp(); }
+  catch { store.set("loc", null); state.loc = null; showSetup(); }
+} else showSetup();
 </script>
 </body>
 </html>

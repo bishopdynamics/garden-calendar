@@ -1,0 +1,1573 @@
+{
+"tomato": {
+"indoors": [
+1,
+2
+],
+"sow": [],
+"transplant": [
+3,
+4,
+5,
+6,
+7
+],
+"plant": [],
+"harvest": [
+6,
+7,
+8,
+9,
+10,
+11
+]
+},
+"pepper": {
+"indoors": [
+1,
+2,
+3
+],
+"sow": [],
+"transplant": [
+4,
+5,
+6
+],
+"plant": [],
+"harvest": [
+7,
+8,
+9,
+10,
+11
+]
+},
+"eggplant": {
+"indoors": [
+2,
+3
+],
+"sow": [],
+"transplant": [
+4,
+5,
+6
+],
+"plant": [],
+"harvest": [
+7,
+8,
+9,
+10
+]
+},
+"bush-bean": {
+"indoors": [],
+"sow": [
+3,
+4,
+5,
+6,
+7,
+8
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+5,
+6,
+7,
+8,
+9,
+10
+]
+},
+"lima-bean": {
+"indoors": [],
+"sow": [
+4,
+5,
+6
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+7,
+8,
+9,
+10
+]
+},
+"cowpea": {
+"indoors": [],
+"sow": [
+4,
+5,
+6,
+7
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+7,
+8,
+9,
+10
+]
+},
+"corn": {
+"indoors": [],
+"sow": [
+3,
+4,
+5,
+6,
+7
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+6,
+7,
+8,
+9,
+10
+]
+},
+"cucumber": {
+"indoors": [],
+"sow": [
+3,
+4,
+5,
+6,
+7
+],
+"transplant": [
+4,
+5,
+6
+],
+"plant": [],
+"harvest": [
+5,
+6,
+7,
+8,
+9,
+10
+]
+},
+"zucchini": {
+"indoors": [],
+"sow": [
+3,
+4,
+5,
+6,
+7,
+8
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+5,
+6,
+7,
+8,
+9,
+10
+]
+},
+"winter-squash": {
+"indoors": [],
+"sow": [
+4,
+5,
+6
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+8,
+9,
+10,
+11
+]
+},
+"pumpkin": {
+"indoors": [],
+"sow": [
+5,
+6
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+9,
+10
+]
+},
+"cantaloupe": {
+"indoors": [],
+"sow": [
+4,
+5,
+6
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+7,
+8,
+9
+]
+},
+"watermelon": {
+"indoors": [],
+"sow": [
+4,
+5,
+6
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+7,
+8,
+9
+]
+},
+"okra": {
+"indoors": [],
+"sow": [
+4,
+5,
+6,
+7
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+7,
+8,
+9,
+10
+]
+},
+"sweet-potato": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+4,
+5,
+6
+],
+"harvest": [
+9,
+10,
+11
+]
+},
+"tomatillo": {
+"indoors": [
+1,
+2,
+3
+],
+"sow": [],
+"transplant": [
+3,
+4,
+5,
+6
+],
+"plant": [],
+"harvest": [
+6,
+7,
+8,
+9,
+10
+]
+},
+"malabar-spinach": {
+"indoors": [],
+"sow": [
+4,
+5,
+6
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+6,
+7,
+8,
+9,
+10
+]
+},
+"amaranth": {
+"indoors": [],
+"sow": [
+4,
+5,
+6,
+7,
+8
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+6,
+7,
+8,
+9,
+10
+]
+},
+"beet": {
+"indoors": [],
+"sow": [
+1,
+2,
+3,
+9,
+10,
+11
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+3,
+4,
+5,
+6,
+11,
+12,
+1,
+2
+]
+},
+"broccoli": {
+"indoors": [
+7,
+8,
+12
+],
+"sow": [],
+"transplant": [
+9,
+10,
+1,
+2
+],
+"plant": [],
+"harvest": [
+11,
+12,
+1,
+2,
+3,
+4,
+5
+]
+},
+"brussels": {
+"indoors": [
+6,
+7
+],
+"sow": [],
+"transplant": [
+8,
+9,
+10
+],
+"plant": [],
+"harvest": [
+12,
+1,
+2,
+3
+]
+},
+"cabbage": {
+"indoors": [
+7,
+8,
+12
+],
+"sow": [],
+"transplant": [
+9,
+10,
+11,
+1,
+2
+],
+"plant": [],
+"harvest": [
+12,
+1,
+2,
+3,
+4,
+5
+]
+},
+"carrot": {
+"indoors": [],
+"sow": [
+1,
+2,
+3,
+4,
+8,
+9,
+10,
+11
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+11,
+12
+]
+},
+"cauliflower": {
+"indoors": [
+7,
+8,
+12
+],
+"sow": [],
+"transplant": [
+9,
+10,
+1,
+2
+],
+"plant": [],
+"harvest": [
+12,
+1,
+2,
+3,
+4
+]
+},
+"celery": {
+"indoors": [
+1,
+6,
+7
+],
+"sow": [],
+"transplant": [
+2,
+3,
+8,
+9
+],
+"plant": [],
+"harvest": [
+11,
+12,
+1,
+5,
+6
+]
+},
+"chard": {
+"indoors": [],
+"sow": [
+2,
+3,
+4,
+5,
+8,
+9,
+10
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12
+]
+},
+"collards": {
+"indoors": [],
+"sow": [
+2,
+3,
+8,
+9,
+10
+],
+"transplant": [
+2,
+3,
+9,
+10
+],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+6,
+11,
+12
+]
+},
+"fava": {
+"indoors": [],
+"sow": [
+10,
+11,
+12
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+3,
+4,
+5
+]
+},
+"garlic": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+10,
+11,
+12
+],
+"harvest": [
+5,
+6
+]
+},
+"kale": {
+"indoors": [],
+"sow": [
+2,
+3,
+8,
+9,
+10
+],
+"transplant": [
+2,
+3,
+9,
+10,
+11
+],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+10,
+11,
+12
+]
+},
+"kohlrabi": {
+"indoors": [],
+"sow": [
+2,
+3,
+9,
+10
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+4,
+5,
+11,
+12
+]
+},
+"leek": {
+"indoors": [
+7,
+8,
+12
+],
+"sow": [],
+"transplant": [
+1,
+2,
+3,
+9,
+10
+],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+6,
+7
+]
+},
+"lettuce": {
+"indoors": [],
+"sow": [
+1,
+2,
+3,
+9,
+10,
+11,
+12
+],
+"transplant": [
+1,
+2,
+3,
+9,
+10,
+11
+],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+10,
+11,
+12
+]
+},
+"mustard": {
+"indoors": [],
+"sow": [
+1,
+2,
+3,
+9,
+10,
+11
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+10,
+11,
+12
+]
+},
+"bok-choy": {
+"indoors": [],
+"sow": [
+2,
+3,
+9,
+10,
+11
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+3,
+4,
+10,
+11,
+12,
+1
+]
+},
+"arugula": {
+"indoors": [],
+"sow": [
+1,
+2,
+3,
+9,
+10,
+11,
+12
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+10,
+11,
+12
+]
+},
+"spinach": {
+"indoors": [],
+"sow": [
+1,
+2,
+9,
+10,
+11
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+11,
+12,
+1,
+2,
+3,
+4
+]
+},
+"onion": {
+"indoors": [],
+"sow": [
+10,
+11
+],
+"transplant": [],
+"plant": [
+11,
+12,
+1
+],
+"harvest": [
+5,
+6,
+7
+]
+},
+"scallion": {
+"indoors": [],
+"sow": [
+1,
+2,
+3,
+4,
+8,
+9,
+10,
+11,
+12
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+6,
+10,
+11,
+12
+]
+},
+"parsnip": {
+"indoors": [],
+"sow": [
+9,
+10,
+11
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+2,
+3,
+4,
+5
+]
+},
+"pea": {
+"indoors": [],
+"sow": [
+9,
+10,
+11,
+12,
+1,
+2
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+11,
+12,
+1,
+2,
+3,
+4,
+5
+]
+},
+"potato": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+1,
+2,
+3,
+8,
+9
+],
+"harvest": [
+5,
+6,
+11,
+12
+]
+},
+"radish": {
+"indoors": [],
+"sow": [
+1,
+2,
+3,
+4,
+9,
+10,
+11,
+12
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+10,
+11,
+12
+]
+},
+"turnip": {
+"indoors": [],
+"sow": [
+1,
+2,
+3,
+9,
+10,
+11
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+11,
+12,
+1,
+2,
+3,
+4,
+5
+]
+},
+"cilantro": {
+"indoors": [],
+"sow": [
+1,
+2,
+3,
+9,
+10,
+11,
+12
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+10,
+11,
+12
+]
+},
+"dill": {
+"indoors": [],
+"sow": [
+1,
+2,
+3,
+9,
+10
+],
+"transplant": [],
+"plant": [],
+"harvest": [
+3,
+4,
+5,
+6,
+11,
+12
+]
+},
+"parsley": {
+"indoors": [],
+"sow": [
+2,
+3,
+9,
+10
+],
+"transplant": [
+2,
+3,
+4,
+9,
+10,
+11
+],
+"plant": [],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+10,
+11,
+12
+]
+},
+"artichoke": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+1,
+2,
+3,
+10,
+11
+],
+"harvest": [
+3,
+4,
+5
+]
+},
+"asparagus": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+1,
+2
+],
+"harvest": [
+2,
+3,
+4
+]
+},
+"basil": {
+"indoors": [
+2,
+3
+],
+"sow": [
+4,
+5,
+6,
+7
+],
+"transplant": [
+4,
+5,
+6,
+7
+],
+"plant": [],
+"harvest": [
+5,
+6,
+7,
+8,
+9,
+10
+]
+},
+"rosemary": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+2,
+3,
+4,
+9,
+10,
+11
+],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12
+]
+},
+"thyme": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+2,
+3,
+4,
+9,
+10,
+11
+],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12
+]
+},
+"mint": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+2,
+3,
+4,
+5,
+9,
+10
+],
+"harvest": [
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11
+]
+},
+"strawberry": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+10,
+11,
+1,
+2
+],
+"harvest": [
+3,
+4,
+5,
+6,
+7
+]
+},
+"blueberry": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+10,
+11,
+12,
+1,
+2,
+3
+],
+"harvest": [
+4,
+5,
+6
+]
+},
+"blackberry": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+12,
+1,
+2,
+3
+],
+"harvest": [
+5,
+6,
+7
+]
+},
+"raspberry": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+12,
+1,
+2,
+3
+],
+"harvest": [
+5,
+6,
+7,
+9,
+10,
+11
+]
+},
+"grape": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+1,
+2,
+3
+],
+"harvest": [
+7,
+8,
+9
+]
+},
+"passionfruit": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+4,
+5,
+6
+],
+"harvest": [
+7,
+8,
+9,
+10,
+11,
+12
+]
+},
+"dragonfruit": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+4,
+5,
+6
+],
+"harvest": [
+7,
+8,
+9,
+10
+]
+},
+"orange": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+3,
+4,
+5,
+9,
+10
+],
+"harvest": [
+12,
+1,
+2,
+3,
+4,
+5,
+6
+]
+},
+"lemon": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+3,
+4,
+5,
+9,
+10
+],
+"harvest": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12
+]
+},
+"mandarin": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+3,
+4,
+5,
+9,
+10
+],
+"harvest": [
+11,
+12,
+1,
+2,
+3,
+4
+]
+},
+"lime": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+4,
+5,
+9
+],
+"harvest": [
+8,
+9,
+10,
+11,
+12,
+1
+]
+},
+"avocado": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+3,
+4,
+5,
+6
+],
+"harvest": [
+3,
+4,
+5,
+6,
+7,
+8,
+9
+]
+},
+"fig": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+1,
+2,
+3,
+4,
+5
+],
+"harvest": [
+6,
+7,
+8,
+9,
+10
+]
+},
+"peach": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+12,
+1,
+2
+],
+"harvest": [
+5,
+6,
+7,
+8
+]
+},
+"nectarine": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+12,
+1,
+2
+],
+"harvest": [
+6,
+7,
+8
+]
+},
+"apricot": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+12,
+1,
+2
+],
+"harvest": [
+5,
+6,
+7
+]
+},
+"plum": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+12,
+1,
+2
+],
+"harvest": [
+6,
+7,
+8
+]
+},
+"apple": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+12,
+1,
+2
+],
+"harvest": [
+6,
+7,
+8,
+9,
+10
+]
+},
+"pomegranate": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+1,
+2,
+3,
+4,
+5
+],
+"harvest": [
+9,
+10,
+11
+]
+},
+"persimmon": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+12,
+1,
+2
+],
+"harvest": [
+10,
+11,
+12
+]
+},
+"loquat": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+3,
+4,
+5,
+9,
+10
+],
+"harvest": [
+3,
+4,
+5
+]
+},
+"feijoa": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+3,
+4,
+5,
+9,
+10
+],
+"harvest": [
+10,
+11,
+12
+]
+},
+"mulberry": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+12,
+1,
+2,
+3
+],
+"harvest": [
+4,
+5,
+6
+]
+},
+"jujube": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+12,
+1,
+2
+],
+"harvest": [
+8,
+9,
+10
+]
+},
+"olive": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+3,
+4,
+5,
+6
+],
+"harvest": [
+10,
+11,
+12
+]
+},
+"guava": {
+"indoors": [],
+"sow": [],
+"transplant": [],
+"plant": [
+4,
+5,
+6
+],
+"harvest": [
+8,
+9,
+10,
+11,
+12
+]
+}
+}

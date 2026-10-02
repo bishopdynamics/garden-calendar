@@ -4,7 +4,7 @@ pages:
   image: alpine:latest
   script:
     - mkdir -p public
-    - cp -r index.html data.js images public/
+    - cp -r index.html data.js engine.js geo images public/
   artifacts:
     paths:
       - public
